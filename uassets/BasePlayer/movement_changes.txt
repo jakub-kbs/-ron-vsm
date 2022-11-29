@@ -1,0 +1,17 @@
+---- NAME ----                          ---- CHANGE ----                ---- NOTE ----
+
+RUN SPEED                               --> INCREASED BY 5%           
+WALK SPEED                              --> INCREASED 3.5 TIMES         (MULTIPLIER - 1 -> 3.5)
+MINIMUM WALK SPEED %                    --> INCREASED BY 20%            
+MOVING SPEED WHEN AIMING                --> INCREASED BY 6.6%           (MULTIPLIER - 0.85 -> 0.9)
+MOVING SPEED WHEN FOCUS AIMING          --> INCREASED BY 10%            (MULTIPLIER - 0.5 -> 0.55)
+MOVING SPEED WHEN LEANING               --> INCREASED BY 50%            (MULTIPLIER - 0.5 -> 0.75)
+SPEED % LOSS PER LEG INJURY             --> INCREASED 5 TIMES           (12.5% SPD LOSS)
+SPEED % LOSS WHEN CARRYING              --> INCREASED 3.2 TIMES         (20% SPD LOSS)
+
+SUPPRESSION SHAKE SCALE                 --> REDUCED BY 17%
+
+FREELOOK YAW                            --> INCREASED TO 90 DEG         (VANILLA 65 DEG)
+
+CHARACTER COLLISION CYLINDER RADIUS     --> REDUCED BY ~10.5%            
+
