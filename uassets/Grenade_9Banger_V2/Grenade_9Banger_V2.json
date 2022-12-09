@@ -785,7 +785,7 @@
      "$type": "UAssetAPI.PropertyTypes.Objects.ObjectPropertyData, UAssetAPI",
      "Name": "DetonationLight",
      "DuplicationIndex": 0,
-     "Value": 4
+     "Value": 8
     },
     {
      "$type": "UAssetAPI.PropertyTypes.Objects.ObjectPropertyData, UAssetAPI",

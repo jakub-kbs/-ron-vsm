@@ -106,7 +106,7 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     continue
 
         # M4A1
-        if item["Name"] == "M4A1":
+        if item["Name"] == "MK18":
             
             # For every piece of the item data.
             for item_data in item["Value"]:

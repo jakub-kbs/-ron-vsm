@@ -19,9 +19,9 @@ for item in data["Exports"][1]["Data"]:
         continue
 
     # Detonation Light                                  # VANILLA 8 - TEST
-    if item["Name"] == "DetonationLight":
-        item["Value"] = 4
-        continue
+    # if item["Name"] == "DetonationLight":
+    #     item["Value"] = 4
+    #     continue
 
     # # Detonation Loudness                               # VANILLA 2 - UNKNOWN
     # if item["Name"] == "DetonationLoudness":
