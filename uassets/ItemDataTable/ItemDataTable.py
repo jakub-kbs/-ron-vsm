@@ -1869,6 +1869,288 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     item_data["Value"] = 0.1
                     continue
 
+        # SPC9
+        if item["Name"] == "SPC9":
+            
+            # For every piece of the item data.
+            for item_data in item["Value"]:
+                
+                # NAME
+                if item_data["Name"] == "ItemName":
+                    item_data["CultureInvariantString"] = "B&T SPC9 SBR"
+                    continue
+                
+                # WEIGHT
+                if item_data["Name"] == "ItemWeight":
+                    item_data["Value"] = 2.650
+                    continue
+
+                # ADS ZOOM IN
+                if item_data["Name"] == "ADSZoomInSpeed":
+                    item_data["Value"] = 5.4000000953674316
+                    continue
+                
+                # ADS ZOOM OUT
+                if item_data["Name"] == "ADSZoomOutSpeed":
+                    item_data["Value"] = 5.4000000953674316
+                    continue
+
+                # MAG WEIGHT FULL
+                if item_data["Name"] == "MagazineWeightFull":
+                    item_data["Value"] = 0.31999999284744263
+                    continue
+
+                # MAG WEIGHT EMPTY
+                if item_data["Name"] == "MagazineWeightEmpty":
+                    item_data["Value"] = 0.10000000149011612
+                    continue
+
+                # DAMAGE SEVERITY MULTIPLIER
+                if item_data["Name"] == "DamageSeverityMultiplier":
+                    item_data["Value"] = 1.05
+                    continue
+
+                # DAMAGE SEVERITY CHANCE
+                if item_data["Name"] == "DamageSeverityChance":
+                    item_data["Value"] = 0.05
+                    continue
+
+                # BLEEDOUT DAMAGE MULTIPLIER
+                if item_data["Name"] == "BleedoutDamageMultiplier":
+                    item_data["Value"] = 0.1
+                    continue
+
+                # BLEEDOUT DAMAGE CHANCE
+                if item_data["Name"] == "BleedoutDamageChance":
+                    item_data["Value"] = 0.125
+                    continue
+
+                # MUZZLE VELOCITY
+                if item_data["Name"] == "ProjectileMovementSpeed":
+                    item_data["Value"] = 40000
+                    continue
+
+                # PENETRATION
+                if item_data["Name"] == "PenetrationDistance":
+                    item_data["Value"] = 20
+                    continue
+
+                # RECOIL PATTERN
+                if item_data["Name"] == "RecoilPattern":
+                    
+                    for recoil_main in item_data["Value"]:
+                        
+                        # ENTER RECOIL ARRAY
+                        if recoil_main["Name"] == "RecoilPattern":
+                            
+                            # ENTER RECOIL OBJECT
+                            for recoil_array in recoil_main["Value"]:
+                                if recoil_array["Value"]["Yaw"] == 0.10000000149011612:
+                                    recoil_array["Value"]["Pitch"] = random.uniform(0.75, 0.9)
+                                    continue
+                                elif recoil_array["Value"]["Yaw"] == -0.10000000149011612:
+                                    recoil_array["Value"]["Pitch"] = random.uniform(0.75, 0.9)
+                                    continue
+                
+                #  ENTER MESHSPACE DEFAULT
+                if item_data["Name"] == "MeshspaceTransform_Default":
+                    
+                    for def_meshspace in item_data["Value"]:
+                        
+                        # ENTER ROTATION ARRAY
+                        if def_meshspace["Name"] == "Rotation":
+                            
+                            # ENTER ROTATION OBJECT
+                            for rotation_array in def_meshspace["Value"]:
+                                rotation_array["Value"]["Y"] = 0.05
+                                continue
+
+                        # ENTER TRANSLATION ARRAY
+                        if def_meshspace["Name"] == "Translation":
+                            
+                            # ENTER TRANSLATION OBJECT
+                            for translation_array in def_meshspace["Value"]:
+                                translation_array["Value"]["X"] = 7
+                                translation_array["Value"]["Y"] = -1
+                                translation_array["Value"]["Z"] = -0.3
+                                continue
+
+                # ENTER MESHSPACE BACK
+                if item_data["Name"] == "MeshspaceTransform_Back":
+                    
+                    for back_meshspace in item_data["Value"]:
+                        
+                        # ENTER TRANSLATION ARRAY
+                        if back_meshspace["Name"] == "Translation":
+                            
+                            # ENTER TRANSLATION OBJECT
+                            for translation_array in back_meshspace["Value"]:
+                                translation_array["Value"]["X"] = -60
+                                translation_array["Value"]["Y"] = 0
+                                translation_array["Value"]["Z"] = -20
+                                continue
+                
+                # INERTIA
+                if item_data["Name"] == "InertiaDragAimRotation":
+                    item_data["Value"] = 0.4
+                    continue
+
+                if item_data["Name"] == "InertiaDragAimLocation":
+                    item_data["Value"] = 0.07
+                    continue
+
+                if item_data["Name"] == "InertiaDragStrafeRotation":
+                    item_data["Value"] = 0.2
+                    continue
+
+                if item_data["Name"] == "InertiaDragStrafeLocation":
+                    item_data["Value"] = 0.1
+                    continue
+
+        # MP7
+        if item["Name"] == "MP7":
+            
+            # For every piece of the item data.
+            for item_data in item["Value"]:
+                
+                # NAME
+                if item_data["Name"] == "ItemName":
+                    item_data["CultureInvariantString"] = "H&K MP7-A2"
+                    continue
+                
+                # WEIGHT
+                if item_data["Name"] == "ItemWeight":
+                    item_data["Value"] = 1.9
+                    continue
+
+                # ADS ZOOM IN
+                if item_data["Name"] == "ADSZoomInSpeed":
+                    item_data["Value"] = 2.8
+                    continue
+                
+                # ADS ZOOM OUT
+                if item_data["Name"] == "ADSZoomOutSpeed":
+                    item_data["Value"] = 2.8
+                    continue
+
+                # MAG WEIGHT FULL
+                if item_data["Name"] == "MagazineWeightFull":
+                    item_data["Value"] = 0.55
+                    continue
+
+                # MAG WEIGHT EMPTY
+                if item_data["Name"] == "MagazineWeightEmpty":
+                    item_data["Value"] = 0.2
+                    continue
+
+                # DAMAGE 
+                if item_data["Name"] == "Damage":
+                    item_data["Value"] = 24
+                    continue
+
+                # DAMAGE SEVERITY MULTIPLIER
+                if item_data["Name"] == "DamageSeverityMultiplier":
+                    item_data["Value"] = 1.05
+                    continue
+
+                # DAMAGE SEVERITY CHANCE
+                if item_data["Name"] == "DamageSeverityChance":
+                    item_data["Value"] = 0.05
+                    continue
+
+                # BLEEDOUT DAMAGE MULTIPLIER
+                if item_data["Name"] == "BleedoutDamageMultiplier":
+                    item_data["Value"] = 0.1
+                    continue
+
+                # BLEEDOUT DAMAGE CHANCE
+                if item_data["Name"] == "BleedoutDamageChance":
+                    item_data["Value"] = 0.125
+                    continue
+
+                # MUZZLE VELOCITY
+                if item_data["Name"] == "ProjectileMovementSpeed":
+                    item_data["Value"] = 30000
+                    continue
+
+                # PENETRATION
+                if item_data["Name"] == "PenetrationDistance":
+                    item_data["Value"] = 22
+                    continue
+
+                # RECOIL PATTERN
+                if item_data["Name"] == "RecoilPattern":
+                    
+                    for recoil_main in item_data["Value"]:
+                        
+                        # ENTER RECOIL ARRAY
+                        if recoil_main["Name"] == "RecoilPattern":
+                            
+                            # ENTER RECOIL OBJECT
+                            for recoil_array in recoil_main["Value"]:
+                                if recoil_array["Value"]["Yaw"] == 0.10000000149011612:
+                                    recoil_array["Value"]["Pitch"] = random.uniform(0.75, 0.95)
+                                    continue
+                                elif recoil_array["Value"]["Yaw"] == -0.10000000149011612:
+                                    recoil_array["Value"]["Pitch"] = random.uniform(0.75, 0.95)
+                                    continue
+                
+                #  ENTER MESHSPACE DEFAULT
+                if item_data["Name"] == "MeshspaceTransform_Default":
+                    
+                    for def_meshspace in item_data["Value"]:
+                        
+                        # ENTER ROTATION ARRAY
+                        if def_meshspace["Name"] == "Rotation":
+                            
+                            # ENTER ROTATION OBJECT
+                            for rotation_array in def_meshspace["Value"]:
+                                rotation_array["Value"]["Y"] = 0.05
+                                continue
+
+                        # ENTER TRANSLATION ARRAY
+                        if def_meshspace["Name"] == "Translation":
+                            
+                            # ENTER TRANSLATION OBJECT
+                            for translation_array in def_meshspace["Value"]:
+                                translation_array["Value"]["X"] = 5.5
+                                translation_array["Value"]["Y"] = -1
+                                translation_array["Value"]["Z"] = 0
+                                continue
+
+                # ENTER MESHSPACE BACK
+                if item_data["Name"] == "MeshspaceTransform_Back":
+                    
+                    for back_meshspace in item_data["Value"]:
+                        
+                        # ENTER TRANSLATION ARRAY
+                        if back_meshspace["Name"] == "Translation":
+                            
+                            # ENTER TRANSLATION OBJECT
+                            for translation_array in back_meshspace["Value"]:
+                                translation_array["Value"]["X"] = -60
+                                translation_array["Value"]["Y"] = 0
+                                translation_array["Value"]["Z"] = -20
+                                continue
+                
+                # INERTIA
+                if item_data["Name"] == "InertiaDragAimRotation":
+                    item_data["Value"] = 0.4
+                    continue
+
+                if item_data["Name"] == "InertiaDragAimLocation":
+                    item_data["Value"] = 0.07
+                    continue
+
+                if item_data["Name"] == "InertiaDragStrafeRotation":
+                    item_data["Value"] = 0.2
+                    continue
+
+                if item_data["Name"] == "InertiaDragStrafeLocation":
+                    item_data["Value"] = 0.1
+                    continue
+
+
         # MP9
         if item["Name"] == "MP9":
             
@@ -3037,7 +3319,110 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     item_data["Value"] = 0.1
                     continue
 
-        
+        # P90
+        if item["Name"] == "P90":
+            
+            # For every piece of the item data.
+            for item_data in item["Value"]:
+                
+                # NAME
+                if item_data["Name"] == "ItemName":
+                    item_data["CultureInvariantString"] = "FN P90 TR"
+                    continue
+
+                # ADS ZOOM IN
+                if item_data["Name"] == "ADSZoomInSpeed":
+                    item_data["Value"] = 1.2200000286102295
+                    continue
+                
+                # ADS ZOOM OUT
+                if item_data["Name"] == "ADSZoomOutSpeed":
+                    item_data["Value"] = 1.2200000286102295
+                    continue
+
+                # MAG WEIGHT FULL
+                if item_data["Name"] == "MagazineWeightFull":
+                    item_data["Value"] = 0.65
+                    continue
+
+                # MAG WEIGHT EMPTY
+                if item_data["Name"] == "MagazineWeightEmpty":
+                    item_data["Value"] = 0.2
+                    continue
+
+                # DAMAGE SEVERITY MULTIPLIER
+                if item_data["Name"] == "DamageSeverityMultiplier":
+                    item_data["Value"] = 1.05
+                    continue
+
+                # DAMAGE SEVERITY CHANCE
+                if item_data["Name"] == "DamageSeverityChance":
+                    item_data["Value"] = 0.075
+                    continue
+
+                # BLEEDOUT DAMAGE MULTIPLIER
+                if item_data["Name"] == "BleedoutDamageMultiplier":
+                    item_data["Value"] = 0.05
+                    continue
+
+                # BLEEDOUT DAMAGE CHANCE
+                if item_data["Name"] == "BleedoutDamageChance":
+                    item_data["Value"] = 0.05
+                    continue
+
+                # MESHSPACE DEFAULT
+                if item_data["Name"] == "MeshspaceTransform_Default":
+                    
+                    for def_meshspace in item_data["Value"]:
+                        
+                        # ROTATION
+                        if def_meshspace["Name"] == "Rotation":
+                            
+                            for rotation_array in def_meshspace["Value"]:
+                                rotation_array["Value"]["Y"] = 0.05
+                                continue
+
+                        # ENTER TRANSLATION ARRAY
+                        if def_meshspace["Name"] == "Translation":
+                            
+                            # ENTER TRANSLATION OBJECT
+                            for translation_array in def_meshspace["Value"]:
+                                translation_array["Value"]["X"] = 7
+                                translation_array["Value"]["Y"] = -1
+                                translation_array["Value"]["Z"] = -0.3
+                                continue
+
+                # MESHSPACE BACK
+                if item_data["Name"] == "MeshspaceTransform_Back":
+                    
+                    for back_meshspace in item_data["Value"]:
+                        
+                        # TRANSLATION
+                        if back_meshspace["Name"] == "Translation":
+                            
+                            for translation_array in back_meshspace["Value"]:
+                                translation_array["Value"]["X"] = -60
+                                translation_array["Value"]["Y"] = 0
+                                translation_array["Value"]["Z"] = -20
+                                continue
+                
+                # INERTIA
+                if item_data["Name"] == "InertiaDragAimRotation":
+                    item_data["Value"] = 0.4
+                    continue
+
+                if item_data["Name"] == "InertiaDragAimLocation":
+                    item_data["Value"] = 0.07
+                    continue
+
+                if item_data["Name"] == "InertiaDragStrafeRotation":
+                    item_data["Value"] = 0.2
+                    continue
+
+                if item_data["Name"] == "InertiaDragStrafeLocation":
+                    item_data["Value"] = 0.1
+                    continue
+
         # AKS74U
         if item["Name"] == "AKS74U":
             
@@ -3157,43 +3542,6 @@ for item in data["Exports"][0]["Table"]["Data"]:
                                 translation_array["Value"]["Z"] = 0
                                 continue
                 
-                # MESHSPACE BACK
-                if item_data["Name"] == "MeshspaceTransform_Back":
-                    
-                    for back_meshspace in item_data["Value"]:
-                        
-                        # TRANSLATION
-                        if back_meshspace["Name"] == "Translation":
-                            
-                            for translation_array in back_meshspace["Value"]:
-                                translation_array["Value"]["X"] = -60
-                                translation_array["Value"]["Y"] = 0
-                                translation_array["Value"]["Z"] = -20
-                                continue
-
-        # P90
-        if item["Name"] == "P90":
-            
-            # For every piece of the item data.
-            for item_data in item["Value"]:
-                
-                # NAME
-                if item_data["Name"] == "ItemName":
-                    item_data["CultureInvariantString"] = "FN P90 TR"
-                    continue
-
-                # MESHSPACE DEFAULT
-                if item_data["Name"] == "MeshspaceTransform_Default":
-                    
-                    for def_meshspace in item_data["Value"]:
-                        
-                        # ROTATION
-                        if def_meshspace["Name"] == "Rotation":
-                            
-                            for rotation_array in def_meshspace["Value"]:
-                                rotation_array["Value"]["Y"] = 0.05
-                                continue
-
                 # MESHSPACE BACK
                 if item_data["Name"] == "MeshspaceTransform_Back":
                     
@@ -4418,6 +4766,123 @@ for item in data["Exports"][0]["Table"]["Data"]:
                             # ENTER TRANSLATION OBJECT
                             for translation_array in def_meshspace["Value"]:
                                 translation_array["Value"]["Y"] = -4.4
+                                continue
+                
+                # INERTIA
+                if item_data["Name"] == "InertiaDragAimRotation":
+                    item_data["Value"] = 0.35
+                    continue
+
+                if item_data["Name"] == "InertiaDragAimLocation":
+                    item_data["Value"] = 0.25
+                    continue
+
+                if item_data["Name"] == "InertiaDragStrafeRotation":
+                    item_data["Value"] = 0.25
+                    continue
+
+                if item_data["Name"] == "InertiaDragStrafeLocation":
+                    item_data["Value"] = 0.125
+                    continue
+
+        # P229
+        if item["Name"] == "P229":
+            # For every piece of the item data.
+            for item_data in item["Value"]:
+                
+                # NAME
+                if item_data["Name"] == "ItemName":
+                    item_data["CultureInvariantString"] = "Sig-Sauer P229"
+                    continue
+
+                # ADS ZOOM IN
+                if item_data["Name"] == "ADSZoomInSpeed":
+                    item_data["Value"] = 1.2200000286102295
+                    continue
+                
+                # ADS ZOOM OUT
+                if item_data["Name"] == "ADSZoomOutSpeed":
+                    item_data["Value"] = 1.2200000286102295
+                    continue
+
+                # WEIGHT
+                if item_data["Name"] == "ItemWeight":
+                    item_data["Value"] = 0.964
+                    continue
+
+                # DAMAGE
+                if item_data["Name"] == "Damage":
+                    item_data["Value"] = 25
+                    continue
+
+                # DAMAGE SEVERITY MULTIPLIER
+                if item_data["Name"] == "DamageSeverityMultiplier":
+                    item_data["Value"] = 1
+                    continue
+
+                # DAMAGE SEVERITY CHANCE
+                if item_data["Name"] == "DamageSeverityChance":
+                    item_data["Value"] = 0.025
+                    continue
+
+                # BLEEDOUT DAMAGE MULTIPLIER
+                if item_data["Name"] == "BleedoutDamageMultiplier":
+                    item_data["Value"] = 0.05
+                    continue
+
+                # BLEEDOUT DAMAGE CHANCE
+                if item_data["Name"] == "BleedoutDamageChance":
+                    item_data["Value"] = 0.05
+                    continue
+
+                # PENETRATION
+                if item_data["Name"] == "PenetrationDistance":
+                    item_data["Value"] = 13
+                    continue
+
+                # RECOIL PATTERN
+                if item_data["Name"] == "RecoilPattern":
+                    
+                    for recoil_main in item_data["Value"]:
+                        
+                        # ENTER RECOIL ARRAY
+                        if recoil_main["Name"] == "RecoilPattern":
+                            
+                            # ENTER RECOIL OBJECT
+                            for recoil_array in recoil_main["Value"]:
+                                if recoil_array["Value"]["Yaw"] == -0.5:
+                                    recoil_array["Value"]["Pitch"] = random.uniform(1.4, 1.55)
+                                    continue
+                                elif recoil_array["Value"]["Yaw"] == 0.5:
+                                    recoil_array["Value"]["Pitch"] = random.uniform(1.4, 1.55)
+                                    continue
+                                elif recoil_array["Value"]["Yaw"] == 0.40000000596046448:
+                                    recoil_array["Value"]["Pitch"] = random.uniform(1.4, 1.55)
+                                    continue
+                                elif recoil_array["Value"]["Yaw"] == -0.40000000596046448:
+                                    recoil_array["Value"]["Pitch"] = random.uniform(1.4, 1.55)
+                                    continue
+
+                # MESHSPACE DEFAULT
+                if item_data["Name"] == "MeshspaceTransform_Default":
+                    
+                    for def_meshspace in item_data["Value"]:
+                        
+                        # ENTER ROTATION ARRAY
+                        if def_meshspace["Name"] == "Rotation":
+                            
+                            # ENTER ROTATION OBJECT
+                            for rotation_array in def_meshspace["Value"]:
+                                rotation_array["Value"]["Y"] = 0.1
+                                continue
+
+                        # ENTER TRANSLATION ARRAY
+                        if def_meshspace["Name"] == "Translation":
+                            
+                            # ENTER TRANSLATION OBJECT
+                            for translation_array in def_meshspace["Value"]:
+                                translation_array["Value"]["X"] = 7
+                                translation_array["Value"]["Y"] = -3.75
                                 continue
                 
                 # INERTIA
