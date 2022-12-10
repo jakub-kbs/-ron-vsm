@@ -3,6 +3,11 @@ import copy, json, random, subprocess
 file = open('vanilla.json')
 data = json.load(file)
 
+red_color = '\033[31m'
+green_color = '\033[32m'
+
+end_color = '\033[m'
+
 path_to_uasset = 'D:\\_Work\\Unreal Tools\\UAassetGUI\\UAssetGUI.exe'
 
 # NAME MAP
@@ -11,10 +16,7 @@ dic_nm = [
     'Grenade_9Banger_V2_C',
     'Default__Grenade_9Banger_V2_C',
     '/Game/ReadyOrNot/UI/Icons/Weapons/Grenades/Grenade_9Banger_V2_1024x2048.Grenade_9Banger_V2_1024x2048',
-    '/Game/ReadyOrNot/UI/Icons/Weapons/Grenades/Warrior_Grenade_9Banger_1024x2048.Warrior_Grenade_9Banger',
-    '/Game/ReadyOrNot/UI/Icons/Weapons/Grenades/Warrior_Grenade_9Banger_1024.Warrior_Grenade_9Banger',
     '/Game/ReadyOrNot/UI/Icons/Weapons/Grenades/Grenade_9Banger_V2_1024.Grenade_9Banger_V2',
-    '/Game/ReadyOrNot/UI/Icons/Weapons/Grenades/WarriorIcon_Grenade_9Banger_2048.WarriorIcon_Grenade_9Banger',
     '/Game/ReadyOrNot/UI/Icons/Weapons/Grenades/Grenade_9Banger_V2_2048.Grenade_9Banger_V2']
 
 # APPEND DIC_NM TO NAME MAP -- .append(dic) doesn't work for some reason :C
@@ -37,7 +39,7 @@ dic_2 = {
       "ClassPackage": "/Script/Engine",
       "ClassName": "BlueprintGeneratedClass",
       "ObjectName": "Grenade_9Banger_V2_C",
-      "OuterIndex": -1164
+      "OuterIndex": -1306
     }
 
 dic_3 = {
@@ -45,7 +47,7 @@ dic_3 = {
       "ClassPackage": "/Game/Blueprints/Items/WeaponsRevised/Grenade_9Banger_V2",
       "ClassName": "Grenade_9Banger_V2_C",
       "ObjectName": "Default__Grenade_9Banger_V2_C",
-      "OuterIndex": -1164
+      "OuterIndex": -1306
     }
 
 # APPEND DIC_1/2/3 TO IMPORTS
@@ -57,7 +59,7 @@ data["Imports"].append(dic_3)
 
 dic_4 = {"$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
               "StructType": "DeviceData",
-              "SerializeNone": 1,
+              "SerializeNone": True,
               "StructGUID": "00000000-0000-0000-0000-000000000000",
               "Name": "TacticalItems",
               "DuplicationIndex": 0,
@@ -169,7 +171,7 @@ dic_4 = {"$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI
                   "$type": "UAssetAPI.PropertyTypes.Objects.ObjectPropertyData, UAssetAPI",
                   "Name": "Blueprint",
                   "DuplicationIndex": 0,
-                  "Value": -1165
+                  "Value": -1307
                 }
               ]
             }
@@ -178,8 +180,28 @@ for item in data["Exports"][0]["Data"]:
 
     # ENTER TACTICAL ITEMS ARRAY
     if item["Name"] == "TacticalItems":
+        
         item["Value"].append(dic_4)
-        item["Value"][4]["Value"][12]["Value"] = 3
+
+        # DOOR WEDGE
+        wedge_index = 4                 # WEDGE INDEX IN TACTICAL ITEMS ARRAY
+        ips_index = 12                  # ItemsPerSlot INDEX IN WEDGE VALUE ARRAY
+
+        if item["Value"][wedge_index]["Value"][0]["Value"] == "WEDGE":
+            print(green_color + "-- FOUND WEDGE --" + end_color)
+            
+            if item["Value"][wedge_index]["Value"][ips_index]["Name"] == "ItemsPerSlot":
+                print(green_color + "-- FOUND ItemsPerSlot --" + end_color)
+                item["Value"][wedge_index]["Value"][ips_index]["Value"] = 3
+                continue
+            
+            else:
+                print(red_color + "-- ERROR --\nCHECK WEDGE VALUES ARRAY FOR -\ ItemsPerSlot /- INDEX" + end_color)
+                continue
+        
+        else:
+            print(red_color + "-- ERROR --\nCHECK TACTICAL ITEMS ARRAY FOR -\ WEDGE /- INDEX" + end_color)
+            continue
 
 # SAVE INTO FILE
 json.dump(data, open(f"ItemData.json", "w"), indent = 1)
