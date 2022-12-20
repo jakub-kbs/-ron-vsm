@@ -105,7 +105,7 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     item_data["Value"] = 0.2
                     continue
 
-        # M4A1
+        # MK18
         if item["Name"] == "MK18":
             
             # For every piece of the item data.
@@ -2149,7 +2149,6 @@ for item in data["Exports"][0]["Table"]["Data"]:
                 if item_data["Name"] == "InertiaDragStrafeLocation":
                     item_data["Value"] = 0.1
                     continue
-
 
         # MP9
         if item["Name"] == "MP9":
