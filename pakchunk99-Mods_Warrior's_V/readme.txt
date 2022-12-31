@@ -1,4 +1,4 @@
-> > >   Warrior's VSM Rework v. 1.0
+> > >   Warrior's VSM Rework v. pre-1.0
 
 !   IMPORTANT   !
     >   This mod is not compatible with any other mods that edit ItemDataTable.uasset file, such as:
