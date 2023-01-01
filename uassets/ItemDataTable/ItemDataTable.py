@@ -352,21 +352,21 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     continue
 
                 # RECOIL PATTERN
-                if item_data["Name"] == "RecoilPattern":
+                # if item_data["Name"] == "RecoilPattern":
                     
-                    for recoil_main in item_data["Value"]:
+                #     for recoil_main in item_data["Value"]:
                         
-                        # ENTER RECOIL ARRAY
-                        if recoil_main["Name"] == "RecoilPattern":
+                #         # ENTER RECOIL ARRAY
+                #         if recoil_main["Name"] == "RecoilPattern":
                             
-                            # ENTER RECOIL OBJECT
-                            for recoil_array in recoil_main["Value"]:
-                                if recoil_array["Value"]["Yaw"] == -0.4000000059604645:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(1.3, 1.4)
-                                    continue
-                                elif recoil_array["Value"]["Yaw"] == 0.4000000059604645:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(1.3, 1.4)
-                                    continue
+                #             # ENTER RECOIL OBJECT
+                #             for recoil_array in recoil_main["Value"]:
+                #                 if recoil_array["Value"]["Yaw"] == -0.4000000059604645:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(1.3, 1.4)
+                #                     continue
+                #                 elif recoil_array["Value"]["Yaw"] == 0.4000000059604645:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(1.3, 1.4)
+                #                     continue
                 
         # Benelli M4
         if item["Name"] == "BenelliM4":
@@ -414,21 +414,21 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     continue
 
                 # RECOIL PATTERN
-                if item_data["Name"] == "RecoilPattern":
+                # if item_data["Name"] == "RecoilPattern":
                     
-                    for recoil_main in item_data["Value"]:
+                #     for recoil_main in item_data["Value"]:
                         
-                        # ENTER RECOIL ARRAY
-                        if recoil_main["Name"] == "RecoilPattern":
+                #         # ENTER RECOIL ARRAY
+                #         if recoil_main["Name"] == "RecoilPattern":
                             
-                            # ENTER RECOIL OBJECT
-                            for recoil_array in recoil_main["Value"]:
-                                if recoil_array["Value"]["Yaw"] == -0.5:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(5.75, 6.25)
-                                    continue
-                                elif recoil_array["Value"]["Yaw"] == 0.5:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(5.75, 6.25)
-                                    continue
+                #             # ENTER RECOIL OBJECT
+                #             for recoil_array in recoil_main["Value"]:
+                #                 if recoil_array["Value"]["Yaw"] == -0.5:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(5.75, 6.25)
+                #                     continue
+                #                 elif recoil_array["Value"]["Yaw"] == 0.5:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(5.75, 6.25)
+                #                     continue
 
         # 870 MCS
         if item["Name"] == "870mcs":
@@ -481,21 +481,21 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     continue
 
                 # RECOIL PATTERN
-                if item_data["Name"] == "RecoilPattern":
+                # if item_data["Name"] == "RecoilPattern":
                     
-                    for recoil_main in item_data["Value"]:
+                #     for recoil_main in item_data["Value"]:
                         
-                        # ENTER RECOIL ARRAY
-                        if recoil_main["Name"] == "RecoilPattern":
+                #         # ENTER RECOIL ARRAY
+                #         if recoil_main["Name"] == "RecoilPattern":
                             
-                            # ENTER RECOIL OBJECT
-                            for recoil_array in recoil_main["Value"]:
-                                if recoil_array["Value"]["Yaw"] == -0.5:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(5.75, 6.25)
-                                    continue
-                                elif recoil_array["Value"]["Yaw"] == 0.5:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(5.75, 6.25)
-                                    continue
+                #             # ENTER RECOIL OBJECT
+                #             for recoil_array in recoil_main["Value"]:
+                #                 if recoil_array["Value"]["Yaw"] == -0.5:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(5.75, 6.25)
+                #                     continue
+                #                 elif recoil_array["Value"]["Yaw"] == 0.5:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(5.75, 6.25)
+                #                     continue
 
         # P1301
         if item["Name"] == "P1301":
@@ -548,21 +548,21 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     continue
 
                 # RECOIL PATTERN
-                if item_data["Name"] == "RecoilPattern":
+                # if item_data["Name"] == "RecoilPattern":
                     
-                    for recoil_main in item_data["Value"]:
+                #     for recoil_main in item_data["Value"]:
                         
-                        # ENTER RECOIL ARRAY
-                        if recoil_main["Name"] == "RecoilPattern":
+                #         # ENTER RECOIL ARRAY
+                #         if recoil_main["Name"] == "RecoilPattern":
                             
-                            # ENTER RECOIL OBJECT
-                            for recoil_array in recoil_main["Value"]:
-                                if recoil_array["Value"]["Yaw"] == -0.5:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(5.75, 6.25)
-                                    continue
-                                elif recoil_array["Value"]["Yaw"] == 0.5:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(5.75, 6.25)
-                                    continue
+                #             # ENTER RECOIL OBJECT
+                #             for recoil_array in recoil_main["Value"]:
+                #                 if recoil_array["Value"]["Yaw"] == -0.5:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(5.75, 6.25)
+                #                     continue
+                #                 elif recoil_array["Value"]["Yaw"] == 0.5:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(5.75, 6.25)
+                #                     continue
 
         # P1301 Entryman
         if item["Name"] == "P1301_Entryman":
@@ -615,21 +615,21 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     continue
 
                 # RECOIL PATTERN
-                if item_data["Name"] == "RecoilPattern":
+                # if item_data["Name"] == "RecoilPattern":
                     
-                    for recoil_main in item_data["Value"]:
+                #     for recoil_main in item_data["Value"]:
                         
-                        # ENTER RECOIL ARRAY
-                        if recoil_main["Name"] == "RecoilPattern":
+                #         # ENTER RECOIL ARRAY
+                #         if recoil_main["Name"] == "RecoilPattern":
                             
-                            # ENTER RECOIL OBJECT
-                            for recoil_array in recoil_main["Value"]:
-                                if recoil_array["Value"]["Yaw"] == -0.5:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(5.75, 6.25)
-                                    continue
-                                elif recoil_array["Value"]["Yaw"] == 0.5:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(5.75, 6.25)
-                                    continue
+                #             # ENTER RECOIL OBJECT
+                #             for recoil_array in recoil_main["Value"]:
+                #                 if recoil_array["Value"]["Yaw"] == -0.5:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(5.75, 6.25)
+                #                     continue
+                #                 elif recoil_array["Value"]["Yaw"] == 0.5:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(5.75, 6.25)
+                #                     continue
 
         # BEANBAG
         if item["Name"] == "Beanbag":
@@ -652,21 +652,21 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     continue
 
                 # RECOIL PATTERN
-                if item_data["Name"] == "RecoilPattern":
+                # if item_data["Name"] == "RecoilPattern":
                     
-                    for recoil_main in item_data["Value"]:
+                #     for recoil_main in item_data["Value"]:
                         
-                        # ENTER RECOIL ARRAY
-                        if recoil_main["Name"] == "RecoilPattern":
+                #         # ENTER RECOIL ARRAY
+                #         if recoil_main["Name"] == "RecoilPattern":
                             
-                            # ENTER RECOIL OBJECT
-                            for recoil_array in recoil_main["Value"]:
-                                if recoil_array["Value"]["Yaw"] == -0.20000000298023224:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(4.75, 5.25)
-                                    continue
-                                elif recoil_array["Value"]["Yaw"] == 0.20000000298023224:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(4.75, 5.25)
-                                    continue
+                #             # ENTER RECOIL OBJECT
+                #             for recoil_array in recoil_main["Value"]:
+                #                 if recoil_array["Value"]["Yaw"] == -0.20000000298023224:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(4.75, 5.25)
+                #                     continue
+                #                 elif recoil_array["Value"]["Yaw"] == 0.20000000298023224:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(4.75, 5.25)
+                #                     continue
 
         # FAL
         if item["Name"] == "FAL":
@@ -720,21 +720,21 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     continue
 
                 # RECOIL PATTERN
-                if item_data["Name"] == "RecoilPattern":
+                # if item_data["Name"] == "RecoilPattern":
                     
-                    for recoil_main in item_data["Value"]:
+                #     for recoil_main in item_data["Value"]:
                         
-                        # ENTER RECOIL ARRAY
-                        if recoil_main["Name"] == "RecoilPattern":
+                #         # ENTER RECOIL ARRAY
+                #         if recoil_main["Name"] == "RecoilPattern":
                             
-                            # ENTER RECOIL OBJECT
-                            for recoil_array in recoil_main["Value"]:
-                                if recoil_array["Value"]["Yaw"] == -0.75:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(2.75, 2.85)
-                                    continue
-                                elif recoil_array["Value"]["Yaw"] == 0.75:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(2.75, 2.85)
-                                    continue
+                #             # ENTER RECOIL OBJECT
+                #             for recoil_array in recoil_main["Value"]:
+                #                 if recoil_array["Value"]["Yaw"] == -0.75:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(2.75, 2.85)
+                #                     continue
+                #                 elif recoil_array["Value"]["Yaw"] == 0.75:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(2.75, 2.85)
+                #                     continue
                 
         # G36C
         if item["Name"] == "G36C":
@@ -803,21 +803,21 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     continue
 
                 # RECOIL PATTERN
-                if item_data["Name"] == "RecoilPattern":
+                # if item_data["Name"] == "RecoilPattern":
                     
-                    for recoil_main in item_data["Value"]:
+                #     for recoil_main in item_data["Value"]:
                         
-                        # ENTER RECOIL ARRAY
-                        if recoil_main["Name"] == "RecoilPattern":
+                #         # ENTER RECOIL ARRAY
+                #         if recoil_main["Name"] == "RecoilPattern":
                             
-                            # ENTER RECOIL OBJECT
-                            for recoil_array in recoil_main["Value"]:
-                                if recoil_array["Value"]["Yaw"] == -0.5:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(1.4, 1.55)
-                                    continue
-                                elif recoil_array["Value"]["Yaw"] == 0.5:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(1.4, 1.55)
-                                    continue
+                #             # ENTER RECOIL OBJECT
+                #             for recoil_array in recoil_main["Value"]:
+                #                 if recoil_array["Value"]["Yaw"] == -0.5:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(1.4, 1.55)
+                #                     continue
+                #                 elif recoil_array["Value"]["Yaw"] == 0.5:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(1.4, 1.55)
+                #                     continue
                 
         # UMP45
         if item["Name"] == "UMP45":
@@ -886,21 +886,21 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     continue
 
                 # RECOIL PATTERN
-                if item_data["Name"] == "RecoilPattern":
+                # if item_data["Name"] == "RecoilPattern":
                     
-                    for recoil_main in item_data["Value"]:
+                #     for recoil_main in item_data["Value"]:
                         
-                        # ENTER RECOIL ARRAY
-                        if recoil_main["Name"] == "RecoilPattern":
+                #         # ENTER RECOIL ARRAY
+                #         if recoil_main["Name"] == "RecoilPattern":
                             
-                            # ENTER RECOIL OBJECT
-                            for recoil_array in recoil_main["Value"]:
-                                if recoil_array["Value"]["Yaw"] == -0.10000000149011612:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(0.8, 0.95)
-                                    continue
-                                elif recoil_array["Value"]["Yaw"] == 0.10000000149011612:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(0.8, 0.95)
-                                    continue
+                #             # ENTER RECOIL OBJECT
+                #             for recoil_array in recoil_main["Value"]:
+                #                 if recoil_array["Value"]["Yaw"] == -0.10000000149011612:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(0.8, 0.95)
+                #                     continue
+                #                 elif recoil_array["Value"]["Yaw"] == 0.10000000149011612:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(0.8, 0.95)
+                #                     continue
 
         # MP5A2
         if item["Name"] == "MP5A2":
@@ -949,24 +949,24 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     continue
 
                 # RECOIL PATTERN
-                if item_data["Name"] == "RecoilPattern":
+                # if item_data["Name"] == "RecoilPattern":
                     
-                    for recoil_main in item_data["Value"]:
+                #     for recoil_main in item_data["Value"]:
                         
-                        # ENTER RECOIL ARRAY
-                        if recoil_main["Name"] == "RecoilPattern":
+                #         # ENTER RECOIL ARRAY
+                #         if recoil_main["Name"] == "RecoilPattern":
                             
-                            # ENTER RECOIL OBJECT
-                            for recoil_array in recoil_main["Value"]:
-                                if recoil_array["Value"]["Yaw"] == 0.30000001192092896:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(0.75, 0.9)
-                                    continue
-                                elif recoil_array["Value"]["Yaw"] == -0.5:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(0.75, 0.9)
-                                    continue
-                                elif recoil_array["Value"]["Yaw"] == 0.10000000149011612:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(0.75, 0.9)
-                                    continue
+                #             # ENTER RECOIL OBJECT
+                #             for recoil_array in recoil_main["Value"]:
+                #                 if recoil_array["Value"]["Yaw"] == 0.30000001192092896:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(0.75, 0.9)
+                #                     continue
+                #                 elif recoil_array["Value"]["Yaw"] == -0.5:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(0.75, 0.9)
+                #                     continue
+                #                 elif recoil_array["Value"]["Yaw"] == 0.10000000149011612:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(0.75, 0.9)
+                #                     continue
                 
         # MP5A3
         if item["Name"] == "MP5A3":
@@ -1015,24 +1015,24 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     continue
 
                 # RECOIL PATTERN
-                if item_data["Name"] == "RecoilPattern":
+                # if item_data["Name"] == "RecoilPattern":
                     
-                    for recoil_main in item_data["Value"]:
+                #     for recoil_main in item_data["Value"]:
                         
-                        # ENTER RECOIL ARRAY
-                        if recoil_main["Name"] == "RecoilPattern":
+                #         # ENTER RECOIL ARRAY
+                #         if recoil_main["Name"] == "RecoilPattern":
                             
-                            # ENTER RECOIL OBJECT
-                            for recoil_array in recoil_main["Value"]:
-                                if recoil_array["Value"]["Yaw"] == 0.30000001192092896:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(0.85, 0.95)
-                                    continue
-                                elif recoil_array["Value"]["Yaw"] == -0.5:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(0.85, 0.95)
-                                    continue
-                                elif recoil_array["Value"]["Yaw"] == 0.10000000149011612:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(0.85, 0.95)
-                                    continue
+                #             # ENTER RECOIL OBJECT
+                #             for recoil_array in recoil_main["Value"]:
+                #                 if recoil_array["Value"]["Yaw"] == 0.30000001192092896:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(0.85, 0.95)
+                #                     continue
+                #                 elif recoil_array["Value"]["Yaw"] == -0.5:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(0.85, 0.95)
+                #                     continue
+                #                 elif recoil_array["Value"]["Yaw"] == 0.10000000149011612:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(0.85, 0.95)
+                #                     continue
 
         # MP5/10
         if item["Name"] == "MP510":
@@ -1091,21 +1091,21 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     continue
 
                 # RECOIL PATTERN
-                if item_data["Name"] == "RecoilPattern":
+                # if item_data["Name"] == "RecoilPattern":
                     
-                    for recoil_main in item_data["Value"]:
+                #     for recoil_main in item_data["Value"]:
                         
-                        # ENTER RECOIL ARRAY
-                        if recoil_main["Name"] == "RecoilPattern":
+                #         # ENTER RECOIL ARRAY
+                #         if recoil_main["Name"] == "RecoilPattern":
                             
-                            # ENTER RECOIL OBJECT
-                            for recoil_array in recoil_main["Value"]:
-                                if recoil_array["Value"]["Yaw"] == 0.30000001192092896:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(1, 1.2)
-                                    continue
-                                elif recoil_array["Value"]["Yaw"] == -0.5:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(1, 1.2)
-                                    continue
+                #             # ENTER RECOIL OBJECT
+                #             for recoil_array in recoil_main["Value"]:
+                #                 if recoil_array["Value"]["Yaw"] == 0.30000001192092896:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(1, 1.2)
+                #                     continue
+                #                 elif recoil_array["Value"]["Yaw"] == -0.5:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(1, 1.2)
+                #                     continue
 
         # MPX
         if item["Name"] == "MPX":
@@ -1164,21 +1164,21 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     continue
 
                 # RECOIL PATTERN
-                if item_data["Name"] == "RecoilPattern":
+                # if item_data["Name"] == "RecoilPattern":
                     
-                    for recoil_main in item_data["Value"]:
+                #     for recoil_main in item_data["Value"]:
                         
-                        # ENTER RECOIL ARRAY
-                        if recoil_main["Name"] == "RecoilPattern":
+                #         # ENTER RECOIL ARRAY
+                #         if recoil_main["Name"] == "RecoilPattern":
                             
-                            # ENTER RECOIL OBJECT
-                            for recoil_array in recoil_main["Value"]:
-                                if recoil_array["Value"]["Yaw"] == 0.10000000149011612:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(0.75, 0.9)
-                                    continue
-                                elif recoil_array["Value"]["Yaw"] == -0.10000000149011612:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(0.75, 0.9)
-                                    continue
+                #             # ENTER RECOIL OBJECT
+                #             for recoil_array in recoil_main["Value"]:
+                #                 if recoil_array["Value"]["Yaw"] == 0.10000000149011612:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(0.75, 0.9)
+                #                     continue
+                #                 elif recoil_array["Value"]["Yaw"] == -0.10000000149011612:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(0.75, 0.9)
+                #                     continue
 
         # SPC9
         if item["Name"] == "SPC9":
@@ -1237,21 +1237,21 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     continue
 
                 # RECOIL PATTERN
-                if item_data["Name"] == "RecoilPattern":
+                # if item_data["Name"] == "RecoilPattern":
                     
-                    for recoil_main in item_data["Value"]:
+                #     for recoil_main in item_data["Value"]:
                         
-                        # ENTER RECOIL ARRAY
-                        if recoil_main["Name"] == "RecoilPattern":
+                #         # ENTER RECOIL ARRAY
+                #         if recoil_main["Name"] == "RecoilPattern":
                             
-                            # ENTER RECOIL OBJECT
-                            for recoil_array in recoil_main["Value"]:
-                                if recoil_array["Value"]["Yaw"] == 0.10000000149011612:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(0.75, 0.9)
-                                    continue
-                                elif recoil_array["Value"]["Yaw"] == -0.10000000149011612:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(0.75, 0.9)
-                                    continue
+                #             # ENTER RECOIL OBJECT
+                #             for recoil_array in recoil_main["Value"]:
+                #                 if recoil_array["Value"]["Yaw"] == 0.10000000149011612:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(0.75, 0.9)
+                #                     continue
+                #                 elif recoil_array["Value"]["Yaw"] == -0.10000000149011612:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(0.75, 0.9)
+                #                     continue
 
         # MP7
         if item["Name"] == "MP7":
@@ -1315,21 +1315,21 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     continue
 
                 # RECOIL PATTERN
-                if item_data["Name"] == "RecoilPattern":
+                # if item_data["Name"] == "RecoilPattern":
                     
-                    for recoil_main in item_data["Value"]:
+                #     for recoil_main in item_data["Value"]:
                         
-                        # ENTER RECOIL ARRAY
-                        if recoil_main["Name"] == "RecoilPattern":
+                #         # ENTER RECOIL ARRAY
+                #         if recoil_main["Name"] == "RecoilPattern":
                             
-                            # ENTER RECOIL OBJECT
-                            for recoil_array in recoil_main["Value"]:
-                                if recoil_array["Value"]["Yaw"] == 0.10000000149011612:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(0.75, 0.95)
-                                    continue
-                                elif recoil_array["Value"]["Yaw"] == -0.10000000149011612:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(0.75, 0.95)
-                                    continue
+                #             # ENTER RECOIL OBJECT
+                #             for recoil_array in recoil_main["Value"]:
+                #                 if recoil_array["Value"]["Yaw"] == 0.10000000149011612:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(0.75, 0.95)
+                #                     continue
+                #                 elif recoil_array["Value"]["Yaw"] == -0.10000000149011612:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(0.75, 0.95)
+                #                     continue
 
         # MP9
         if item["Name"] == "MP9":
@@ -1393,21 +1393,21 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     continue
 
                 # RECOIL PATTERN
-                if item_data["Name"] == "RecoilPattern":
+                # if item_data["Name"] == "RecoilPattern":
                     
-                    for recoil_main in item_data["Value"]:
+                #     for recoil_main in item_data["Value"]:
                         
-                        # ENTER RECOIL ARRAY
-                        if recoil_main["Name"] == "RecoilPattern":
+                #         # ENTER RECOIL ARRAY
+                #         if recoil_main["Name"] == "RecoilPattern":
                             
-                            # ENTER RECOIL OBJECT
-                            for recoil_array in recoil_main["Value"]:
-                                if recoil_array["Value"]["Yaw"] == 0.10000000149011612:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(0.65, 0.85)
-                                    continue
-                                elif recoil_array["Value"]["Yaw"] == -0.10000000149011612:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(0.65, 0.85)
-                                    continue
+                #             # ENTER RECOIL OBJECT
+                #             for recoil_array in recoil_main["Value"]:
+                #                 if recoil_array["Value"]["Yaw"] == 0.10000000149011612:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(0.65, 0.85)
+                #                     continue
+                #                 elif recoil_array["Value"]["Yaw"] == -0.10000000149011612:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(0.65, 0.85)
+                #                     continue
                 
         # AR18
         if item["Name"] == "AR18":
@@ -1476,27 +1476,27 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     continue
 
                 # RECOIL PATTERN
-                if item_data["Name"] == "RecoilPattern":
+                # if item_data["Name"] == "RecoilPattern":
                     
-                    for recoil_main in item_data["Value"]:
+                #     for recoil_main in item_data["Value"]:
                         
-                        # ENTER RECOIL ARRAY
-                        if recoil_main["Name"] == "RecoilPattern":
+                #         # ENTER RECOIL ARRAY
+                #         if recoil_main["Name"] == "RecoilPattern":
                             
-                            # ENTER RECOIL OBJECT
-                            for recoil_array in recoil_main["Value"]:
-                                if recoil_array["Value"]["Yaw"] == 0.10000000149011612:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(1.2, 1.4)
-                                    continue
-                                elif recoil_array["Value"]["Yaw"] == -0.10000000149011612:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(1.2, 1.4)
-                                    continue
-                                elif recoil_array["Value"]["Yaw"] == 0.11999999731779099:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(1.2, 1.4)
-                                    continue
-                                elif recoil_array["Value"]["Yaw"] == -0.05000000074505806:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(1.2, 1.4)
-                                    continue
+                #             # ENTER RECOIL OBJECT
+                #             for recoil_array in recoil_main["Value"]:
+                #                 if recoil_array["Value"]["Yaw"] == 0.10000000149011612:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(1.2, 1.4)
+                #                     continue
+                #                 elif recoil_array["Value"]["Yaw"] == -0.10000000149011612:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(1.2, 1.4)
+                #                     continue
+                #                 elif recoil_array["Value"]["Yaw"] == 0.11999999731779099:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(1.2, 1.4)
+                #                     continue
+                #                 elif recoil_array["Value"]["Yaw"] == -0.05000000074505806:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(1.2, 1.4)
+                #                     continue
 
         # SR16
         if item["Name"] == "SR16":
@@ -1560,24 +1560,24 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     continue
 
                 # RECOIL PATTERN
-                if item_data["Name"] == "RecoilPattern":
+                # if item_data["Name"] == "RecoilPattern":
                     
-                    for recoil_main in item_data["Value"]:
+                #     for recoil_main in item_data["Value"]:
                         
-                        # ENTER RECOIL ARRAY
-                        if recoil_main["Name"] == "RecoilPattern":
+                #         # ENTER RECOIL ARRAY
+                #         if recoil_main["Name"] == "RecoilPattern":
                             
-                            # ENTER RECOIL OBJECT
-                            for recoil_array in recoil_main["Value"]:
-                                if recoil_array["Value"]["Yaw"] == -0.15000000596046448:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(1.4, 1.6)
-                                    continue
-                                elif recoil_array["Value"]["Yaw"] == -0.20000000298023224:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(1.4, 1.6)
-                                    continue
-                                elif recoil_array["Value"]["Yaw"] == 0.20999999344348908:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(1.4, 1.6)
-                                    continue
+                #             # ENTER RECOIL OBJECT
+                #             for recoil_array in recoil_main["Value"]:
+                #                 if recoil_array["Value"]["Yaw"] == -0.15000000596046448:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(1.4, 1.6)
+                #                     continue
+                #                 elif recoil_array["Value"]["Yaw"] == -0.20000000298023224:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(1.4, 1.6)
+                #                     continue
+                #                 elif recoil_array["Value"]["Yaw"] == 0.20999999344348908:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(1.4, 1.6)
+                #                     continue
                 
         # BCM MK1
         if item["Name"] == "BCM_MK1":
@@ -1651,24 +1651,24 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     continue
 
                 # RECOIL PATTERN
-                if item_data["Name"] == "RecoilPattern":
+                # if item_data["Name"] == "RecoilPattern":
                     
-                    for recoil_main in item_data["Value"]:
+                #     for recoil_main in item_data["Value"]:
                         
-                        # ENTER RECOIL ARRAY
-                        if recoil_main["Name"] == "RecoilPattern":
+                #         # ENTER RECOIL ARRAY
+                #         if recoil_main["Name"] == "RecoilPattern":
                             
-                            # ENTER RECOIL OBJECT
-                            for recoil_array in recoil_main["Value"]:
-                                if recoil_array["Value"]["Yaw"] == -0.15000000596046448:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(1.2, 1.35)
-                                    continue
-                                elif recoil_array["Value"]["Yaw"] == 0.20000000298023224:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(1.2, 1.35)
-                                    continue
-                                elif recoil_array["Value"]["Yaw"] == 0.20999999344348908:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(1.2, 1.35)
-                                    continue
+                #             # ENTER RECOIL OBJECT
+                #             for recoil_array in recoil_main["Value"]:
+                #                 if recoil_array["Value"]["Yaw"] == -0.15000000596046448:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(1.2, 1.35)
+                #                     continue
+                #                 elif recoil_array["Value"]["Yaw"] == 0.20000000298023224:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(1.2, 1.35)
+                #                     continue
+                #                 elif recoil_array["Value"]["Yaw"] == 0.20999999344348908:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(1.2, 1.35)
+                #                     continue
 
         # SBR
         if item["Name"] == "SBR":
@@ -1732,21 +1732,21 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     continue
 
                 # RECOIL PATTERN
-                if item_data["Name"] == "RecoilPattern":
+                # if item_data["Name"] == "RecoilPattern":
                     
-                    for recoil_main in item_data["Value"]:
+                #     for recoil_main in item_data["Value"]:
                         
-                        # ENTER RECOIL ARRAY
-                        if recoil_main["Name"] == "RecoilPattern":
+                #         # ENTER RECOIL ARRAY
+                #         if recoil_main["Name"] == "RecoilPattern":
                             
-                            # ENTER RECOIL OBJECT
-                            for recoil_array in recoil_main["Value"]:
-                                if recoil_array["Value"]["Yaw"] == -0.30000001192092896:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(1.25, 1.35)
-                                    continue
-                                elif recoil_array["Value"]["Yaw"] == 0.30000001192092896:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(1.25, 1.35)
-                                    continue
+                #             # ENTER RECOIL OBJECT
+                #             for recoil_array in recoil_main["Value"]:
+                #                 if recoil_array["Value"]["Yaw"] == -0.30000001192092896:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(1.25, 1.35)
+                #                     continue
+                #                 elif recoil_array["Value"]["Yaw"] == 0.30000001192092896:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(1.25, 1.35)
+                #                     continue
 
         # HK416
         if item["Name"] == "HK416":
@@ -1810,18 +1810,18 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     continue
 
                 # RECOIL PATTERN
-                if item_data["Name"] == "RecoilPattern":
+                # if item_data["Name"] == "RecoilPattern":
                     
-                    for recoil_main in item_data["Value"]:
+                #     for recoil_main in item_data["Value"]:
                         
-                        # ENTER RECOIL ARRAY
-                        if recoil_main["Name"] == "RecoilPattern":
+                #         # ENTER RECOIL ARRAY
+                #         if recoil_main["Name"] == "RecoilPattern":
                             
-                            # ENTER RECOIL OBJECT
-                            for recoil_array in recoil_main["Value"]:
-                                if recoil_array["Value"]["Yaw"] == -0.30000001192092896:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(1.35, 1.55)
-                                    continue
+                #             # ENTER RECOIL OBJECT
+                #             for recoil_array in recoil_main["Value"]:
+                #                 if recoil_array["Value"]["Yaw"] == -0.30000001192092896:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(1.35, 1.55)
+                #                     continue
                 
         # SCAR-L
         if item["Name"] == "SCARL":
@@ -1885,21 +1885,21 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     continue
 
                 # RECOIL PATTERN
-                if item_data["Name"] == "RecoilPattern":
+                # if item_data["Name"] == "RecoilPattern":
                     
-                    for recoil_main in item_data["Value"]:
+                #     for recoil_main in item_data["Value"]:
                         
-                        # ENTER RECOIL ARRAY
-                        if recoil_main["Name"] == "RecoilPattern":
+                #         # ENTER RECOIL ARRAY
+                #         if recoil_main["Name"] == "RecoilPattern":
                             
-                            # ENTER RECOIL OBJECT
-                            for recoil_array in recoil_main["Value"]:
-                                if recoil_array["Value"]["Yaw"] == -0.40000000596046448:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(1.3, 1.45)
-                                    continue
-                                elif recoil_array["Value"]["Yaw"] == -0.40000000596046448:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(1.3, 1.45)
-                                    continue
+                #             # ENTER RECOIL OBJECT
+                #             for recoil_array in recoil_main["Value"]:
+                #                 if recoil_array["Value"]["Yaw"] == -0.40000000596046448:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(1.3, 1.45)
+                #                     continue
+                #                 elif recoil_array["Value"]["Yaw"] == -0.40000000596046448:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(1.3, 1.45)
+                #                     continue
 
         # SLR47
         if item["Name"] == "SLR47":
@@ -1963,21 +1963,21 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     continue
 
                 # RECOIL PATTERN
-                if item_data["Name"] == "RecoilPattern":
+                # if item_data["Name"] == "RecoilPattern":
                     
-                    for recoil_main in item_data["Value"]:
+                #     for recoil_main in item_data["Value"]:
                         
-                        # ENTER RECOIL ARRAY
-                        if recoil_main["Name"] == "RecoilPattern":
+                #         # ENTER RECOIL ARRAY
+                #         if recoil_main["Name"] == "RecoilPattern":
                             
-                            # ENTER RECOIL OBJECT
-                            for recoil_array in recoil_main["Value"]:
-                                if recoil_array["Value"]["Yaw"] == -0.34999999403953552:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(1.85, 2.1)
-                                    continue
-                                elif recoil_array["Value"]["Yaw"] == 0.34999999403953552:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(1.85, 2.1)
-                                    continue
+                #             # ENTER RECOIL OBJECT
+                #             for recoil_array in recoil_main["Value"]:
+                #                 if recoil_array["Value"]["Yaw"] == -0.34999999403953552:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(1.85, 2.1)
+                #                     continue
+                #                 elif recoil_array["Value"]["Yaw"] == 0.34999999403953552:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(1.85, 2.1)
+                #                     continue
 
         # P90
         if item["Name"] == "P90":
@@ -2109,23 +2109,6 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     item_data["Value"] = 13
                     continue
 
-                # RECOIL PATTERN
-                if item_data["Name"] == "RecoilPattern":
-                    
-                    for recoil_main in item_data["Value"]:
-                        
-                        # ENTER RECOIL ARRAY
-                        if recoil_main["Name"] == "RecoilPattern":
-                            
-                            # ENTER RECOIL OBJECT
-                            for recoil_array in recoil_main["Value"]:
-                                if recoil_array["Value"]["Yaw"] == -0.5:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(1.35, 1.5)
-                                    continue
-                                elif recoil_array["Value"]["Yaw"] == 0.5:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(1.35, 1.5)
-                                    continue
-
                 # MESHSPACE DEFAULT
                 if item_data["Name"] == "MeshspaceTransform_Default":
                     
@@ -2140,6 +2123,23 @@ for item in data["Exports"][0]["Table"]["Data"]:
                                 translation_array["Value"]["Y"] = -4.85
                                 translation_array["Value"]["Z"] = -0.75
                                 continue
+
+                # RECOIL PATTERN
+                # if item_data["Name"] == "RecoilPattern":
+                    
+                #     for recoil_main in item_data["Value"]:
+                        
+                #         # ENTER RECOIL ARRAY
+                #         if recoil_main["Name"] == "RecoilPattern":
+                            
+                #             # ENTER RECOIL OBJECT
+                #             for recoil_array in recoil_main["Value"]:
+                #                 if recoil_array["Value"]["Yaw"] == -0.5:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(1.35, 1.5)
+                #                     continue
+                #                 elif recoil_array["Value"]["Yaw"] == 0.5:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(1.35, 1.5)
+                #                     continue
 
         # PFC9
         if item["Name"] == "PFC9":
@@ -2201,23 +2201,6 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     item_data["Value"] = 13
                     continue
 
-                # RECOIL PATTERN
-                if item_data["Name"] == "RecoilPattern":
-                    
-                    for recoil_main in item_data["Value"]:
-                        
-                        # ENTER RECOIL ARRAY
-                        if recoil_main["Name"] == "RecoilPattern":
-                            
-                            # ENTER RECOIL OBJECT
-                            for recoil_array in recoil_main["Value"]:
-                                if recoil_array["Value"]["Yaw"] == -0.5:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(1.35, 1.5)
-                                    continue
-                                elif recoil_array["Value"]["Yaw"] == 0.5:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(1.35, 1.5)
-                                    continue
-
                 # MESHSPACE DEFAULT
                 if item_data["Name"] == "MeshspaceTransform_Default":
                     
@@ -2232,6 +2215,23 @@ for item in data["Exports"][0]["Table"]["Data"]:
                                 translation_array["Value"]["Y"] = -4.85
                                 translation_array["Value"]["Z"] = -0.75
                                 continue
+                
+                # RECOIL PATTERN
+                # if item_data["Name"] == "RecoilPattern":
+                    
+                #     for recoil_main in item_data["Value"]:
+                        
+                #         # ENTER RECOIL ARRAY
+                #         if recoil_main["Name"] == "RecoilPattern":
+                            
+                #             # ENTER RECOIL OBJECT
+                #             for recoil_array in recoil_main["Value"]:
+                #                 if recoil_array["Value"]["Yaw"] == -0.5:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(1.35, 1.5)
+                #                     continue
+                #                 elif recoil_array["Value"]["Yaw"] == 0.5:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(1.35, 1.5)
+                #                     continue
 
         # M2011
         if item["Name"] == "M2011":
@@ -2283,23 +2283,6 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     item_data["Value"] = 0.05
                     continue
 
-                # RECOIL PATTERN
-                if item_data["Name"] == "RecoilPattern":
-                    
-                    for recoil_main in item_data["Value"]:
-                        
-                        # ENTER RECOIL ARRAY
-                        if recoil_main["Name"] == "RecoilPattern":
-                            
-                            # ENTER RECOIL OBJECT
-                            for recoil_array in recoil_main["Value"]:
-                                if recoil_array["Value"]["Yaw"] == -0.5:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(2.1, 2.25)
-                                    continue
-                                elif recoil_array["Value"]["Yaw"] == 0.5:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(2.1, 2.25)
-                                    continue
-
                 # MESHSPACE DEFAULT
                 if item_data["Name"] == "MeshspaceTransform_Default":
                     
@@ -2312,6 +2295,23 @@ for item in data["Exports"][0]["Table"]["Data"]:
                             for translation_array in def_meshspace["Value"]:
                                 translation_array["Value"]["Y"] = -4.85
                                 continue
+
+                # RECOIL PATTERN
+                # if item_data["Name"] == "RecoilPattern":
+                    
+                #     for recoil_main in item_data["Value"]:
+                        
+                #         # ENTER RECOIL ARRAY
+                #         if recoil_main["Name"] == "RecoilPattern":
+                            
+                #             # ENTER RECOIL OBJECT
+                #             for recoil_array in recoil_main["Value"]:
+                #                 if recoil_array["Value"]["Yaw"] == -0.5:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(2.1, 2.25)
+                #                     continue
+                #                 elif recoil_array["Value"]["Yaw"] == 0.5:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(2.1, 2.25)
+                #                     continue
 
         # USP
         if item["Name"] == "USP":
@@ -2353,23 +2353,6 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     item_data["Value"] = 0.05
                     continue
 
-                # RECOIL PATTERN
-                if item_data["Name"] == "RecoilPattern":
-                    
-                    for recoil_main in item_data["Value"]:
-                        
-                        # ENTER RECOIL ARRAY
-                        if recoil_main["Name"] == "RecoilPattern":
-                            
-                            # ENTER RECOIL OBJECT
-                            for recoil_array in recoil_main["Value"]:
-                                if recoil_array["Value"]["Yaw"] == -0.5:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(2, 2.2)
-                                    continue
-                                elif recoil_array["Value"]["Yaw"] == 0.5:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(2, 2.2)
-                                    continue
-
                 # MESHSPACE DEFAULT
                 if item_data["Name"] == "MeshspaceTransform_Default":
                     
@@ -2383,6 +2366,23 @@ for item in data["Exports"][0]["Table"]["Data"]:
                                 translation_array["Value"]["Y"] = -3.38
                                 translation_array["Value"]["Z"] = -0.5
                                 continue
+
+                # RECOIL PATTERN
+                # if item_data["Name"] == "RecoilPattern":
+                    
+                #     for recoil_main in item_data["Value"]:
+                        
+                #         # ENTER RECOIL ARRAY
+                #         if recoil_main["Name"] == "RecoilPattern":
+                            
+                #             # ENTER RECOIL OBJECT
+                #             for recoil_array in recoil_main["Value"]:
+                #                 if recoil_array["Value"]["Yaw"] == -0.5:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(2, 2.2)
+                #                     continue
+                #                 elif recoil_array["Value"]["Yaw"] == 0.5:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(2, 2.2)
+                #                     continue
 
         # FiveSeven
         if item["Name"] == "FiveSeven":
@@ -2452,26 +2452,6 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     item_data["Value"] = 0.125
                     continue
 
-                # RECOIL PATTERN
-                if item_data["Name"] == "RecoilPattern":
-                    
-                    for recoil_main in item_data["Value"]:
-                        
-                        # ENTER RECOIL ARRAY
-                        if recoil_main["Name"] == "RecoilPattern":
-                            
-                            # ENTER RECOIL OBJECT
-                            for recoil_array in recoil_main["Value"]:
-                                if recoil_array["Value"]["Yaw"] == -0.20000000298023224:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(2.6, 2.8)
-                                    continue
-                                elif recoil_array["Value"]["Yaw"] == 0.20000000298023224:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(2.6, 2.8)
-                                    continue
-                                elif recoil_array["Value"]["Yaw"] == 0.10000000149011612:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(2.6, 2.8)
-                                    continue
-
                 # MESHSPACE DEFAULT
                 if item_data["Name"] == "MeshspaceTransform_Default":
                     
@@ -2484,6 +2464,26 @@ for item in data["Exports"][0]["Table"]["Data"]:
                             for translation_array in def_meshspace["Value"]:
                                 translation_array["Value"]["Y"] = -4.81
                                 continue
+
+                # RECOIL PATTERN
+                # if item_data["Name"] == "RecoilPattern":
+                    
+                #     for recoil_main in item_data["Value"]:
+                        
+                #         # ENTER RECOIL ARRAY
+                #         if recoil_main["Name"] == "RecoilPattern":
+                            
+                #             # ENTER RECOIL OBJECT
+                #             for recoil_array in recoil_main["Value"]:
+                #                 if recoil_array["Value"]["Yaw"] == -0.20000000298023224:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(2.6, 2.8)
+                #                     continue
+                #                 elif recoil_array["Value"]["Yaw"] == 0.20000000298023224:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(2.6, 2.8)
+                #                     continue
+                #                 elif recoil_array["Value"]["Yaw"] == 0.10000000149011612:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(2.6, 2.8)
+                #                     continue
         
         # M92A3
         if item["Name"] == "M92A3":
@@ -2525,29 +2525,6 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     item_data["Value"] = 13
                     continue
 
-                # RECOIL PATTERN
-                if item_data["Name"] == "RecoilPattern":
-                    
-                    for recoil_main in item_data["Value"]:
-                        
-                        # ENTER RECOIL ARRAY
-                        if recoil_main["Name"] == "RecoilPattern":
-                            
-                            # ENTER RECOIL OBJECT
-                            for recoil_array in recoil_main["Value"]:
-                                if recoil_array["Value"]["Yaw"] == -0.5:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(1.4, 1.55)
-                                    continue
-                                elif recoil_array["Value"]["Yaw"] == 0.5:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(1.4, 1.55)
-                                    continue
-                                elif recoil_array["Value"]["Yaw"] == 0.40000000596046448:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(1.4, 1.55)
-                                    continue
-                                elif recoil_array["Value"]["Yaw"] == -0.40000000596046448:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(1.4, 1.55)
-                                    continue
-
                 # MESHSPACE DEFAULT
                 if item_data["Name"] == "MeshspaceTransform_Default":
                     
@@ -2560,6 +2537,29 @@ for item in data["Exports"][0]["Table"]["Data"]:
                             for translation_array in def_meshspace["Value"]:
                                 translation_array["Value"]["Y"] = -4.4
                                 continue
+
+                # RECOIL PATTERN
+                # if item_data["Name"] == "RecoilPattern":
+                    
+                #     for recoil_main in item_data["Value"]:
+                        
+                #         # ENTER RECOIL ARRAY
+                #         if recoil_main["Name"] == "RecoilPattern":
+                            
+                #             # ENTER RECOIL OBJECT
+                #             for recoil_array in recoil_main["Value"]:
+                #                 if recoil_array["Value"]["Yaw"] == -0.5:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(1.4, 1.55)
+                #                     continue
+                #                 elif recoil_array["Value"]["Yaw"] == 0.5:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(1.4, 1.55)
+                #                     continue
+                #                 elif recoil_array["Value"]["Yaw"] == 0.40000000596046448:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(1.4, 1.55)
+                #                     continue
+                #                 elif recoil_array["Value"]["Yaw"] == -0.40000000596046448:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(1.4, 1.55)
+                #                     continue
 
         # P229
         if item["Name"] == "P229":
@@ -2606,29 +2606,6 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     item_data["Value"] = 13
                     continue
 
-                # RECOIL PATTERN
-                if item_data["Name"] == "RecoilPattern":
-                    
-                    for recoil_main in item_data["Value"]:
-                        
-                        # ENTER RECOIL ARRAY
-                        if recoil_main["Name"] == "RecoilPattern":
-                            
-                            # ENTER RECOIL OBJECT
-                            for recoil_array in recoil_main["Value"]:
-                                if recoil_array["Value"]["Yaw"] == -0.5:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(1.4, 1.55)
-                                    continue
-                                elif recoil_array["Value"]["Yaw"] == 0.5:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(1.4, 1.55)
-                                    continue
-                                elif recoil_array["Value"]["Yaw"] == 0.40000000596046448:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(1.4, 1.55)
-                                    continue
-                                elif recoil_array["Value"]["Yaw"] == -0.40000000596046448:
-                                    recoil_array["Value"]["Pitch"] = random.uniform(1.4, 1.55)
-                                    continue
-
                 # MESHSPACE DEFAULT
                 if item_data["Name"] == "MeshspaceTransform_Default":
                     
@@ -2642,6 +2619,29 @@ for item in data["Exports"][0]["Table"]["Data"]:
                                 translation_array["Value"]["X"] = 7
                                 translation_array["Value"]["Y"] = -3.75
                                 continue
+
+                # RECOIL PATTERN
+                # if item_data["Name"] == "RecoilPattern":
+                    
+                #     for recoil_main in item_data["Value"]:
+                        
+                #         # ENTER RECOIL ARRAY
+                #         if recoil_main["Name"] == "RecoilPattern":
+                            
+                #             # ENTER RECOIL OBJECT
+                #             for recoil_array in recoil_main["Value"]:
+                #                 if recoil_array["Value"]["Yaw"] == -0.5:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(1.4, 1.55)
+                #                     continue
+                #                 elif recoil_array["Value"]["Yaw"] == 0.5:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(1.4, 1.55)
+                #                     continue
+                #                 elif recoil_array["Value"]["Yaw"] == 0.40000000596046448:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(1.4, 1.55)
+                #                     continue
+                #                 elif recoil_array["Value"]["Yaw"] == -0.40000000596046448:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(1.4, 1.55)
+                #                     continue
 
     #----------- LONG TACTICAL
 
