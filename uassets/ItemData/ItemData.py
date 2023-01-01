@@ -39,7 +39,7 @@ dic_2 = {
       "ClassPackage": "/Script/Engine",
       "ClassName": "BlueprintGeneratedClass",
       "ObjectName": "Grenade_9Banger_V2_C",
-      "OuterIndex": -1306
+      "OuterIndex": -1241
     }
 
 dic_3 = {
@@ -47,7 +47,7 @@ dic_3 = {
       "ClassPackage": "/Game/Blueprints/Items/WeaponsRevised/Grenade_9Banger_V2",
       "ClassName": "Grenade_9Banger_V2_C",
       "ObjectName": "Default__Grenade_9Banger_V2_C",
-      "OuterIndex": -1306
+      "OuterIndex": -1241
     }
 
 # APPEND DIC_1/2/3 TO IMPORTS
@@ -171,7 +171,7 @@ dic_4 = {"$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI
                   "$type": "UAssetAPI.PropertyTypes.Objects.ObjectPropertyData, UAssetAPI",
                   "Name": "Blueprint",
                   "DuplicationIndex": 0,
-                  "Value": -1307
+                  "Value": -1242
                 }
               ]
             }

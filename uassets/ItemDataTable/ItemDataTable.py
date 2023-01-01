@@ -12,14 +12,6 @@ for item in data["Exports"][0]["Table"]["Data"]:
         
         for item_data in item["Value"]:
 
-            array_long_weapons = [
-                [["MP5A2", "MP5A3", "MP510","MPX", "SPC9", "MP9"], "UMP45", "MP7", "P90"], 
-                [["MK18", "SBR", "SR16", "HK416", "BCM_MK1", "SCARL", "G36C"], "VKS", "AR18", "SLR47", "FAL"],
-                ["Beanbag", ["870mcs", "P1301_Entryman", "P1301", "BenelliM4", "S590_Breach"]],
-                ["M32A1", "M320_Gas", "M320_Bang", "M320_Stinger", "Mirrorgun", "TAC700"]]
-
-            array_handguns = ["G19", "PFC9", "M2011", "Python", "M92A3", "Taser", "FiveSeven", "USP", "P229"]
-
             # ADS ZOOM
             if item_data["Name"] == "ADSZoom":
                 item_data["Value"] = 0.9
@@ -55,183 +47,243 @@ for item in data["Exports"][0]["Table"]["Data"]:
                 val = float(item_data["Value"])
                 item_data["Value"] = val / 2
                 continue
-
+            
             # RECOIL CONTROL STRENGTH
             if item_data["Name"] == "RecoilDampStrength":
                 val = float(item_data["Value"])
                 item_data["Value"] = val * 1.5
                 continue
 
-                # RecoilDampStrength    RecoilFireTime      RecoilFireStrength      RecoilFireStrengthFirst     RecoilAngleStrength     RecoilADSModfier   
+            # RECOIL FIRE STRENGTH
+            if item_data["Name"] == "RecoilFireStrength":
+                val = float(item_data["Value"])
+                item_data["Value"] = val * 0.85
+                continue
 
-            # MESHPACE DEFAULT ROTATION - LONG
-            for x in array_long_weapons:
-                if item_data["Name"] == "MeshspaceTransform_Default":
-                    for def_meshspace in item_data["Value"]:
-                            
+            # RECOIL FIRE STRENGTH
+            if item_data["Name"] == "RecoilFireStrengthFirst":
+                val = float(item_data["Value"])
+                item_data["Value"] = val * 0.9
+                continue
+
+        array_smg = ["MP5A2", "MP5A3", "MP510", "MPX", "MP9", "SPC9", "UMP45", "MP7", "P90", "TAC700"]
+        array_ar = ["MK18", "SBR", "SR16", "HK416", "BCM_MK1", "SCARL", "G36C", "VKS", "AR18", "SLR47", "FAL"]
+        array_sg = ["Beanbag", "870mcs", "P1301_Entryman", "P1301", "BenelliM4", "S590_Breach"]
+        
+        array_hg = ["G19", "PFC9", "M2011", "Python", "M92A3", "Taser", "FiveSeven", "USP", "P229"]
+
+        array_tac = ["M32A1", "M320_Gas", "M320_Bang", "M320_Stinger", "Mirrorgun"]
+
+        # MESHSPACE DEFAULT - SMGs
+        index_smg = 0
+        while index_smg < len(array_smg):
+            if item["Name"] == array_smg[index_smg]:
+
+                for item_data in item["Value"]:
+
+                    if item_data["Name"] == "MeshspaceTransform_Default":
+                        
+                        for def_meshspace in item_data["Value"]:
+
+                            # ENTER TRANSLATION ARRAY
+                            if def_meshspace["Name"] == "Translation":
+                                    
+                                # ENTER TRANSLATION OBJECT
+                                for translation_array in def_meshspace["Value"]:
+                                    translation_array["Value"]["X"] = 7
+                                    translation_array["Value"]["Y"] = -1
+                                    translation_array["Value"]["Z"] = -1
+                                    continue
+                                
                             # ENTER ROTATION ARRAY
                             if def_meshspace["Name"] == "Rotation":
-                                
+                                    
                                 # ENTER ROTATION OBJECT
                                 for rotation_array in def_meshspace["Value"]:
                                     rotation_array["Value"]["Y"] = 0.05
                                     continue
-                
-            # MESHSPACE DEFAULT TRANSLATION - SMGs
-            for x in array_long_weapons[0]:
-                if item_data["Name"] == "MeshspaceTransform_Default":
-                    
-                    for def_meshspace in item_data["Value"]:
 
-                        # ENTER TRANSLATION ARRAY
-                        if def_meshspace["Name"] == "Translation":
+                    if item_data["Name"] == "MeshspaceTransform_Back":
+                    
+                        for back_meshspace in item_data["Value"]:
                             
-                            # ENTER TRANSLATION OBJECT
-                            for translation_array in def_meshspace["Value"]:
-                                translation_array["Value"]["X"] = 7
-                                translation_array["Value"]["Y"] = -1
-                                translation_array["Value"]["Z"] = -0.75
-                                continue
+                            # ENTER TRANSLATION ARRAY
+                            if back_meshspace["Name"] == "Translation":
+                                
+                                # ENTER TRANSLATION OBJECT
+                                for translation_array in back_meshspace["Value"]:
+                                    translation_array["Value"]["X"] = -60
+                                    translation_array["Value"]["Y"] = -0
+                                    translation_array["Value"]["Z"] = -20
+                                    continue
+            index_smg+=1
 
-                if item_data["Name"] == "MeshspaceTransform_Back":
-                    
-                    for back_meshspace in item_data["Value"]:
+        # MESHSPACE DEFAULT - ARs
+        index_ar = 0
+        while index_ar < len(array_ar):
+            if item["Name"] == array_ar[index_ar]:
+
+                for item_data in item["Value"]:
+
+                    if item_data["Name"] == "MeshspaceTransform_Default":
                         
-                        # ENTER TRANSLATION ARRAY
-                        if back_meshspace["Name"] == "Translation":
-                            
-                            # ENTER TRANSLATION OBJECT
-                            for translation_array in back_meshspace["Value"]:
-                                translation_array["Value"]["X"] = -60
-                                translation_array["Value"]["Y"] = -0
-                                translation_array["Value"]["Z"] = -20
-                                continue
+                        for def_meshspace in item_data["Value"]:
 
-            # MESHSPACE DEFAULT TRANSLATION - ARs
-            for x in array_long_weapons[1]:
-                if item_data["Name"] == "MeshspaceTransform_Default":
-                    
-                    for def_meshspace in item_data["Value"]:
-
-                        # ENTER TRANSLATION ARRAY
-                        if def_meshspace["Name"] == "Translation":
-                            
-                            # ENTER TRANSLATION OBJECT
-                            for translation_array in def_meshspace["Value"]:
-                                translation_array["Value"]["X"] = 7
-                                translation_array["Value"]["Y"] = -1
-                                translation_array["Value"]["Z"] = -0.75
-                                continue
-                
-                if item_data["Name"] == "MeshspaceTransform_Back":
-                    
-                    for back_meshspace in item_data["Value"]:
-                        
-                        # ENTER TRANSLATION ARRAY
-                        if back_meshspace["Name"] == "Translation":
-                            
-                            # ENTER TRANSLATION OBJECT
-                            for translation_array in back_meshspace["Value"]:
-                                translation_array["Value"]["X"] = -60
-                                translation_array["Value"]["Y"] = -0
-                                translation_array["Value"]["Z"] = -20
-                                continue
-
-            # MESHSPACE DEFAULT TRANSLATION - SHOTGUNs
-            for x in array_long_weapons[2]:
-                if item_data["Name"] == "MeshspaceTransform_Default":
-                    
-                    for def_meshspace in item_data["Value"]:
-
-                        # ENTER TRANSLATION ARRAY
-                        if def_meshspace["Name"] == "Translation":
-                            
-                            # ENTER TRANSLATION OBJECT
-                            for translation_array in def_meshspace["Value"]:
-                                translation_array["Value"]["X"] = 5
-                                translation_array["Value"]["Y"] = -1
-                                translation_array["Value"]["Z"] = -0.75
-                                continue
-                
-                if item_data["Name"] == "MeshspaceTransform_Back":
-                    
-                    for back_meshspace in item_data["Value"]:
-                        
-                        # ENTER TRANSLATION ARRAY
-                        if back_meshspace["Name"] == "Translation":
-                            
-                            # ENTER TRANSLATION OBJECT
-                            for translation_array in back_meshspace["Value"]:
-                                translation_array["Value"]["X"] = -60
-                                translation_array["Value"]["Y"] = -2
-                                translation_array["Value"]["Z"] = -20
-                                continue
-
-            # MESHSPACE DEFAULT TRANSLATION - TACTICALs
-            for x in array_long_weapons[3]:
-                if item_data["Name"] == "MeshspaceTransform_Default":
-                    
-                    for def_meshspace in item_data["Value"]:
-
-                        # ENTER TRANSLATION ARRAY
-                        if def_meshspace["Name"] == "Translation":
-                            
-                            # ENTER TRANSLATION OBJECT
-                            for translation_array in def_meshspace["Value"]:
-                                translation_array["Value"]["X"] = 7
-                                translation_array["Value"]["Y"] = -1
-                                translation_array["Value"]["Z"] = -0.75
-                                continue
-                
-                if item_data["Name"] == "MeshspaceTransform_Back":
-                    
-                    for back_meshspace in item_data["Value"]:
-                        
-                        # ENTER TRANSLATION ARRAY
-                        if back_meshspace["Name"] == "Translation":
-                            
-                            # ENTER TRANSLATION OBJECT
-                            for translation_array in back_meshspace["Value"]:
-                                translation_array["Value"]["X"] = -60
-                                translation_array["Value"]["Y"] = -0
-                                translation_array["Value"]["Z"] = -20
-                                continue
-
-            # MESHSPACE DEFAULT ROTATION - HANDGUNS
-            for x in array_handguns:
-                if item_data["Name"] == "MeshspaceTransform_Default":
-                    for def_meshspace in item_data["Value"]:
-                            
+                            # ENTER TRANSLATION ARRAY
+                            if def_meshspace["Name"] == "Translation":
+                                    
+                                # ENTER TRANSLATION OBJECT
+                                for translation_array in def_meshspace["Value"]:
+                                    translation_array["Value"]["X"] = 7
+                                    translation_array["Value"]["Y"] = -1
+                                    translation_array["Value"]["Z"] = -1.25
+                                    continue
+                                
                             # ENTER ROTATION ARRAY
                             if def_meshspace["Name"] == "Rotation":
+                                    
+                                # ENTER ROTATION OBJECT
+                                for rotation_array in def_meshspace["Value"]:
+                                    rotation_array["Value"]["Y"] = 0.05
+                                    continue
+
+                    if item_data["Name"] == "MeshspaceTransform_Back":
+                    
+                        for back_meshspace in item_data["Value"]:
+                            
+                            # ENTER TRANSLATION ARRAY
+                            if back_meshspace["Name"] == "Translation":
                                 
+                                # ENTER TRANSLATION OBJECT
+                                for translation_array in back_meshspace["Value"]:
+                                    translation_array["Value"]["X"] = -60
+                                    translation_array["Value"]["Y"] = -0
+                                    translation_array["Value"]["Z"] = -20
+                                    continue
+            index_ar+=1
+
+        # MESHSPACE DEFAULT - SHOTGUNSs
+        index_sg = 0
+        while index_sg < len(array_sg):
+            if item["Name"] == array_sg[index_sg]:
+
+                for item_data in item["Value"]:
+
+                    if item_data["Name"] == "MeshspaceTransform_Default":
+                        
+                        for def_meshspace in item_data["Value"]:
+
+                            # ENTER TRANSLATION ARRAY
+                            if def_meshspace["Name"] == "Translation":
+                                    
+                                # ENTER TRANSLATION OBJECT
+                                for translation_array in def_meshspace["Value"]:
+                                    translation_array["Value"]["X"] = -7
+                                    translation_array["Value"]["Y"] = -1
+                                    translation_array["Value"]["Z"] = -1.25
+                                    continue
+                                
+                            # ENTER ROTATION ARRAY
+                            if def_meshspace["Name"] == "Rotation":
+                                    
+                                # ENTER ROTATION OBJECT
+                                for rotation_array in def_meshspace["Value"]:
+                                    rotation_array["Value"]["Y"] = 0.05
+                                    continue
+
+                    if item_data["Name"] == "MeshspaceTransform_Back":
+                    
+                        for back_meshspace in item_data["Value"]:
+                            
+                            # ENTER TRANSLATION ARRAY
+                            if back_meshspace["Name"] == "Translation":
+                                
+                                # ENTER TRANSLATION OBJECT
+                                for translation_array in back_meshspace["Value"]:
+                                    translation_array["Value"]["X"] = -60
+                                    translation_array["Value"]["Y"] = -0
+                                    translation_array["Value"]["Z"] = -20
+                                    continue
+            index_sg+=1
+
+        # MESHSPACE DEFAULT - TACTICALs
+        index_tac = 0
+        while index_tac < len(array_tac):
+            if item["Name"] == array_tac[index_tac]:
+
+                for item_data in item["Value"]:
+
+                    if item_data["Name"] == "MeshspaceTransform_Default":
+                        
+                        for def_meshspace in item_data["Value"]:
+
+                            # ENTER TRANSLATION ARRAY
+                            if def_meshspace["Name"] == "Translation":
+                                    
+                                # ENTER TRANSLATION OBJECT
+                                for translation_array in def_meshspace["Value"]:
+                                    translation_array["Value"]["X"] = 7
+                                    translation_array["Value"]["Y"] = -1
+                                    translation_array["Value"]["Z"] = -1.25
+                                    continue
+                                
+                            # ENTER ROTATION ARRAY
+                            if def_meshspace["Name"] == "Rotation":
+                                    
+                                # ENTER ROTATION OBJECT
+                                for rotation_array in def_meshspace["Value"]:
+                                    rotation_array["Value"]["Y"] = 0.05
+                                    continue
+
+                    if item_data["Name"] == "MeshspaceTransform_Back":
+                    
+                        for back_meshspace in item_data["Value"]:
+                            
+                            # ENTER TRANSLATION ARRAY
+                            if back_meshspace["Name"] == "Translation":
+                                
+                                # ENTER TRANSLATION OBJECT
+                                for translation_array in back_meshspace["Value"]:
+                                    translation_array["Value"]["X"] = -60
+                                    translation_array["Value"]["Y"] = -0
+                                    translation_array["Value"]["Z"] = -20
+                                    continue  
+            index_tac+=1                             
+
+        # MESHSPACE DEFAULT - HANDGUNS
+        index_hg = 0
+        while index_hg < len(array_hg):
+            if item["Name"] == array_hg[index_hg]:
+
+                for item_data in item["Value"]:
+
+                    if item_data["Name"] == "MeshspaceTransform_Default":
+                        
+                        for def_meshspace in item_data["Value"]:
+                                
+                            # ENTER ROTATION ARRAY
+                            if def_meshspace["Name"] == "Rotation":
+                                    
                                 # ENTER ROTATION OBJECT
                                 for rotation_array in def_meshspace["Value"]:
                                     rotation_array["Value"]["Y"] = 0.1
                                     continue
 
-    #----------- PRIMARY WEAPONS
+                    if item_data["Name"] == "MeshspaceTransform_Back":
+                    
+                        for back_meshspace in item_data["Value"]:
+                            
+                            # ENTER TRANSLATION ARRAY
+                            if back_meshspace["Name"] == "Translation":
+                                
+                                # ENTER TRANSLATION OBJECT
+                                for translation_array in back_meshspace["Value"]:
+                                    translation_array["Value"]["X"] = -25
+                                    translation_array["Value"]["Y"] = 0
+                                    continue 
+            index_hg+=1
 
-        # BREACHING SHOTGUN
-        if item["Name"] == "S590_Breach":
-            
-            # For every piece of the item data.
-            for item_data in item["Value"]:
-                
-                # NAME
-                if item_data["Name"] == "ItemName":
-                    item_data["CultureInvariantString"] = "M500 Cruiser - Breaching Shotgun"
-                    continue
-                
-                # DESCRIPTION
-                if item_data["Name"] == "ItemDescription":
-                    item_data["CultureInvariantString"] = "This version of the Mossberg 500 allows you to quickly and effectively blow open doors using frangible slugs. Not ideal for combat."
-                    continue
-
-                # WEIGHT
-                if item_data["Name"] == "ItemWeight":
-                    item_data["Value"] = 3.2
-                    continue
+#----------- PRIMARY WEAPONS
 
         # MK18
         if item["Name"] == "MK18":
@@ -683,21 +735,6 @@ for item in data["Exports"][0]["Table"]["Data"]:
                                 elif recoil_array["Value"]["Yaw"] == 0.75:
                                     recoil_array["Value"]["Pitch"] = random.uniform(2.75, 2.85)
                                     continue
-                
-                # RECOIL DAMP STRENGTH
-                if item_data["Name"] == "RecoilDampStrength":
-                    item_data["Value"] = 3.5
-                    continue
-
-                # RECOIL FIRE STRENGTH
-                if item_data["Name"] == "RecoilFireStrength":
-                    item_data["Value"] = 8
-                    continue
-
-                # RECOIL FIRE STRENGTH
-                if item_data["Name"] == "RecoilFireStrengthFirst":
-                    item_data["Value"] = 8
-                    continue
                 
         # G36C
         if item["Name"] == "G36C":
@@ -1983,176 +2020,6 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     item_data["Value"] = 0.05
                     continue
 
-        # AKS74U
-        if item["Name"] == "AKS74U":
-            
-            # For every piece of the item data.
-            for item_data in item["Value"]:
-                
-                # NAME
-                if item_data["Name"] == "ItemName":
-                    item_data["CultureInvariantString"] = "AKS-74U"
-                    continue
-
-        # M16A4 - EMPTY
-        if item["Name"] == "M16A4":
-            
-            # For every piece of the item data.
-            for item_data in item["Value"]:
-                continue
-                
-        # G3A3
-        if item["Name"] == "G3A3":
-            
-            # For every piece of the item data.
-            for item_data in item["Value"]:
-
-                # NAME
-                if item_data["Name"] == "ItemName":
-                    item_data["CultureInvariantString"] = "H&K G3A3"
-                    continue
-                
-        # M37
-        if item["Name"] == "M37":
-            # For every piece of the item data.
-            for item_data in item["Value"]:
-                
-                # NAME
-                if item_data["Name"] == "ItemName":
-                    item_data["CultureInvariantString"] = "Wincherster Model 1897"
-                    continue
-                
-        # MPL
-        if item["Name"] == "MPL":
-            # For every piece of the item data.
-            for item_data in item["Value"]:
-                
-                # NAME
-                if item_data["Name"] == "ItemName":
-                    item_data["CultureInvariantString"] = "Walther MPL"
-                    continue
-                
-        # AKM
-        if item["Name"] == "AKM":
-            # For every piece of the item data.
-            for item_data in item["Value"]:
-                
-                # NAME
-                if item_data["Name"] == "ItemName":
-                    item_data["CultureInvariantString"] = "AKM"
-                    continue
-                
-        # UZI
-        if item["Name"] == "UZI":
-            # For every piece of the item data.
-            for item_data in item["Value"]:
-                
-                # NAME
-                if item_data["Name"] == "ItemName":
-                    item_data["CultureInvariantString"] = "IMI Uzi"
-                    continue
-                
-                # DESCRIPTION
-                if item_data["Name"] == "ItemDescription":
-                    item_data["CultureInvariantString"] = "The Uzi is a Izraeli open-bolt, blowback-operated submachine gun first designed in the late 1940s and finished in 1950. Since then The Uzi has been exported to over 90 countries and it's been sold to more military, law enforcement and security markets than eny other submachine gun ever made."
-                    continue
-
-        # M14
-        if item["Name"] == "M14":
-            # For every piece of the item data.
-            for item_data in item["Value"]:
-                
-                # NAME
-                if item_data["Name"] == "ItemName":
-                    item_data["CultureInvariantString"] = "M14"
-                    continue
-                
-        # AK102
-        if item["Name"] == "AK102":
-            
-            # For every piece of the item data.
-            for item_data in item["Value"]:
-
-                # NAME
-                if item_data["Name"] == "ItemName":
-                    item_data["CultureInvariantString"] = "AK-102"
-                    continue
-                
-        # AK103
-        if item["Name"] == "AK103":
-            # For every piece of the item data.
-            for item_data in item["Value"]:
-                
-                # NAME
-                if item_data["Name"] == "ItemName":
-                    item_data["CultureInvariantString"] = "AK-103"
-                    continue
-                
-        # M76
-        if item["Name"] == "M76":
-            # For every piece of the item data.
-            for item_data in item["Value"]:
-                
-                # NAME
-                if item_data["Name"] == "ItemName":
-                    item_data["CultureInvariantString"] = "Smith & Wesson Model 76"
-                    continue
-
-        # Sawnoff
-        if item["Name"] == "Sawnoff":
-            # For every piece of the item data.
-            for item_data in item["Value"]:
-                
-                # NAME
-                if item_data["Name"] == "ItemName":
-                    item_data["CultureInvariantString"] = "12 Gauge Double Barreled Sawed-Off"
-                    continue
-
-        # M249
-        if item["Name"] == "M249":
-            # For every piece of the item data.
-            for item_data in item["Value"]:
-                
-                # NAME
-                if item_data["Name"] == "ItemName":
-                    item_data["CultureInvariantString"] = "M249 Para"
-                    continue
-
-        # S590 Assault V2
-        if item["Name"] == "S590_Assault_V2":
-            # For every piece of the item data.
-            for item_data in item["Value"]:
-                
-                # NAME
-                if item_data["Name"] == "ItemName":
-                    item_data["CultureInvariantString"] = "Mossberg 500"
-                    continue
-
-                # WEIGHT
-                if item_data["Name"] == "ItemWeight":
-                    item_data["Value"] = 3.2
-                    continue
-                
-        # Saiga12
-        if item["Name"] == "Saiga12":
-            # For every piece of the item data.
-            for item_data in item["Value"]:
-                
-                # NAME
-                if item_data["Name"] == "ItemName":
-                    item_data["CultureInvariantString"] = "Izhmash KS-K"
-                    continue
-                
-        # SCARH
-        if item["Name"] == "SCARH":
-            # For every piece of the item data.
-            for item_data in item["Value"]:
-                
-                # NAME
-                if item_data["Name"] == "ItemName":
-                    item_data["CultureInvariantString"] = "FN MK 17 MOD 0"
-                    continue
-
     #----------- HANDGUNS
 
         # TASER
@@ -2170,13 +2037,6 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     
                     for def_meshspace in item_data["Value"]:
                         
-                        # ROTATION
-                        if def_meshspace["Name"] == "Rotation":
-                            
-                            for rotation_array in def_meshspace["Value"]:
-                                rotation_array["Value"]["Y"] = 0.1
-                                continue
-
                         # TRANSLATION
                         if def_meshspace["Name"] == "Translation":
                             
@@ -2577,20 +2437,6 @@ for item in data["Exports"][0]["Table"]["Data"]:
                                 translation_array["Value"]["Y"] = -4.62
                                 continue
 
-                # ENTER MESHSPACE BACK
-                if item_data["Name"] == "MeshspaceTransform_Back":
-                    
-                    for back_meshspace in item_data["Value"]:
-                        
-                        # ENTER TRANSLATION ARRAY
-                        if back_meshspace["Name"] == "Translation":
-                            
-                            # ENTER TRANSLATION OBJECT
-                            for translation_array in back_meshspace["Value"]:
-                                translation_array["Value"]["X"] = -25
-                                translation_array["Value"]["Y"] = 0
-                                continue
-
         # Python
         if item["Name"] == "Python":
             # For every piece of the item data.
@@ -2797,145 +2643,6 @@ for item in data["Exports"][0]["Table"]["Data"]:
                                 translation_array["Value"]["Y"] = -3.75
                                 continue
 
-        # P250
-        if item["Name"] == "P250":
-            # For every piece of the item data.
-            for item_data in item["Value"]:
-                
-                # NAME
-                if item_data["Name"] == "ItemName":
-                    item_data["CultureInvariantString"] = "Sig-Sauer P250"
-                    continue
-
-                # MESHSPACE DEFAULT
-                if item_data["Name"] == "MeshspaceTransform_Default":
-                    
-                    for def_meshspace in item_data["Value"]:
-
-                        # ENTER TRANSLATION ARRAY
-                        if def_meshspace["Name"] == "Translation":
-                            
-                            # ENTER TRANSLATION OBJECT
-                            for translation_array in def_meshspace["Value"]:
-                                translation_array["Value"]["Y"] = -7.35
-                                translation_array["Value"]["Z"] = -1.5
-                                continue
-
-        # M9A1
-        if item["Name"] == "M92FS":
-            # For every piece of the item data.
-            for item_data in item["Value"]:
-                
-                # NAME
-                if item_data["Name"] == "ItemName":
-                    item_data["CultureInvariantString"] = "Beretta M92FS"
-                    continue
-
-            # MESHSPACE DEFAULT
-                if item_data["Name"] == "MeshspaceTransform_Default":
-                    
-                    for def_meshspace in item_data["Value"]:
-                        
-                        # TRANSLATION
-                        if def_meshspace["Name"] == "Translation":
-                            
-                            for translation_array in def_meshspace["Value"]:
-                                translation_array["Value"]["Y"] = -6.4
-                                translation_array["Value"]["Z"] = -2
-                                continue
-        
-        # Makarov
-        if item["Name"] == "Makarov":
-            # For every piece of the item data.
-            for item_data in item["Value"]:
-                
-                # NAME
-                if item_data["Name"] == "ItemName":
-                    item_data["CultureInvariantString"] = "Makarov PM"
-                    continue
-
-        # Tec9
-        if item["Name"] == "Tec9":
-            # For every piece of the item data.
-            for item_data in item["Value"]:
-                
-                # NAME
-                if item_data["Name"] == "ItemName":
-                    item_data["CultureInvariantString"] = "Intratec TEC-9"
-                    continue
-
-        # G18
-        if item["Name"] == "G18":
-            # For every piece of the item data.
-            for item_data in item["Value"]:
-                
-                # NAME
-                if item_data["Name"] == "ItemName":
-                    item_data["CultureInvariantString"] = "Glock 18C"
-                    continue
-
-                # MESHSPACE DEFAULT
-                if item_data["Name"] == "MeshspaceTransform_Default":
-                    
-                    for def_meshspace in item_data["Value"]:
-
-                        # ENTER TRANSLATION ARRAY
-                        if def_meshspace["Name"] == "Translation":
-                            
-                            # ENTER TRANSLATION OBJECT
-                            for translation_array in def_meshspace["Value"]:
-                                translation_array["Value"]["X"] = 7
-                                translation_array["Value"]["Y"] = -4.85
-                                translation_array["Value"]["Z"] = -0.75
-                                continue
-
-        # M1911
-        if item["Name"] == "M1911":
-            # For every piece of the item data.
-            for item_data in item["Value"]:
-                
-                # NAME
-                if item_data["Name"] == "ItemName":
-                    item_data["CultureInvariantString"] = "Colt M1911A1"
-                    continue
-
-                # MESHSPACE DEFAULT
-                if item_data["Name"] == "MeshspaceTransform_Default":
-                    
-                    for def_meshspace in item_data["Value"]:
-                        
-                        # ENTER TRANSLATION ARRAY
-                        if def_meshspace["Name"] == "Translation":
-                            
-                            # ENTER TRANSLATION OBJECT
-                            for translation_array in def_meshspace["Value"]:
-                                translation_array["Value"]["Y"] = -4.85
-                                continue
-
-        # P99
-        if item["Name"] == "P99":
-            # For every piece of the item data.
-            for item_data in item["Value"]:
-                
-                # NAME
-                if item_data["Name"] == "ItemName":
-                    item_data["CultureInvariantString"] = "Walther PPQ"
-                    continue
-
-                # MESHSPACE DEFAULT
-                if item_data["Name"] == "MeshspaceTransform_Default":
-                    
-                    for def_meshspace in item_data["Value"]:
-
-                        # ENTER TRANSLATION ARRAY
-                        if def_meshspace["Name"] == "Translation":
-                            
-                            # ENTER TRANSLATION OBJECT
-                            for translation_array in def_meshspace["Value"]:
-                                translation_array["Value"]["Y"] = -6.85
-                                translation_array["Value"]["Y"] = -0.5
-                                continue
-
     #----------- LONG TACTICAL
 
         # VKS
@@ -2947,6 +2654,27 @@ for item in data["Exports"][0]["Table"]["Data"]:
                 # NAME
                 if item_data["Name"] == "ItemName":
                     item_data["CultureInvariantString"] = "PepperBall VKS"
+                    continue
+
+        # BREACHING SHOTGUN
+        if item["Name"] == "S590_Breach":
+            
+            # For every piece of the item data.
+            for item_data in item["Value"]:
+                
+                # NAME
+                if item_data["Name"] == "ItemName":
+                    item_data["CultureInvariantString"] = "M500 Cruiser - Breaching Shotgun"
+                    continue
+                
+                # DESCRIPTION
+                if item_data["Name"] == "ItemDescription":
+                    item_data["CultureInvariantString"] = "This version of the Mossberg 500 allows you to quickly and effectively blow open doors using frangible slugs. Not ideal for combat."
+                    continue
+
+                # WEIGHT
+                if item_data["Name"] == "ItemWeight":
+                    item_data["Value"] = 3.2
                     continue
 
         # M32A1
@@ -3097,19 +2825,329 @@ for item in data["Exports"][0]["Table"]["Data"]:
         # BALLISTIC MASK
         if item["Name"] == "BallisticMask":
 
-            dic = {"$type": "UAssetAPI.PropertyTypes.Objects.EnumPropertyData, UAssetAPI",
-                    "EnumType": "null", 
-                    "Name": "", 
-                    "DuplicationIndex": 0, 
-                    "Value": "EItemCategory::IC_Googles"}
-
             for item_data in item["Value"]:
 
                 if item_data["Name"] == "ItemCategories":
-                    dic_2 = item_data["Value"][0].copy()
-                    dic_2["Value"] = "EItemCategory::IC_Goggles"
-                    item_data["Value"].append(dic_2)
+                    dic = item_data["Value"][0].copy()
+                    dic["Value"] = "EItemCategory::IC_Goggles"
+                    item_data["Value"].append(dic)
                     continue  
+
+    #----------- NOT USED
+
+        #----------- PRIMARIES
+
+        # AKS74U
+        if item["Name"] == "AKS74U":
+            
+            # For every piece of the item data.
+            for item_data in item["Value"]:
+                
+                # NAME
+                if item_data["Name"] == "ItemName":
+                    item_data["CultureInvariantString"] = "AKS-74U"
+                    continue
+
+        # M16A4 - EMPTY
+        if item["Name"] == "M16A4":
+            
+            # For every piece of the item data.
+            for item_data in item["Value"]:
+                continue
+                
+        # G3A3
+        if item["Name"] == "G3A3":
+            
+            # For every piece of the item data.
+            for item_data in item["Value"]:
+
+                # NAME
+                if item_data["Name"] == "ItemName":
+                    item_data["CultureInvariantString"] = "H&K G3A3"
+                    continue
+                
+        # M37
+        if item["Name"] == "M37":
+            # For every piece of the item data.
+            for item_data in item["Value"]:
+                
+                # NAME
+                if item_data["Name"] == "ItemName":
+                    item_data["CultureInvariantString"] = "Wincherster Model 1897"
+                    continue
+                
+        # MPL
+        if item["Name"] == "MPL":
+            # For every piece of the item data.
+            for item_data in item["Value"]:
+                
+                # NAME
+                if item_data["Name"] == "ItemName":
+                    item_data["CultureInvariantString"] = "Walther MPL"
+                    continue
+                
+        # AKM
+        if item["Name"] == "AKM":
+            # For every piece of the item data.
+            for item_data in item["Value"]:
+                
+                # NAME
+                if item_data["Name"] == "ItemName":
+                    item_data["CultureInvariantString"] = "AKM"
+                    continue
+                
+        # UZI
+        if item["Name"] == "UZI":
+            # For every piece of the item data.
+            for item_data in item["Value"]:
+                
+                # NAME
+                if item_data["Name"] == "ItemName":
+                    item_data["CultureInvariantString"] = "IMI Uzi"
+                    continue
+                
+                # DESCRIPTION
+                if item_data["Name"] == "ItemDescription":
+                    item_data["CultureInvariantString"] = "The Uzi is a Izraeli open-bolt, blowback-operated submachine gun first designed in the late 1940s and finished in 1950. Since then The Uzi has been exported to over 90 countries and it's been sold to more military, law enforcement and security markets than eny other submachine gun ever made."
+                    continue
+
+        # M14
+        if item["Name"] == "M14":
+            # For every piece of the item data.
+            for item_data in item["Value"]:
+                
+                # NAME
+                if item_data["Name"] == "ItemName":
+                    item_data["CultureInvariantString"] = "M14"
+                    continue
+                
+        # AK102
+        if item["Name"] == "AK102":
+            
+            # For every piece of the item data.
+            for item_data in item["Value"]:
+
+                # NAME
+                if item_data["Name"] == "ItemName":
+                    item_data["CultureInvariantString"] = "AK-102"
+                    continue
+                
+        # AK103
+        if item["Name"] == "AK103":
+            # For every piece of the item data.
+            for item_data in item["Value"]:
+                
+                # NAME
+                if item_data["Name"] == "ItemName":
+                    item_data["CultureInvariantString"] = "AK-103"
+                    continue
+                
+        # M76
+        if item["Name"] == "M76":
+            # For every piece of the item data.
+            for item_data in item["Value"]:
+                
+                # NAME
+                if item_data["Name"] == "ItemName":
+                    item_data["CultureInvariantString"] = "Smith & Wesson Model 76"
+                    continue
+
+        # Sawnoff
+        if item["Name"] == "Sawnoff":
+            # For every piece of the item data.
+            for item_data in item["Value"]:
+                
+                # NAME
+                if item_data["Name"] == "ItemName":
+                    item_data["CultureInvariantString"] = "12 Gauge Double Barreled Sawed-Off"
+                    continue
+
+        # M249
+        if item["Name"] == "M249":
+            # For every piece of the item data.
+            for item_data in item["Value"]:
+                
+                # NAME
+                if item_data["Name"] == "ItemName":
+                    item_data["CultureInvariantString"] = "M249 Para"
+                    continue
+
+        # S590 Assault V2
+        if item["Name"] == "S590_Assault_V2":
+            # For every piece of the item data.
+            for item_data in item["Value"]:
+                
+                # NAME
+                if item_data["Name"] == "ItemName":
+                    item_data["CultureInvariantString"] = "Mossberg 500"
+                    continue
+
+                # WEIGHT
+                if item_data["Name"] == "ItemWeight":
+                    item_data["Value"] = 3.2
+                    continue
+                
+        # Saiga12
+        if item["Name"] == "Saiga12":
+            # For every piece of the item data.
+            for item_data in item["Value"]:
+                
+                # NAME
+                if item_data["Name"] == "ItemName":
+                    item_data["CultureInvariantString"] = "Izhmash KS-K"
+                    continue
+                
+        # SCARH
+        if item["Name"] == "SCARH":
+            # For every piece of the item data.
+            for item_data in item["Value"]:
+                
+                # NAME
+                if item_data["Name"] == "ItemName":
+                    item_data["CultureInvariantString"] = "FN MK 17 MOD 0"
+                    continue
+
+        #----------- HANDGUNS
+
+        # P250
+        if item["Name"] == "P250":
+            # For every piece of the item data.
+            for item_data in item["Value"]:
+                
+                # NAME
+                if item_data["Name"] == "ItemName":
+                    item_data["CultureInvariantString"] = "Sig-Sauer P250"
+                    continue
+
+                # MESHSPACE DEFAULT
+                if item_data["Name"] == "MeshspaceTransform_Default":
+                    
+                    for def_meshspace in item_data["Value"]:
+
+                        # ENTER TRANSLATION ARRAY
+                        if def_meshspace["Name"] == "Translation":
+                            
+                            # ENTER TRANSLATION OBJECT
+                            for translation_array in def_meshspace["Value"]:
+                                translation_array["Value"]["Y"] = -7.35
+                                translation_array["Value"]["Z"] = -1.5
+                                continue
+
+        # M9A1
+        if item["Name"] == "M92FS":
+            # For every piece of the item data.
+            for item_data in item["Value"]:
+                
+                # NAME
+                if item_data["Name"] == "ItemName":
+                    item_data["CultureInvariantString"] = "Beretta M92FS"
+                    continue
+
+            # MESHSPACE DEFAULT
+                if item_data["Name"] == "MeshspaceTransform_Default":
+                    
+                    for def_meshspace in item_data["Value"]:
+                        
+                        # TRANSLATION
+                        if def_meshspace["Name"] == "Translation":
+                            
+                            for translation_array in def_meshspace["Value"]:
+                                translation_array["Value"]["Y"] = -6.4
+                                translation_array["Value"]["Z"] = -2
+                                continue
+        
+        # Makarov
+        if item["Name"] == "Makarov":
+            # For every piece of the item data.
+            for item_data in item["Value"]:
+                
+                # NAME
+                if item_data["Name"] == "ItemName":
+                    item_data["CultureInvariantString"] = "Makarov PM"
+                    continue
+
+        # Tec9
+        if item["Name"] == "Tec9":
+            # For every piece of the item data.
+            for item_data in item["Value"]:
+                
+                # NAME
+                if item_data["Name"] == "ItemName":
+                    item_data["CultureInvariantString"] = "Intratec TEC-9"
+                    continue
+
+        # G18
+        if item["Name"] == "G18":
+            # For every piece of the item data.
+            for item_data in item["Value"]:
+                
+                # NAME
+                if item_data["Name"] == "ItemName":
+                    item_data["CultureInvariantString"] = "Glock 18C"
+                    continue
+
+                # MESHSPACE DEFAULT
+                if item_data["Name"] == "MeshspaceTransform_Default":
+                    
+                    for def_meshspace in item_data["Value"]:
+
+                        # ENTER TRANSLATION ARRAY
+                        if def_meshspace["Name"] == "Translation":
+                            
+                            # ENTER TRANSLATION OBJECT
+                            for translation_array in def_meshspace["Value"]:
+                                translation_array["Value"]["X"] = 7
+                                translation_array["Value"]["Y"] = -4.85
+                                translation_array["Value"]["Z"] = -0.75
+                                continue
+
+        # M1911
+        if item["Name"] == "M1911":
+            # For every piece of the item data.
+            for item_data in item["Value"]:
+                
+                # NAME
+                if item_data["Name"] == "ItemName":
+                    item_data["CultureInvariantString"] = "Colt M1911A1"
+                    continue
+
+                # MESHSPACE DEFAULT
+                if item_data["Name"] == "MeshspaceTransform_Default":
+                    
+                    for def_meshspace in item_data["Value"]:
+                        
+                        # ENTER TRANSLATION ARRAY
+                        if def_meshspace["Name"] == "Translation":
+                            
+                            # ENTER TRANSLATION OBJECT
+                            for translation_array in def_meshspace["Value"]:
+                                translation_array["Value"]["Y"] = -4.85
+                                continue
+
+        # P99
+        if item["Name"] == "P99":
+            # For every piece of the item data.
+            for item_data in item["Value"]:
+                
+                # NAME
+                if item_data["Name"] == "ItemName":
+                    item_data["CultureInvariantString"] = "Walther PPQ"
+                    continue
+
+                # MESHSPACE DEFAULT
+                if item_data["Name"] == "MeshspaceTransform_Default":
+                    
+                    for def_meshspace in item_data["Value"]:
+
+                        # ENTER TRANSLATION ARRAY
+                        if def_meshspace["Name"] == "Translation":
+                            
+                            # ENTER TRANSLATION OBJECT
+                            for translation_array in def_meshspace["Value"]:
+                                translation_array["Value"]["Y"] = -6.85
+                                translation_array["Value"]["Y"] = -0.5
+                                continue
+
 
 # SAVE INTO FILE
 json.dump(data, open(f"ItemDataTable.json", "w"), indent = 1)
