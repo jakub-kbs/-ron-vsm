@@ -51,10 +51,10 @@ for item in data["Exports"][0]["Table"]["Data"]:
             # RECOIL CONTROL STRENGTH
             if item_data["Name"] == "RecoilDampStrength":
                 val = float(item_data["Value"])
-                item_data["Value"] = val * 1.5
+                item_data["Value"] = val * 0.5
                 continue
 
-            # RECOIL FIRE STRENGTH
+            # RECOIL FIRE STRENGTH FIRST
             if item_data["Name"] == "RecoilFireStrength":
                 val = float(item_data["Value"])
                 item_data["Value"] = val * 0.85
@@ -67,7 +67,7 @@ for item in data["Exports"][0]["Table"]["Data"]:
                 continue
 
         array_smg = ["MP5A2", "MP5A3", "MP510", "MPX", "MP9", "SPC9", "UMP45", "MP7", "P90", "TAC700"]
-        array_ar = ["MK18", "SBR", "SR16", "HK416", "BCM_MK1", "SCARL", "G36C", "VKS", "AR18", "SLR47", "FAL"]
+        array_ar = ["MK18", "SBR", "SR16", "HK416", "BCM_MK1", "SCARL", "G36C", "AR18", "SLR47", "FAL", "VKS"]
         array_sg = ["Beanbag", "870mcs", "P1301_Entryman", "P1301", "BenelliM4", "S590_Breach"]
         
         array_hg = ["G19", "PFC9", "M2011", "Python", "M92A3", "Taser", "FiveSeven", "USP", "P229"]
@@ -285,352 +285,6 @@ for item in data["Exports"][0]["Table"]["Data"]:
 
 #----------- PRIMARY WEAPONS
 
-        # MK18
-        if item["Name"] == "MK18":
-            
-            # For every piece of the item data.
-            for item_data in item["Value"]:
-                
-                # NAME
-                if item_data["Name"] == "ItemName":
-                    item_data["CultureInvariantString"] = "Mk 18 Mod 0"
-                    continue
-                
-                # DESCRIPTION
-                if item_data["Name"] == "ItemDescription":
-                    item_data["CultureInvariantString"] = "This shorter-barreled M4A1 designated as Mk 18 Mod 0 is a weapon significantly more compact, thus making it easier to use in, and around, vehicles and in tight, confined spaces."
-                    continue
-
-                # WEIGHT
-                if item_data["Name"] == "ItemWeight":
-                    item_data["Value"] = 2.72
-                    continue
-
-                # PUSHBACK RANGE
-                if item_data["Name"] == "PushbackRange":
-                    item_data["Value"] = 160
-                    continue
-
-                # LOW-READY RANGE
-                if item_data["Name"] == "LowReadyRange":
-                    item_data["Value"] = 73
-                    continue
-
-                # MAG WEIGHT FULL
-                if item_data["Name"] == "MagazineWeightFull":
-                    item_data["Value"] = 0.53
-                    continue
-
-                # DAMAGE SEVERITY MULTIPLIER
-                if item_data["Name"] == "DamageSeverityMultiplier":
-                    item_data["Value"] = 1.1
-                    continue
-
-                # DAMAGE SEVERITY CHANCE
-                if item_data["Name"] == "DamageSeverityChance":
-                    item_data["Value"] = 0.1
-                    continue
-
-                # BLEEDOUT DAMAGE MULTIPLIER
-                if item_data["Name"] == "BleedoutDamageMultiplier":
-                    item_data["Value"] = 0.075
-                    continue
-
-                # BLEEDOUT DAMAGE CHANCE
-                if item_data["Name"] == "BleedoutDamageChance":
-                    item_data["Value"] = 0.2
-                    continue
-
-                # MUZZLE VELOCITY
-                if item_data["Name"] == "ProjectileMovementSpeed":
-                    item_data["Value"] = 90521
-                    continue
-
-                # PENETRATION
-                if item_data["Name"] == "PenetrationDistance":
-                    item_data["Value"] = 32.5
-                    continue
-
-                # RECOIL PATTERN
-                # if item_data["Name"] == "RecoilPattern":
-                    
-                #     for recoil_main in item_data["Value"]:
-                        
-                #         # ENTER RECOIL ARRAY
-                #         if recoil_main["Name"] == "RecoilPattern":
-                            
-                #             # ENTER RECOIL OBJECT
-                #             for recoil_array in recoil_main["Value"]:
-                #                 if recoil_array["Value"]["Yaw"] == -0.4000000059604645:
-                #                     recoil_array["Value"]["Pitch"] = random.uniform(1.3, 1.4)
-                #                     continue
-                #                 elif recoil_array["Value"]["Yaw"] == 0.4000000059604645:
-                #                     recoil_array["Value"]["Pitch"] = random.uniform(1.3, 1.4)
-                #                     continue
-                
-        # Benelli M4
-        if item["Name"] == "BenelliM4":
-            # For every piece of the item data.
-            for item_data in item["Value"]:
-                
-                # NAME
-                if item_data["Name"] == "ItemName":
-                    item_data["CultureInvariantString"] = "Benelli M4"
-                    continue
-                
-                # DESCRIPTION
-                if item_data["Name"] == "ItemDescription":
-                    item_data["CultureInvariantString"] = "This gas powered combat shotgun is widely considered the best of its breed. Reliable and fast firing, its only major drawback is how quickly you'll empty it if you're not careful."
-                    continue
-
-                # DAMAGE
-                if item_data["Name"] == "Damage":
-                    item_data["Value"] = 47.5
-                    continue
-
-                # DAMAGE SEVERITY MULTIPLIER
-                if item_data["Name"] == "DamageSeverityMultiplier":
-                    item_data["Value"] = 1.25
-                    continue
-
-                # DAMAGE SEVERITY CHANCE
-                if item_data["Name"] == "DamageSeverityChance":
-                    item_data["Value"] = 0.2
-                    continue
-
-                # BLEEDOUT DAMAGE MULTIPLIER
-                if item_data["Name"] == "BleedoutDamageMultiplier":
-                    item_data["Value"] = 0.1
-                    continue
-
-                # BLEEDOUT DAMAGE CHANCE
-                if item_data["Name"] == "BleedoutDamageChance":
-                    item_data["Value"] = 0.075
-                    continue
-
-                # PENETRATION
-                if item_data["Name"] == "PenetrationDistance":
-                    item_data["Value"] = 8.5
-                    continue
-
-                # RECOIL PATTERN
-                # if item_data["Name"] == "RecoilPattern":
-                    
-                #     for recoil_main in item_data["Value"]:
-                        
-                #         # ENTER RECOIL ARRAY
-                #         if recoil_main["Name"] == "RecoilPattern":
-                            
-                #             # ENTER RECOIL OBJECT
-                #             for recoil_array in recoil_main["Value"]:
-                #                 if recoil_array["Value"]["Yaw"] == -0.5:
-                #                     recoil_array["Value"]["Pitch"] = random.uniform(5.75, 6.25)
-                #                     continue
-                #                 elif recoil_array["Value"]["Yaw"] == 0.5:
-                #                     recoil_array["Value"]["Pitch"] = random.uniform(5.75, 6.25)
-                #                     continue
-
-        # 870 MCS
-        if item["Name"] == "870mcs":
-            # For every piece of the item data.
-            for item_data in item["Value"]:
-                
-                # NAME
-                if item_data["Name"] == "ItemName":
-                    item_data["CultureInvariantString"] = "Wilson Combat CQB"
-                    continue
-                
-                # DESCRIPTION
-                if item_data["Name"] == "ItemDescription":
-                    item_data["CultureInvariantString"] = "This take on the Remington Model 870 shotgun by Wilson Combat has been developed at the request of tactical shotgunners looking for the ideal tactical shotgun package with the added adjustability and modularity inherent to a collapsible AR-compatible buttstock."
-                    continue
-
-                # WEIGHT
-                if item_data["Name"] == "ItemWeight":
-                    item_data["Value"] = 3.85
-                    continue
-
-                # DAMAGE
-                if item_data["Name"] == "Damage":
-                    item_data["Value"] = 47.5
-                    continue
-
-                # DAMAGE SEVERITY MULTIPLIER
-                if item_data["Name"] == "DamageSeverityMultiplier":
-                    item_data["Value"] = 1.25
-                    continue
-
-                # DAMAGE SEVERITY CHANCE
-                if item_data["Name"] == "DamageSeverityChance":
-                    item_data["Value"] = 0.2
-                    continue
-
-                # BLEEDOUT DAMAGE MULTIPLIER
-                if item_data["Name"] == "BleedoutDamageMultiplier":
-                    item_data["Value"] = 0.1
-                    continue
-
-                # BLEEDOUT DAMAGE CHANCE
-                if item_data["Name"] == "BleedoutDamageChance":
-                    item_data["Value"] = 0.075
-                    continue
-
-                # PENETRATION
-                if item_data["Name"] == "PenetrationDistance":
-                    item_data["Value"] = 8.5
-                    continue
-
-                # RECOIL PATTERN
-                # if item_data["Name"] == "RecoilPattern":
-                    
-                #     for recoil_main in item_data["Value"]:
-                        
-                #         # ENTER RECOIL ARRAY
-                #         if recoil_main["Name"] == "RecoilPattern":
-                            
-                #             # ENTER RECOIL OBJECT
-                #             for recoil_array in recoil_main["Value"]:
-                #                 if recoil_array["Value"]["Yaw"] == -0.5:
-                #                     recoil_array["Value"]["Pitch"] = random.uniform(5.75, 6.25)
-                #                     continue
-                #                 elif recoil_array["Value"]["Yaw"] == 0.5:
-                #                     recoil_array["Value"]["Pitch"] = random.uniform(5.75, 6.25)
-                #                     continue
-
-        # P1301
-        if item["Name"] == "P1301":
-            # For every piece of the item data.
-            for item_data in item["Value"]:
-                
-                # NAME
-                if item_data["Name"] == "ItemName":
-                    item_data["CultureInvariantString"] = "Beretta 1301 Tactical"
-                    continue
-                
-                # DESCRIPTION
-                if item_data["Name"] == "ItemDescription":
-                    item_data["CultureInvariantString"] = "A sturdy tactical shotgun hailing from Italy. Its unique bolt design reduces muzzle climb compared to its counterparts."
-                    continue
-
-                # WEIGHT
-                if item_data["Name"] == "ItemWeight":
-                    item_data["Value"] = 2.9
-                    continue
-
-                # DAMAGE
-                if item_data["Name"] == "Damage":
-                    item_data["Value"] = 47.5
-                    continue
-
-                # DAMAGE SEVERITY MULTIPLIER
-                if item_data["Name"] == "DamageSeverityMultiplier":
-                    item_data["Value"] = 1.25
-                    continue
-
-                # DAMAGE SEVERITY CHANCE
-                if item_data["Name"] == "DamageSeverityChance":
-                    item_data["Value"] = 0.2
-                    continue
-
-                # BLEEDOUT DAMAGE MULTIPLIER
-                if item_data["Name"] == "BleedoutDamageMultiplier":
-                    item_data["Value"] = 0.1
-                    continue
-
-                # BLEEDOUT DAMAGE CHANCE
-                if item_data["Name"] == "BleedoutDamageChance":
-                    item_data["Value"] = 0.075
-                    continue
-
-                # PENETRATION
-                if item_data["Name"] == "PenetrationDistance":
-                    item_data["Value"] = 8.5
-                    continue
-
-                # RECOIL PATTERN
-                # if item_data["Name"] == "RecoilPattern":
-                    
-                #     for recoil_main in item_data["Value"]:
-                        
-                #         # ENTER RECOIL ARRAY
-                #         if recoil_main["Name"] == "RecoilPattern":
-                            
-                #             # ENTER RECOIL OBJECT
-                #             for recoil_array in recoil_main["Value"]:
-                #                 if recoil_array["Value"]["Yaw"] == -0.5:
-                #                     recoil_array["Value"]["Pitch"] = random.uniform(5.75, 6.25)
-                #                     continue
-                #                 elif recoil_array["Value"]["Yaw"] == 0.5:
-                #                     recoil_array["Value"]["Pitch"] = random.uniform(5.75, 6.25)
-                #                     continue
-
-        # P1301 Entryman
-        if item["Name"] == "P1301_Entryman":
-            # For every piece of the item data.
-            for item_data in item["Value"]:
-                
-                # NAME
-                if item_data["Name"] == "ItemName":
-                    item_data["CultureInvariantString"] = "Beretta 1301 Tactical \"Entryman\""
-                    continue
-                
-                # DESCRIPTION
-                if item_data["Name"] == "ItemDescription":
-                    item_data["CultureInvariantString"] = "A sturdy tactical shotgun hailing from Italy. Its unique bolt design reduces muzzle climb compared to its counterparts."
-                    continue
-
-                # WEIGHT
-                if item_data["Name"] == "ItemWeight":
-                    item_data["Value"] = 2.9
-                    continue
-
-                # DAMAGE
-                if item_data["Name"] == "Damage":
-                    item_data["Value"] = 47.5
-                    continue
-
-                # DAMAGE SEVERITY MULTIPLIER
-                if item_data["Name"] == "DamageSeverityMultiplier":
-                    item_data["Value"] = 1.25
-                    continue
-
-                # DAMAGE SEVERITY CHANCE
-                if item_data["Name"] == "DamageSeverityChance":
-                    item_data["Value"] = 0.2
-                    continue
-
-                # BLEEDOUT DAMAGE MULTIPLIER
-                if item_data["Name"] == "BleedoutDamageMultiplier":
-                    item_data["Value"] = 0.1
-                    continue
-
-                # BLEEDOUT DAMAGE CHANCE
-                if item_data["Name"] == "BleedoutDamageChance":
-                    item_data["Value"] = 0.075
-                    continue
-
-                # PENETRATION
-                if item_data["Name"] == "PenetrationDistance":
-                    item_data["Value"] = 8.5
-                    continue
-
-                # RECOIL PATTERN
-                # if item_data["Name"] == "RecoilPattern":
-                    
-                #     for recoil_main in item_data["Value"]:
-                        
-                #         # ENTER RECOIL ARRAY
-                #         if recoil_main["Name"] == "RecoilPattern":
-                            
-                #             # ENTER RECOIL OBJECT
-                #             for recoil_array in recoil_main["Value"]:
-                #                 if recoil_array["Value"]["Yaw"] == -0.5:
-                #                     recoil_array["Value"]["Pitch"] = random.uniform(5.75, 6.25)
-                #                     continue
-                #                 elif recoil_array["Value"]["Yaw"] == 0.5:
-                #                     recoil_array["Value"]["Pitch"] = random.uniform(5.75, 6.25)
-                #                     continue
-
         # BEANBAG
         if item["Name"] == "Beanbag":
             # For every piece of the item data.
@@ -668,6 +322,354 @@ for item in data["Exports"][0]["Table"]["Data"]:
                 #                     recoil_array["Value"]["Pitch"] = random.uniform(4.75, 5.25)
                 #                     continue
 
+        # MK18
+        if item["Name"] == "MK18":
+            
+            # For every piece of the item data.
+            for item_data in item["Value"]:
+                
+                # NAME
+                if item_data["Name"] == "ItemName":
+                    item_data["CultureInvariantString"] = "Mk 18 Mod 0"
+                    continue
+                
+                # DESCRIPTION
+                if item_data["Name"] == "ItemDescription":
+                    item_data["CultureInvariantString"] = "This shorter-barreled M4A1 designated as Mk 18 Mod 0 is a weapon significantly more compact, thus making it easier to use in, and around, vehicles and in tight, confined spaces."
+                    continue
+
+                # WEIGHT
+                if item_data["Name"] == "ItemWeight":
+                    item_data["Value"] = 2.72
+                    continue
+
+                # PUSHBACK RANGE
+                if item_data["Name"] == "PushbackRange":
+                    item_data["Value"] = 160
+                    continue
+
+                # LOW-READY RANGE
+                if item_data["Name"] == "LowReadyRange":
+                    item_data["Value"] = 73
+                    continue
+
+                # MAG WEIGHT FULL
+                if item_data["Name"] == "MagazineWeightFull":
+                    item_data["Value"] = 0.53
+                    continue
+
+                # # DAMAGE SEVERITY MULTIPLIER
+                # if item_data["Name"] == "DamageSeverityMultiplier":
+                #     item_data["Value"] = 1.1
+                #     continue
+
+                # DAMAGE SEVERITY CHANCE
+                # if item_data["Name"] == "DamageSeverityChance":
+                #     item_data["Value"] = 0.1
+                #     continue
+
+                # BLEEDOUT DAMAGE MULTIPLIER
+                # if item_data["Name"] == "BleedoutDamageMultiplier":
+                #     item_data["Value"] = 0.075
+                #     continue
+
+                # BLEEDOUT DAMAGE CHANCE
+                # if item_data["Name"] == "BleedoutDamageChance":
+                #     item_data["Value"] = 0.2
+                #     continue
+
+                # MUZZLE VELOCITY
+                # if item_data["Name"] == "ProjectileMovementSpeed":
+                #     item_data["Value"] = 90521
+                #     continue
+
+                # PENETRATION
+                # if item_data["Name"] == "PenetrationDistance":
+                #     item_data["Value"] = 32.5
+                #     continue
+
+                # RECOIL PATTERN
+                # if item_data["Name"] == "RecoilPattern":
+                    
+                #     for recoil_main in item_data["Value"]:
+                        
+                #         # ENTER RECOIL ARRAY
+                #         if recoil_main["Name"] == "RecoilPattern":
+                            
+                #             # ENTER RECOIL OBJECT
+                #             for recoil_array in recoil_main["Value"]:
+                #                 if recoil_array["Value"]["Yaw"] == -0.4000000059604645:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(1.3, 1.4)
+                #                     continue
+                #                 elif recoil_array["Value"]["Yaw"] == 0.4000000059604645:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(1.3, 1.4)
+                #                     continue
+                
+        # Benelli M4
+        if item["Name"] == "BenelliM4":
+            
+            # For every piece of the item data.
+            for item_data in item["Value"]:
+                
+                # NAME
+                if item_data["Name"] == "ItemName":
+                    item_data["CultureInvariantString"] = "Benelli M4"
+                    continue
+                
+                # DESCRIPTION
+                if item_data["Name"] == "ItemDescription":
+                    item_data["CultureInvariantString"] = "This gas powered combat shotgun is widely considered the best of its breed. Reliable and fast firing, its only major drawback is how quickly you'll empty it if you're not careful."
+                    continue
+
+                # DAMAGE
+                # if item_data["Name"] == "Damage":
+                #     item_data["Value"] = 47.5
+                #     continue
+
+                # # DAMAGE SEVERITY MULTIPLIER
+                # if item_data["Name"] == "DamageSeverityMultiplier":
+                #     item_data["Value"] = 1.25
+                #     continue
+
+                # # DAMAGE SEVERITY CHANCE
+                # if item_data["Name"] == "DamageSeverityChance":
+                #     item_data["Value"] = 0.2
+                #     continue
+
+                # # BLEEDOUT DAMAGE MULTIPLIER
+                # if item_data["Name"] == "BleedoutDamageMultiplier":
+                #     item_data["Value"] = 0.1
+                #     continue
+
+                # # BLEEDOUT DAMAGE CHANCE
+                # if item_data["Name"] == "BleedoutDamageChance":
+                #     item_data["Value"] = 0.075
+                #     continue
+
+                # # PENETRATION
+                # if item_data["Name"] == "PenetrationDistance":
+                #     item_data["Value"] = 8.5
+                #     continue
+
+                # # RECOIL PATTERN
+                # if item_data["Name"] == "RecoilPattern":
+                    
+                #     for recoil_main in item_data["Value"]:
+                        
+                #         # ENTER RECOIL ARRAY
+                #         if recoil_main["Name"] == "RecoilPattern":
+                            
+                #             # ENTER RECOIL OBJECT
+                #             for recoil_array in recoil_main["Value"]:
+                #                 if recoil_array["Value"]["Yaw"] == -0.5:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(5.75, 6.25)
+                #                     continue
+                #                 elif recoil_array["Value"]["Yaw"] == 0.5:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(5.75, 6.25)
+                #                     continue
+
+        # 870 MCS
+        if item["Name"] == "870mcs":
+            # For every piece of the item data.
+            for item_data in item["Value"]:
+                
+                # NAME
+                if item_data["Name"] == "ItemName":
+                    item_data["CultureInvariantString"] = "Wilson Combat CQB"
+                    continue
+                
+                # DESCRIPTION
+                if item_data["Name"] == "ItemDescription":
+                    item_data["CultureInvariantString"] = "This take on the Remington Model 870 shotgun by Wilson Combat has been developed at the request of tactical shotgunners looking for the ideal tactical shotgun package with the added adjustability and modularity inherent to a collapsible AR-compatible buttstock."
+                    continue
+
+                # WEIGHT
+                if item_data["Name"] == "ItemWeight":
+                    item_data["Value"] = 3.85
+                    continue
+
+                # DAMAGE
+                # if item_data["Name"] == "Damage":
+                #     item_data["Value"] = 47.5
+                #     continue
+
+                # # DAMAGE SEVERITY MULTIPLIER
+                # if item_data["Name"] == "DamageSeverityMultiplier":
+                #     item_data["Value"] = 1.25
+                #     continue
+
+                # # DAMAGE SEVERITY CHANCE
+                # if item_data["Name"] == "DamageSeverityChance":
+                #     item_data["Value"] = 0.2
+                #     continue
+
+                # # BLEEDOUT DAMAGE MULTIPLIER
+                # if item_data["Name"] == "BleedoutDamageMultiplier":
+                #     item_data["Value"] = 0.1
+                #     continue
+
+                # # BLEEDOUT DAMAGE CHANCE
+                # if item_data["Name"] == "BleedoutDamageChance":
+                #     item_data["Value"] = 0.075
+                #     continue
+
+                # # PENETRATION
+                # if item_data["Name"] == "PenetrationDistance":
+                #     item_data["Value"] = 8.5
+                #     continue
+
+                # # RECOIL PATTERN
+                # if item_data["Name"] == "RecoilPattern":
+                    
+                #     for recoil_main in item_data["Value"]:
+                        
+                #         # ENTER RECOIL ARRAY
+                #         if recoil_main["Name"] == "RecoilPattern":
+                            
+                #             # ENTER RECOIL OBJECT
+                #             for recoil_array in recoil_main["Value"]:
+                #                 if recoil_array["Value"]["Yaw"] == -0.5:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(5.75, 6.25)
+                #                     continue
+                #                 elif recoil_array["Value"]["Yaw"] == 0.5:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(5.75, 6.25)
+                #                     continue
+
+        # P1301
+        if item["Name"] == "P1301":
+            # For every piece of the item data.
+            for item_data in item["Value"]:
+                
+                # NAME
+                if item_data["Name"] == "ItemName":
+                    item_data["CultureInvariantString"] = "Beretta 1301 Tactical"
+                    continue
+                
+                # DESCRIPTION
+                if item_data["Name"] == "ItemDescription":
+                    item_data["CultureInvariantString"] = "A sturdy tactical shotgun hailing from Italy. Its unique bolt design reduces muzzle climb compared to its counterparts."
+                    continue
+
+                # WEIGHT
+                if item_data["Name"] == "ItemWeight":
+                    item_data["Value"] = 2.9
+                    continue
+
+                # DAMAGE
+                # if item_data["Name"] == "Damage":
+                #     item_data["Value"] = 47.5
+                #     continue
+
+                # # DAMAGE SEVERITY MULTIPLIER
+                # if item_data["Name"] == "DamageSeverityMultiplier":
+                #     item_data["Value"] = 1.25
+                #     continue
+
+                # # DAMAGE SEVERITY CHANCE
+                # if item_data["Name"] == "DamageSeverityChance":
+                #     item_data["Value"] = 0.2
+                #     continue
+
+                # # BLEEDOUT DAMAGE MULTIPLIER
+                # if item_data["Name"] == "BleedoutDamageMultiplier":
+                #     item_data["Value"] = 0.1
+                #     continue
+
+                # # BLEEDOUT DAMAGE CHANCE
+                # if item_data["Name"] == "BleedoutDamageChance":
+                #     item_data["Value"] = 0.075
+                #     continue
+
+                # # PENETRATION
+                # if item_data["Name"] == "PenetrationDistance":
+                #     item_data["Value"] = 8.5
+                #     continue
+
+                # # RECOIL PATTERN
+                # if item_data["Name"] == "RecoilPattern":
+                    
+                #     for recoil_main in item_data["Value"]:
+                        
+                #         # ENTER RECOIL ARRAY
+                #         if recoil_main["Name"] == "RecoilPattern":
+                            
+                #             # ENTER RECOIL OBJECT
+                #             for recoil_array in recoil_main["Value"]:
+                #                 if recoil_array["Value"]["Yaw"] == -0.5:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(5.75, 6.25)
+                #                     continue
+                #                 elif recoil_array["Value"]["Yaw"] == 0.5:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(5.75, 6.25)
+                #                     continue
+
+        # P1301 Entryman
+        if item["Name"] == "P1301_Entryman":
+            
+            # For every piece of the item data.
+            for item_data in item["Value"]:
+                
+                # NAME
+                if item_data["Name"] == "ItemName":
+                    item_data["CultureInvariantString"] = "Beretta 1301 Tactical \"Entryman\""
+                    continue
+                
+                # DESCRIPTION
+                if item_data["Name"] == "ItemDescription":
+                    item_data["CultureInvariantString"] = "A sturdy tactical shotgun hailing from Italy. Its unique bolt design reduces muzzle climb compared to its counterparts."
+                    continue
+
+                # WEIGHT
+                if item_data["Name"] == "ItemWeight":
+                    item_data["Value"] = 2.9
+                    continue
+
+                # DAMAGE
+                # if item_data["Name"] == "Damage":
+                #     item_data["Value"] = 47.5
+                #     continue
+
+                # # DAMAGE SEVERITY MULTIPLIER
+                # if item_data["Name"] == "DamageSeverityMultiplier":
+                #     item_data["Value"] = 1.25
+                #     continue
+
+                # # DAMAGE SEVERITY CHANCE
+                # if item_data["Name"] == "DamageSeverityChance":
+                #     item_data["Value"] = 0.2
+                #     continue
+
+                # # BLEEDOUT DAMAGE MULTIPLIER
+                # if item_data["Name"] == "BleedoutDamageMultiplier":
+                #     item_data["Value"] = 0.1
+                #     continue
+
+                # # BLEEDOUT DAMAGE CHANCE
+                # if item_data["Name"] == "BleedoutDamageChance":
+                #     item_data["Value"] = 0.075
+                #     continue
+
+                # # PENETRATION
+                # if item_data["Name"] == "PenetrationDistance":
+                #     item_data["Value"] = 8.5
+                #     continue
+
+                # # RECOIL PATTERN
+                # if item_data["Name"] == "RecoilPattern":
+                    
+                #     for recoil_main in item_data["Value"]:
+                        
+                #         # ENTER RECOIL ARRAY
+                #         if recoil_main["Name"] == "RecoilPattern":
+                            
+                #             # ENTER RECOIL OBJECT
+                #             for recoil_array in recoil_main["Value"]:
+                #                 if recoil_array["Value"]["Yaw"] == -0.5:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(5.75, 6.25)
+                #                     continue
+                #                 elif recoil_array["Value"]["Yaw"] == 0.5:
+                #                     recoil_array["Value"]["Pitch"] = random.uniform(5.75, 6.25)
+                #                     continue
+
         # FAL
         if item["Name"] == "FAL":
             
@@ -695,31 +697,31 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     continue
 
                 # DAMAGE 
-                if item_data["Name"] == "Damage":
-                    item_data["Value"] = 65
-                    continue
+                # if item_data["Name"] == "Damage":
+                #     item_data["Value"] = 65
+                #     continue
 
-                # DAMAGE SEVERITY MULTIPLIER
-                if item_data["Name"] == "DamageSeverityMultiplier":
-                    item_data["Value"] = 1.2
-                    continue
+                # # DAMAGE SEVERITY MULTIPLIER
+                # if item_data["Name"] == "DamageSeverityMultiplier":
+                #     item_data["Value"] = 1.2
+                #     continue
 
-                # DAMAGE SEVERITY CHANCE
-                if item_data["Name"] == "DamageSeverityChance":
-                    item_data["Value"] = 0.1
-                    continue
+                # # DAMAGE SEVERITY CHANCE
+                # if item_data["Name"] == "DamageSeverityChance":
+                #     item_data["Value"] = 0.1
+                #     continue
 
-                # BLEEDOUT DAMAGE MULTIPLIER
-                if item_data["Name"] == "BleedoutDamageMultiplier":
-                    item_data["Value"] = 0.2
-                    continue
+                # # BLEEDOUT DAMAGE MULTIPLIER
+                # if item_data["Name"] == "BleedoutDamageMultiplier":
+                #     item_data["Value"] = 0.2
+                #     continue
 
-                # BLEEDOUT DAMAGE CHANCE
-                if item_data["Name"] == "BleedoutDamageChance":
-                    item_data["Value"] = 0.2
-                    continue
+                # # BLEEDOUT DAMAGE CHANCE
+                # if item_data["Name"] == "BleedoutDamageChance":
+                #     item_data["Value"] = 0.2
+                #     continue
 
-                # RECOIL PATTERN
+                # # RECOIL PATTERN
                 # if item_data["Name"] == "RecoilPattern":
                     
                 #     for recoil_main in item_data["Value"]:
@@ -768,41 +770,41 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     continue
 
                 # DAMAGE
-                if item_data["Name"] == "Damage":
-                    item_data["Value"] = 50
-                    continue
+                # if item_data["Name"] == "Damage":
+                #     item_data["Value"] = 50
+                #     continue
 
-                # DAMAGE SEVERITY MULTIPLIER
-                if item_data["Name"] == "DamageSeverityMultiplier":
-                    item_data["Value"] = 1.1
-                    continue
+                # # DAMAGE SEVERITY MULTIPLIER
+                # if item_data["Name"] == "DamageSeverityMultiplier":
+                #     item_data["Value"] = 1.1
+                #     continue
 
-                # DAMAGE SEVERITY CHANCE
-                if item_data["Name"] == "DamageSeverityChance":
-                    item_data["Value"] = 0.05
-                    continue
+                # # DAMAGE SEVERITY CHANCE
+                # if item_data["Name"] == "DamageSeverityChance":
+                #     item_data["Value"] = 0.05
+                #     continue
 
-                # BLEEDOUT DAMAGE MULTIPLIER
-                if item_data["Name"] == "BleedoutDamageMultiplier":
-                    item_data["Value"] = 0.075
-                    continue
+                # # BLEEDOUT DAMAGE MULTIPLIER
+                # if item_data["Name"] == "BleedoutDamageMultiplier":
+                #     item_data["Value"] = 0.075
+                #     continue
 
-                # BLEEDOUT DAMAGE CHANCE
-                if item_data["Name"] == "BleedoutDamageChance":
-                    item_data["Value"] = 0.2
-                    continue
+                # # BLEEDOUT DAMAGE CHANCE
+                # if item_data["Name"] == "BleedoutDamageChance":
+                #     item_data["Value"] = 0.2
+                #     continue
 
-                # MUZZLE VELOCITY
-                if item_data["Name"] == "ProjectileMovementSpeed":
-                    item_data["Value"] = 78774
-                    continue
+                # # MUZZLE VELOCITY
+                # if item_data["Name"] == "ProjectileMovementSpeed":
+                #     item_data["Value"] = 78774
+                #     continue
 
-                # PENETRATION
-                if item_data["Name"] == "PenetrationDistance":
-                    item_data["Value"] = 30
-                    continue
+                # # PENETRATION
+                # if item_data["Name"] == "PenetrationDistance":
+                #     item_data["Value"] = 30
+                #     continue
 
-                # RECOIL PATTERN
+                # # RECOIL PATTERN
                 # if item_data["Name"] == "RecoilPattern":
                     
                 #     for recoil_main in item_data["Value"]:
@@ -856,36 +858,36 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     continue
 
                 # DAMAGE
-                if item_data["Name"] == "Damage":
-                    item_data["Value"] = 40
-                    continue
+                # if item_data["Name"] == "Damage":
+                #     item_data["Value"] = 40
+                #     continue
 
-                # DAMAGE SEVERITY MULTIPLIER
-                if item_data["Name"] == "DamageSeverityMultiplier":
-                    item_data["Value"] = 1.05
-                    continue
+                # # DAMAGE SEVERITY MULTIPLIER
+                # if item_data["Name"] == "DamageSeverityMultiplier":
+                #     item_data["Value"] = 1.05
+                #     continue
 
-                # DAMAGE SEVERITY CHANCE
-                if item_data["Name"] == "DamageSeverityChance":
-                    item_data["Value"] = 0.05
-                    continue
+                # # DAMAGE SEVERITY CHANCE
+                # if item_data["Name"] == "DamageSeverityChance":
+                #     item_data["Value"] = 0.05
+                #     continue
 
-                # BLEEDOUT DAMAGE MULTIPLIER
-                if item_data["Name"] == "BleedoutDamageMultiplier":
-                    item_data["Value"] = 0.1
-                    continue
+                # # BLEEDOUT DAMAGE MULTIPLIER
+                # if item_data["Name"] == "BleedoutDamageMultiplier":
+                #     item_data["Value"] = 0.1
+                #     continue
 
-                # BLEEDOUT DAMAGE CHANCE
-                if item_data["Name"] == "BleedoutDamageChance":
-                    item_data["Value"] = 0.2
-                    continue
+                # # BLEEDOUT DAMAGE CHANCE
+                # if item_data["Name"] == "BleedoutDamageChance":
+                #     item_data["Value"] = 0.2
+                #     continue
 
-                # PENETRATION
-                if item_data["Name"] == "PenetrationDistance":
-                    item_data["Value"] = 12
-                    continue
+                # # PENETRATION
+                # if item_data["Name"] == "PenetrationDistance":
+                #     item_data["Value"] = 12
+                #     continue
 
-                # RECOIL PATTERN
+                # # RECOIL PATTERN
                 # if item_data["Name"] == "RecoilPattern":
                     
                 #     for recoil_main in item_data["Value"]:
@@ -924,31 +926,31 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     continue
 
                 # DAMAGE SEVERITY MULTIPLIER
-                if item_data["Name"] == "DamageSeverityMultiplier":
-                    item_data["Value"] = 1.05
-                    continue
+                # if item_data["Name"] == "DamageSeverityMultiplier":
+                #     item_data["Value"] = 1.05
+                #     continue
 
-                # DAMAGE SEVERITY CHANCE
-                if item_data["Name"] == "DamageSeverityChance":
-                    item_data["Value"] = 0.05
-                    continue
+                # # DAMAGE SEVERITY CHANCE
+                # if item_data["Name"] == "DamageSeverityChance":
+                #     item_data["Value"] = 0.05
+                #     continue
 
-                # BLEEDOUT DAMAGE MULTIPLIER
-                if item_data["Name"] == "BleedoutDamageMultiplier":
-                    item_data["Value"] = 0.1
-                    continue
+                # # BLEEDOUT DAMAGE MULTIPLIER
+                # if item_data["Name"] == "BleedoutDamageMultiplier":
+                #     item_data["Value"] = 0.1
+                #     continue
 
-                # BLEEDOUT DAMAGE CHANCE
-                if item_data["Name"] == "BleedoutDamageChance":
-                    item_data["Value"] = 0.125
-                    continue
+                # # BLEEDOUT DAMAGE CHANCE
+                # if item_data["Name"] == "BleedoutDamageChance":
+                #     item_data["Value"] = 0.125
+                #     continue
 
-                # PENETRATION
-                if item_data["Name"] == "PenetrationDistance":
-                    item_data["Value"] = 20
-                    continue
+                # # PENETRATION
+                # if item_data["Name"] == "PenetrationDistance":
+                #     item_data["Value"] = 20
+                #     continue
 
-                # RECOIL PATTERN
+                # # RECOIL PATTERN
                 # if item_data["Name"] == "RecoilPattern":
                     
                 #     for recoil_main in item_data["Value"]:
@@ -990,31 +992,31 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     continue
 
                 # DAMAGE SEVERITY MULTIPLIER
-                if item_data["Name"] == "DamageSeverityMultiplier":
-                    item_data["Value"] = 1.05
-                    continue
+                # if item_data["Name"] == "DamageSeverityMultiplier":
+                #     item_data["Value"] = 1.05
+                #     continue
 
-                # DAMAGE SEVERITY CHANCE
-                if item_data["Name"] == "DamageSeverityChance":
-                    item_data["Value"] = 0.05
-                    continue
+                # # DAMAGE SEVERITY CHANCE
+                # if item_data["Name"] == "DamageSeverityChance":
+                #     item_data["Value"] = 0.05
+                #     continue
 
-                # BLEEDOUT DAMAGE MULTIPLIER
-                if item_data["Name"] == "BleedoutDamageMultiplier":
-                    item_data["Value"] = 0.1
-                    continue
+                # # BLEEDOUT DAMAGE MULTIPLIER
+                # if item_data["Name"] == "BleedoutDamageMultiplier":
+                #     item_data["Value"] = 0.1
+                #     continue
 
-                # BLEEDOUT DAMAGE CHANCE
-                if item_data["Name"] == "BleedoutDamageChance":
-                    item_data["Value"] = 0.125
-                    continue
+                # # BLEEDOUT DAMAGE CHANCE
+                # if item_data["Name"] == "BleedoutDamageChance":
+                #     item_data["Value"] = 0.125
+                #     continue
 
-                # PENETRATION
-                if item_data["Name"] == "PenetrationDistance":
-                    item_data["Value"] = 20
-                    continue
+                # # PENETRATION
+                # if item_data["Name"] == "PenetrationDistance":
+                #     item_data["Value"] = 20
+                #     continue
 
-                # RECOIL PATTERN
+                # # RECOIL PATTERN
                 # if item_data["Name"] == "RecoilPattern":
                     
                 #     for recoil_main in item_data["Value"]:
@@ -1061,36 +1063,36 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     continue
 
                 # DAMAGE
-                if item_data["Name"] == "DamageSeverityMultiplier":
-                    item_data["Value"] = 37.5
-                    continue
+                # if item_data["Name"] == "DamageSeverityMultiplier":
+                #     item_data["Value"] = 37.5
+                #     continue
 
-                # DAMAGE SEVERITY MULTIPLIER
-                if item_data["Name"] == "DamageSeverityMultiplier":
-                    item_data["Value"] = 1.1
-                    continue
+                # # DAMAGE SEVERITY MULTIPLIER
+                # if item_data["Name"] == "DamageSeverityMultiplier":
+                #     item_data["Value"] = 1.1
+                #     continue
 
-                # DAMAGE SEVERITY CHANCE
-                if item_data["Name"] == "DamageSeverityChance":
-                    item_data["Value"] = 0.05
-                    continue
+                # # DAMAGE SEVERITY CHANCE
+                # if item_data["Name"] == "DamageSeverityChance":
+                #     item_data["Value"] = 0.05
+                #     continue
 
-                # BLEEDOUT DAMAGE MULTIPLIER
-                if item_data["Name"] == "BleedoutDamageMultiplier":
-                    item_data["Value"] = 0.07
-                    continue
+                # # BLEEDOUT DAMAGE MULTIPLIER
+                # if item_data["Name"] == "BleedoutDamageMultiplier":
+                #     item_data["Value"] = 0.07
+                #     continue
 
-                # BLEEDOUT DAMAGE CHANCE
-                if item_data["Name"] == "BleedoutDamageChance":
-                    item_data["Value"] = 0.2
-                    continue
+                # # BLEEDOUT DAMAGE CHANCE
+                # if item_data["Name"] == "BleedoutDamageChance":
+                #     item_data["Value"] = 0.2
+                #     continue
 
-                # PENETRATION
-                if item_data["Name"] == "PenetrationDistance":
-                    item_data["Value"] = 17
-                    continue
+                # # PENETRATION
+                # if item_data["Name"] == "PenetrationDistance":
+                #     item_data["Value"] = 17
+                #     continue
 
-                # RECOIL PATTERN
+                # # RECOIL PATTERN
                 # if item_data["Name"] == "RecoilPattern":
                     
                 #     for recoil_main in item_data["Value"]:
@@ -1134,36 +1136,36 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     continue
 
                 # DAMAGE SEVERITY MULTIPLIER
-                if item_data["Name"] == "DamageSeverityMultiplier":
-                    item_data["Value"] = 1.05
-                    continue
+                # if item_data["Name"] == "DamageSeverityMultiplier":
+                #     item_data["Value"] = 1.05
+                #     continue
 
-                # DAMAGE SEVERITY CHANCE
-                if item_data["Name"] == "DamageSeverityChance":
-                    item_data["Value"] = 0.05
-                    continue
+                # # DAMAGE SEVERITY CHANCE
+                # if item_data["Name"] == "DamageSeverityChance":
+                #     item_data["Value"] = 0.05
+                #     continue
 
-                # BLEEDOUT DAMAGE MULTIPLIER
-                if item_data["Name"] == "BleedoutDamageMultiplier":
-                    item_data["Value"] = 0.1
-                    continue
+                # # BLEEDOUT DAMAGE MULTIPLIER
+                # if item_data["Name"] == "BleedoutDamageMultiplier":
+                #     item_data["Value"] = 0.1
+                #     continue
 
-                # BLEEDOUT DAMAGE CHANCE
-                if item_data["Name"] == "BleedoutDamageChance":
-                    item_data["Value"] = 0.125
-                    continue
+                # # BLEEDOUT DAMAGE CHANCE
+                # if item_data["Name"] == "BleedoutDamageChance":
+                #     item_data["Value"] = 0.125
+                #     continue
 
-                # MUZZLE VELOCITY
-                if item_data["Name"] == "ProjectileMovementSpeed":
-                    item_data["Value"] = 40000
-                    continue
+                # # MUZZLE VELOCITY
+                # if item_data["Name"] == "ProjectileMovementSpeed":
+                #     item_data["Value"] = 40000
+                #     continue
 
-                # PENETRATION
-                if item_data["Name"] == "PenetrationDistance":
-                    item_data["Value"] = 20
-                    continue
+                # # PENETRATION
+                # if item_data["Name"] == "PenetrationDistance":
+                #     item_data["Value"] = 20
+                #     continue
 
-                # RECOIL PATTERN
+                # # RECOIL PATTERN
                 # if item_data["Name"] == "RecoilPattern":
                     
                 #     for recoil_main in item_data["Value"]:
@@ -1207,36 +1209,36 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     continue
 
                 # DAMAGE SEVERITY MULTIPLIER
-                if item_data["Name"] == "DamageSeverityMultiplier":
-                    item_data["Value"] = 1.05
-                    continue
+                # if item_data["Name"] == "DamageSeverityMultiplier":
+                #     item_data["Value"] = 1.05
+                #     continue
 
-                # DAMAGE SEVERITY CHANCE
-                if item_data["Name"] == "DamageSeverityChance":
-                    item_data["Value"] = 0.05
-                    continue
+                # # DAMAGE SEVERITY CHANCE
+                # if item_data["Name"] == "DamageSeverityChance":
+                #     item_data["Value"] = 0.05
+                #     continue
 
-                # BLEEDOUT DAMAGE MULTIPLIER
-                if item_data["Name"] == "BleedoutDamageMultiplier":
-                    item_data["Value"] = 0.1
-                    continue
+                # # BLEEDOUT DAMAGE MULTIPLIER
+                # if item_data["Name"] == "BleedoutDamageMultiplier":
+                #     item_data["Value"] = 0.1
+                #     continue
 
-                # BLEEDOUT DAMAGE CHANCE
-                if item_data["Name"] == "BleedoutDamageChance":
-                    item_data["Value"] = 0.125
-                    continue
+                # # BLEEDOUT DAMAGE CHANCE
+                # if item_data["Name"] == "BleedoutDamageChance":
+                #     item_data["Value"] = 0.125
+                #     continue
 
-                # MUZZLE VELOCITY
-                if item_data["Name"] == "ProjectileMovementSpeed":
-                    item_data["Value"] = 40000
-                    continue
+                # # MUZZLE VELOCITY
+                # if item_data["Name"] == "ProjectileMovementSpeed":
+                #     item_data["Value"] = 40000
+                #     continue
 
-                # PENETRATION
-                if item_data["Name"] == "PenetrationDistance":
-                    item_data["Value"] = 20
-                    continue
+                # # PENETRATION
+                # if item_data["Name"] == "PenetrationDistance":
+                #     item_data["Value"] = 20
+                #     continue
 
-                # RECOIL PATTERN
+                # # RECOIL PATTERN
                 # if item_data["Name"] == "RecoilPattern":
                     
                 #     for recoil_main in item_data["Value"]:
@@ -1280,41 +1282,41 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     continue
 
                 # DAMAGE 
-                if item_data["Name"] == "Damage":
-                    item_data["Value"] = 24
-                    continue
+                # if item_data["Name"] == "Damage":
+                #     item_data["Value"] = 24
+                #     continue
 
-                # DAMAGE SEVERITY MULTIPLIER
-                if item_data["Name"] == "DamageSeverityMultiplier":
-                    item_data["Value"] = 1.05
-                    continue
+                # # DAMAGE SEVERITY MULTIPLIER
+                # if item_data["Name"] == "DamageSeverityMultiplier":
+                #     item_data["Value"] = 1.05
+                #     continue
 
-                # DAMAGE SEVERITY CHANCE
-                if item_data["Name"] == "DamageSeverityChance":
-                    item_data["Value"] = 0.05
-                    continue
+                # # DAMAGE SEVERITY CHANCE
+                # if item_data["Name"] == "DamageSeverityChance":
+                #     item_data["Value"] = 0.05
+                #     continue
 
-                # BLEEDOUT DAMAGE MULTIPLIER
-                if item_data["Name"] == "BleedoutDamageMultiplier":
-                    item_data["Value"] = 0.1
-                    continue
+                # # BLEEDOUT DAMAGE MULTIPLIER
+                # if item_data["Name"] == "BleedoutDamageMultiplier":
+                #     item_data["Value"] = 0.1
+                #     continue
 
-                # BLEEDOUT DAMAGE CHANCE
-                if item_data["Name"] == "BleedoutDamageChance":
-                    item_data["Value"] = 0.125
-                    continue
+                # # BLEEDOUT DAMAGE CHANCE
+                # if item_data["Name"] == "BleedoutDamageChance":
+                #     item_data["Value"] = 0.125
+                #     continue
 
-                # MUZZLE VELOCITY
-                if item_data["Name"] == "ProjectileMovementSpeed":
-                    item_data["Value"] = 30000
-                    continue
+                # # MUZZLE VELOCITY
+                # if item_data["Name"] == "ProjectileMovementSpeed":
+                #     item_data["Value"] = 30000
+                #     continue
 
-                # PENETRATION
-                if item_data["Name"] == "PenetrationDistance":
-                    item_data["Value"] = 22
-                    continue
+                # # PENETRATION
+                # if item_data["Name"] == "PenetrationDistance":
+                #     item_data["Value"] = 22
+                #     continue
 
-                # RECOIL PATTERN
+                # # RECOIL PATTERN
                 # if item_data["Name"] == "RecoilPattern":
                     
                 #     for recoil_main in item_data["Value"]:
@@ -1358,41 +1360,41 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     continue
 
                 # DAMAGE 
-                if item_data["Name"] == "Damage":
-                    item_data["Value"] = 28
-                    continue
+                # if item_data["Name"] == "Damage":
+                #     item_data["Value"] = 28
+                #     continue
 
-                # DAMAGE SEVERITY MULTIPLIER
-                if item_data["Name"] == "DamageSeverityMultiplier":
-                    item_data["Value"] = 1.05
-                    continue
+                # # DAMAGE SEVERITY MULTIPLIER
+                # if item_data["Name"] == "DamageSeverityMultiplier":
+                #     item_data["Value"] = 1.05
+                #     continue
 
-                # DAMAGE SEVERITY CHANCE
-                if item_data["Name"] == "DamageSeverityChance":
-                    item_data["Value"] = 0.05
-                    continue
+                # # DAMAGE SEVERITY CHANCE
+                # if item_data["Name"] == "DamageSeverityChance":
+                #     item_data["Value"] = 0.05
+                #     continue
 
-                # BLEEDOUT DAMAGE MULTIPLIER
-                if item_data["Name"] == "BleedoutDamageMultiplier":
-                    item_data["Value"] = 0.1
-                    continue
+                # # BLEEDOUT DAMAGE MULTIPLIER
+                # if item_data["Name"] == "BleedoutDamageMultiplier":
+                #     item_data["Value"] = 0.1
+                #     continue
 
-                # BLEEDOUT DAMAGE CHANCE
-                if item_data["Name"] == "BleedoutDamageChance":
-                    item_data["Value"] = 0.125
-                    continue
+                # # BLEEDOUT DAMAGE CHANCE
+                # if item_data["Name"] == "BleedoutDamageChance":
+                #     item_data["Value"] = 0.125
+                #     continue
 
-                # MUZZLE VELOCITY
-                if item_data["Name"] == "ProjectileMovementSpeed":
-                    item_data["Value"] = 30000
-                    continue
+                # # MUZZLE VELOCITY
+                # if item_data["Name"] == "ProjectileMovementSpeed":
+                #     item_data["Value"] = 30000
+                #     continue
 
-                # PENETRATION
-                if item_data["Name"] == "PenetrationDistance":
-                    item_data["Value"] = 18
-                    continue
+                # # PENETRATION
+                # if item_data["Name"] == "PenetrationDistance":
+                #     item_data["Value"] = 18
+                #     continue
 
-                # RECOIL PATTERN
+                # # RECOIL PATTERN
                 # if item_data["Name"] == "RecoilPattern":
                     
                 #     for recoil_main in item_data["Value"]:
@@ -1446,36 +1448,36 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     continue
 
                 # DAMAGE
-                if item_data["Name"] == "Damage":
-                    item_data["Value"] = 52.5
-                    continue
+                # if item_data["Name"] == "Damage":
+                #     item_data["Value"] = 52.5
+                #     continue
 
-                # DAMAGE SEVERITY MULTIPLIER
-                if item_data["Name"] == "DamageSeverityMultiplier":
-                    item_data["Value"] = 1.1
-                    continue
+                # # DAMAGE SEVERITY MULTIPLIER
+                # if item_data["Name"] == "DamageSeverityMultiplier":
+                #     item_data["Value"] = 1.1
+                #     continue
 
-                # DAMAGE SEVERITY CHANCE
-                if item_data["Name"] == "DamageSeverityChance":
-                    item_data["Value"] = 0.1
-                    continue
+                # # DAMAGE SEVERITY CHANCE
+                # if item_data["Name"] == "DamageSeverityChance":
+                #     item_data["Value"] = 0.1
+                #     continue
 
-                # BLEEDOUT DAMAGE MULTIPLIER
-                if item_data["Name"] == "BleedoutDamageMultiplier":
-                    item_data["Value"] = 0.1
-                    continue
+                # # BLEEDOUT DAMAGE MULTIPLIER
+                # if item_data["Name"] == "BleedoutDamageMultiplier":
+                #     item_data["Value"] = 0.1
+                #     continue
 
-                # BLEEDOUT DAMAGE CHANCE
-                if item_data["Name"] == "BleedoutDamageChance":
-                    item_data["Value"] = 0.2
-                    continue
+                # # BLEEDOUT DAMAGE CHANCE
+                # if item_data["Name"] == "BleedoutDamageChance":
+                #     item_data["Value"] = 0.2
+                #     continue
 
-                # PENETRATION
-                if item_data["Name"] == "PenetrationDistance":
-                    item_data["Value"] = 36.5
-                    continue
+                # # PENETRATION
+                # if item_data["Name"] == "PenetrationDistance":
+                #     item_data["Value"] = 36.5
+                #     continue
 
-                # RECOIL PATTERN
+                # # RECOIL PATTERN
                 # if item_data["Name"] == "RecoilPattern":
                     
                 #     for recoil_main in item_data["Value"]:
@@ -1525,41 +1527,41 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     continue
 
                 # DAMAGE
-                if item_data["Name"] == "Damage":
-                    item_data["Value"] = 50
-                    continue
+                # if item_data["Name"] == "Damage":
+                #     item_data["Value"] = 50
+                #     continue
 
-                # DAMAGE SEVERITY MULTIPLIER
-                if item_data["Name"] == "DamageSeverityMultiplier":
-                    item_data["Value"] = 1.1
-                    continue
+                # # DAMAGE SEVERITY MULTIPLIER
+                # if item_data["Name"] == "DamageSeverityMultiplier":
+                #     item_data["Value"] = 1.1
+                #     continue
 
-                # DAMAGE SEVERITY CHANCE
-                if item_data["Name"] == "DamageSeverityChance":
-                    item_data["Value"] = 0.05
-                    continue
+                # # DAMAGE SEVERITY CHANCE
+                # if item_data["Name"] == "DamageSeverityChance":
+                #     item_data["Value"] = 0.05
+                #     continue
 
-                # BLEEDOUT DAMAGE MULTIPLIER
-                if item_data["Name"] == "BleedoutDamageMultiplier":
-                    item_data["Value"] = 0.075
-                    continue
+                # # BLEEDOUT DAMAGE MULTIPLIER
+                # if item_data["Name"] == "BleedoutDamageMultiplier":
+                #     item_data["Value"] = 0.075
+                #     continue
 
-                # BLEEDOUT DAMAGE CHANCE
-                if item_data["Name"] == "BleedoutDamageChance":
-                    item_data["Value"] = 0.2
-                    continue
+                # # BLEEDOUT DAMAGE CHANCE
+                # if item_data["Name"] == "BleedoutDamageChance":
+                #     item_data["Value"] = 0.2
+                #     continue
 
-                # MUZZLE VELOCITY
-                if item_data["Name"] == "ProjectileMovementSpeed":
-                    item_data["Value"] = 100886
-                    continue
+                # # MUZZLE VELOCITY
+                # if item_data["Name"] == "ProjectileMovementSpeed":
+                #     item_data["Value"] = 100886
+                #     continue
 
-                # PENETRATION
-                if item_data["Name"] == "PenetrationDistance":
-                    item_data["Value"] = 40
-                    continue
+                # # PENETRATION
+                # if item_data["Name"] == "PenetrationDistance":
+                #     item_data["Value"] = 40
+                #     continue
 
-                # RECOIL PATTERN
+                # # RECOIL PATTERN
                 # if item_data["Name"] == "RecoilPattern":
                     
                 #     for recoil_main in item_data["Value"]:
@@ -1616,41 +1618,41 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     continue
 
                 # DAMAGE
-                if item_data["Name"] == "Damage":
-                    item_data["Value"] = 50
-                    continue
+                # if item_data["Name"] == "Damage":
+                #     item_data["Value"] = 50
+                #     continue
 
-                # DAMAGE SEVERITY MULTIPLIER
-                if item_data["Name"] == "DamageSeverityMultiplier":
-                    item_data["Value"] = 1.1
-                    continue
+                # # DAMAGE SEVERITY MULTIPLIER
+                # if item_data["Name"] == "DamageSeverityMultiplier":
+                #     item_data["Value"] = 1.1
+                #     continue
 
-                # DAMAGE SEVERITY CHANCE
-                if item_data["Name"] == "DamageSeverityChance":
-                    item_data["Value"] = 0.05
-                    continue
+                # # DAMAGE SEVERITY CHANCE
+                # if item_data["Name"] == "DamageSeverityChance":
+                #     item_data["Value"] = 0.05
+                #     continue
 
-                # BLEEDOUT DAMAGE MULTIPLIER
-                if item_data["Name"] == "BleedoutDamageMultiplier":
-                    item_data["Value"] = 0.075
-                    continue
+                # # BLEEDOUT DAMAGE MULTIPLIER
+                # if item_data["Name"] == "BleedoutDamageMultiplier":
+                #     item_data["Value"] = 0.075
+                #     continue
 
-                # BLEEDOUT DAMAGE CHANCE
-                if item_data["Name"] == "BleedoutDamageChance":
-                    item_data["Value"] = 0.2
-                    continue
+                # # BLEEDOUT DAMAGE CHANCE
+                # if item_data["Name"] == "BleedoutDamageChance":
+                #     item_data["Value"] = 0.2
+                #     continue
 
-                # MUZZLE VELOCITY
-                if item_data["Name"] == "ProjectileMovementSpeed":
-                    item_data["Value"] = 100886
-                    continue
+                # # MUZZLE VELOCITY
+                # if item_data["Name"] == "ProjectileMovementSpeed":
+                #     item_data["Value"] = 100886
+                #     continue
 
-                # PENETRATION
-                if item_data["Name"] == "PenetrationDistance":
-                    item_data["Value"] = 40
-                    continue
+                # # PENETRATION
+                # if item_data["Name"] == "PenetrationDistance":
+                #     item_data["Value"] = 40
+                #     continue
 
-                # RECOIL PATTERN
+                # # RECOIL PATTERN
                 # if item_data["Name"] == "RecoilPattern":
                     
                 #     for recoil_main in item_data["Value"]:
@@ -1697,41 +1699,41 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     continue
 
                 # DAMAGE
-                if item_data["Name"] == "Damage":
-                    item_data["Value"] = 50
-                    continue
+                # if item_data["Name"] == "Damage":
+                #     item_data["Value"] = 50
+                #     continue
 
-                # DAMAGE SEVERITY MULTIPLIER
-                if item_data["Name"] == "DamageSeverityMultiplier":
-                    item_data["Value"] = 1.1
-                    continue
+                # # DAMAGE SEVERITY MULTIPLIER
+                # if item_data["Name"] == "DamageSeverityMultiplier":
+                #     item_data["Value"] = 1.1
+                #     continue
 
-                # DAMAGE SEVERITY CHANCE
-                if item_data["Name"] == "DamageSeverityChance":
-                    item_data["Value"] = 0.05
-                    continue
+                # # DAMAGE SEVERITY CHANCE
+                # if item_data["Name"] == "DamageSeverityChance":
+                #     item_data["Value"] = 0.05
+                #     continue
 
-                # BLEEDOUT DAMAGE MULTIPLIER
-                if item_data["Name"] == "BleedoutDamageMultiplier":
-                    item_data["Value"] = 0.075
-                    continue
+                # # BLEEDOUT DAMAGE MULTIPLIER
+                # if item_data["Name"] == "BleedoutDamageMultiplier":
+                #     item_data["Value"] = 0.075
+                #     continue
 
-                # BLEEDOUT DAMAGE CHANCE
-                if item_data["Name"] == "BleedoutDamageChance":
-                    item_data["Value"] = 0.2
-                    continue
+                # # BLEEDOUT DAMAGE CHANCE
+                # if item_data["Name"] == "BleedoutDamageChance":
+                #     item_data["Value"] = 0.2
+                #     continue
 
-                # MUZZLE VELOCITY
-                if item_data["Name"] == "ProjectileMovementSpeed":
-                    item_data["Value"] = 99159
-                    continue
+                # # MUZZLE VELOCITY
+                # if item_data["Name"] == "ProjectileMovementSpeed":
+                #     item_data["Value"] = 99159
+                #     continue
 
-                # PENETRATION
-                if item_data["Name"] == "PenetrationDistance":
-                    item_data["Value"] = 38
-                    continue
+                # # PENETRATION
+                # if item_data["Name"] == "PenetrationDistance":
+                #     item_data["Value"] = 38
+                #     continue
 
-                # RECOIL PATTERN
+                # # RECOIL PATTERN
                 # if item_data["Name"] == "RecoilPattern":
                     
                 #     for recoil_main in item_data["Value"]:
@@ -1775,41 +1777,41 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     continue
 
                 # DAMAGE
-                if item_data["Name"] == "Damage":
-                    item_data["Value"] = 50
-                    continue
+                # if item_data["Name"] == "Damage":
+                #     item_data["Value"] = 50
+                #     continue
 
-                # DAMAGE SEVERITY MULTIPLIER
-                if item_data["Name"] == "DamageSeverityMultiplier":
-                    item_data["Value"] = 1.1
-                    continue
+                # # DAMAGE SEVERITY MULTIPLIER
+                # if item_data["Name"] == "DamageSeverityMultiplier":
+                #     item_data["Value"] = 1.1
+                #     continue
 
-                # DAMAGE SEVERITY CHANCE
-                if item_data["Name"] == "DamageSeverityChance":
-                    item_data["Value"] = 0.05
-                    continue
+                # # DAMAGE SEVERITY CHANCE
+                # if item_data["Name"] == "DamageSeverityChance":
+                #     item_data["Value"] = 0.05
+                #     continue
 
-                # BLEEDOUT DAMAGE MULTIPLIER
-                if item_data["Name"] == "BleedoutDamageMultiplier":
-                    item_data["Value"] = 0.075
-                    continue
+                # # BLEEDOUT DAMAGE MULTIPLIER
+                # if item_data["Name"] == "BleedoutDamageMultiplier":
+                #     item_data["Value"] = 0.075
+                #     continue
 
-                # BLEEDOUT DAMAGE CHANCE
-                if item_data["Name"] == "BleedoutDamageChance":
-                    item_data["Value"] = 0.2
-                    continue
+                # # BLEEDOUT DAMAGE CHANCE
+                # if item_data["Name"] == "BleedoutDamageChance":
+                #     item_data["Value"] = 0.2
+                #     continue
 
-                # MUZZLE VELOCITY
-                if item_data["Name"] == "ProjectileMovementSpeed":
-                    item_data["Value"] = 92145
-                    continue
+                # # MUZZLE VELOCITY
+                # if item_data["Name"] == "ProjectileMovementSpeed":
+                #     item_data["Value"] = 92145
+                #     continue
 
-                # PENETRATION
-                if item_data["Name"] == "PenetrationDistance":
-                    item_data["Value"] = 37
-                    continue
+                # # PENETRATION
+                # if item_data["Name"] == "PenetrationDistance":
+                #     item_data["Value"] = 37
+                #     continue
 
-                # RECOIL PATTERN
+                # # RECOIL PATTERN
                 # if item_data["Name"] == "RecoilPattern":
                     
                 #     for recoil_main in item_data["Value"]:
@@ -1850,41 +1852,41 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     continue
 
                 # DAMAGE
-                if item_data["Name"] == "Damage":
-                    item_data["Value"] = 50
-                    continue
+                # if item_data["Name"] == "Damage":
+                #     item_data["Value"] = 50
+                #     continue
 
-                # DAMAGE SEVERITY MULTIPLIER
-                if item_data["Name"] == "DamageSeverityMultiplier":
-                    item_data["Value"] = 1.1
-                    continue
+                # # DAMAGE SEVERITY MULTIPLIER
+                # if item_data["Name"] == "DamageSeverityMultiplier":
+                #     item_data["Value"] = 1.1
+                #     continue
 
-                # DAMAGE SEVERITY CHANCE
-                if item_data["Name"] == "DamageSeverityChance":
-                    item_data["Value"] = 0.05
-                    continue
+                # # DAMAGE SEVERITY CHANCE
+                # if item_data["Name"] == "DamageSeverityChance":
+                #     item_data["Value"] = 0.05
+                #     continue
 
-                # BLEEDOUT DAMAGE MULTIPLIER
-                if item_data["Name"] == "BleedoutDamageMultiplier":
-                    item_data["Value"] = 0.075
-                    continue
+                # # BLEEDOUT DAMAGE MULTIPLIER
+                # if item_data["Name"] == "BleedoutDamageMultiplier":
+                #     item_data["Value"] = 0.075
+                #     continue
 
-                # BLEEDOUT DAMAGE CHANCE
-                if item_data["Name"] == "BleedoutDamageChance":
-                    item_data["Value"] = 0.2
-                    continue
+                # # BLEEDOUT DAMAGE CHANCE
+                # if item_data["Name"] == "BleedoutDamageChance":
+                #     item_data["Value"] = 0.2
+                #     continue
 
-                # MUZZLE VELOCITY
-                if item_data["Name"] == "ProjectileMovementSpeed":
-                    item_data["Value"] = 87757
-                    continue
+                # # MUZZLE VELOCITY
+                # if item_data["Name"] == "ProjectileMovementSpeed":
+                #     item_data["Value"] = 87757
+                #     continue
 
-                # PENETRATION
-                if item_data["Name"] == "PenetrationDistance":
-                    item_data["Value"] = 32.5
-                    continue
+                # # PENETRATION
+                # if item_data["Name"] == "PenetrationDistance":
+                #     item_data["Value"] = 32.5
+                #     continue
 
-                # RECOIL PATTERN
+                # # RECOIL PATTERN
                 # if item_data["Name"] == "RecoilPattern":
                     
                 #     for recoil_main in item_data["Value"]:
@@ -1928,41 +1930,41 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     continue
 
                 # DAMAGE
-                if item_data["Name"] == "Damage":
-                    item_data["Value"] = 55
-                    continue
+                # if item_data["Name"] == "Damage":
+                #     item_data["Value"] = 55
+                #     continue
 
-                # DAMAGE SEVERITY MULTIPLIER
-                if item_data["Name"] == "DamageSeverityMultiplier":
-                    item_data["Value"] = 1.05
-                    continue
+                # # DAMAGE SEVERITY MULTIPLIER
+                # if item_data["Name"] == "DamageSeverityMultiplier":
+                #     item_data["Value"] = 1.05
+                #     continue
 
-                # DAMAGE SEVERITY CHANCE
-                if item_data["Name"] == "DamageSeverityChance":
-                    item_data["Value"] = 0.05
-                    continue
+                # # DAMAGE SEVERITY CHANCE
+                # if item_data["Name"] == "DamageSeverityChance":
+                #     item_data["Value"] = 0.05
+                #     continue
 
-                # BLEEDOUT DAMAGE MULTIPLIER
-                if item_data["Name"] == "BleedoutDamageMultiplier":
-                    item_data["Value"] = 0.05
-                    continue
+                # # BLEEDOUT DAMAGE MULTIPLIER
+                # if item_data["Name"] == "BleedoutDamageMultiplier":
+                #     item_data["Value"] = 0.05
+                #     continue
 
-                # BLEEDOUT DAMAGE CHANCE
-                if item_data["Name"] == "BleedoutDamageChance":
-                    item_data["Value"] = 0.2
-                    continue
+                # # BLEEDOUT DAMAGE CHANCE
+                # if item_data["Name"] == "BleedoutDamageChance":
+                #     item_data["Value"] = 0.2
+                #     continue
 
-                # MUZZLE VELOCITY
-                if item_data["Name"] == "ProjectileMovementSpeed":
-                    item_data["Value"] = 90525
-                    continue
+                # # MUZZLE VELOCITY
+                # if item_data["Name"] == "ProjectileMovementSpeed":
+                #     item_data["Value"] = 90525
+                #     continue
 
-                # PENETRATION
-                if item_data["Name"] == "PenetrationDistance":
-                    item_data["Value"] = 38.5
-                    continue
+                # # PENETRATION
+                # if item_data["Name"] == "PenetrationDistance":
+                #     item_data["Value"] = 38.5
+                #     continue
 
-                # RECOIL PATTERN
+                # # RECOIL PATTERN
                 # if item_data["Name"] == "RecoilPattern":
                     
                 #     for recoil_main in item_data["Value"]:
@@ -2001,29 +2003,30 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     continue
 
                 # DAMAGE SEVERITY MULTIPLIER
-                if item_data["Name"] == "DamageSeverityMultiplier":
-                    item_data["Value"] = 1.05
-                    continue
+                # if item_data["Name"] == "DamageSeverityMultiplier":
+                #     item_data["Value"] = 1.05
+                #     continue
 
-                # DAMAGE SEVERITY CHANCE
-                if item_data["Name"] == "DamageSeverityChance":
-                    item_data["Value"] = 0.075
-                    continue
+                # # DAMAGE SEVERITY CHANCE
+                # if item_data["Name"] == "DamageSeverityChance":
+                #     item_data["Value"] = 0.075
+                #     continue
 
-                # BLEEDOUT DAMAGE MULTIPLIER
-                if item_data["Name"] == "BleedoutDamageMultiplier":
-                    item_data["Value"] = 0.05
-                    continue
+                # # BLEEDOUT DAMAGE MULTIPLIER
+                # if item_data["Name"] == "BleedoutDamageMultiplier":
+                #     item_data["Value"] = 0.05
+                #     continue
 
-                # BLEEDOUT DAMAGE CHANCE
-                if item_data["Name"] == "BleedoutDamageChance":
-                    item_data["Value"] = 0.05
-                    continue
+                # # BLEEDOUT DAMAGE CHANCE
+                # if item_data["Name"] == "BleedoutDamageChance":
+                #     item_data["Value"] = 0.05
+                #     continue
 
     #----------- HANDGUNS
 
         # TASER
         if item["Name"] == "Taser":
+            
             # For every piece of the item data.
             for item_data in item["Value"]:
                 
@@ -2079,36 +2082,6 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     item_data["Value"] = 20
                     continue
 
-                # DAMAGE
-                if item_data["Name"] == "Damage":
-                    item_data["Value"] = 25
-                    continue
-
-                # DAMAGE SEVERITY MULTIPLIER
-                if item_data["Name"] == "DamageSeverityMultiplier":
-                    item_data["Value"] = 1
-                    continue
-
-                # DAMAGE SEVERITY CHANCE
-                if item_data["Name"] == "DamageSeverityChance":
-                    item_data["Value"] = 0.025
-                    continue
-
-                # BLEEDOUT DAMAGE MULTIPLIER
-                if item_data["Name"] == "BleedoutDamageMultiplier":
-                    item_data["Value"] = 0.05
-                    continue
-
-                # BLEEDOUT DAMAGE CHANCE
-                if item_data["Name"] == "BleedoutDamageChance":
-                    item_data["Value"] = 0.05
-                    continue
-
-                # PENETRATION
-                if item_data["Name"] == "PenetrationDistance":
-                    item_data["Value"] = 13
-                    continue
-
                 # MESHSPACE DEFAULT
                 if item_data["Name"] == "MeshspaceTransform_Default":
                     
@@ -2124,7 +2097,37 @@ for item in data["Exports"][0]["Table"]["Data"]:
                                 translation_array["Value"]["Z"] = -0.75
                                 continue
 
-                # RECOIL PATTERN
+                # DAMAGE
+                # if item_data["Name"] == "Damage":
+                #     item_data["Value"] = 25
+                #     continue
+
+                # # DAMAGE SEVERITY MULTIPLIER
+                # if item_data["Name"] == "DamageSeverityMultiplier":
+                #     item_data["Value"] = 1
+                #     continue
+
+                # # DAMAGE SEVERITY CHANCE
+                # if item_data["Name"] == "DamageSeverityChance":
+                #     item_data["Value"] = 0.025
+                #     continue
+
+                # # BLEEDOUT DAMAGE MULTIPLIER
+                # if item_data["Name"] == "BleedoutDamageMultiplier":
+                #     item_data["Value"] = 0.05
+                #     continue
+
+                # # BLEEDOUT DAMAGE CHANCE
+                # if item_data["Name"] == "BleedoutDamageChance":
+                #     item_data["Value"] = 0.05
+                #     continue
+
+                # # PENETRATION
+                # if item_data["Name"] == "PenetrationDistance":
+                #     item_data["Value"] = 13
+                #     continue
+
+                # # RECOIL PATTERN
                 # if item_data["Name"] == "RecoilPattern":
                     
                 #     for recoil_main in item_data["Value"]:
@@ -2143,6 +2146,7 @@ for item in data["Exports"][0]["Table"]["Data"]:
 
         # PFC9
         if item["Name"] == "PFC9":
+            
             # For every piece of the item data.
             for item_data in item["Value"]:
                 
@@ -2171,36 +2175,6 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     item_data["Value"] = 0.06
                     continue
 
-                # DAMAGE
-                if item_data["Name"] == "Damage":
-                    item_data["Value"] = 25
-                    continue
-
-                # DAMAGE SEVERITY MULTIPLIER
-                if item_data["Name"] == "DamageSeverityMultiplier":
-                    item_data["Value"] = 1
-                    continue
-
-                # DAMAGE SEVERITY CHANCE
-                if item_data["Name"] == "DamageSeverityChance":
-                    item_data["Value"] = 0.025
-                    continue
-
-                # BLEEDOUT DAMAGE MULTIPLIER
-                if item_data["Name"] == "BleedoutDamageMultiplier":
-                    item_data["Value"] = 0.05
-                    continue
-
-                # BLEEDOUT DAMAGE CHANCE
-                if item_data["Name"] == "BleedoutDamageChance":
-                    item_data["Value"] = 0.05
-                    continue
-
-                # PENETRATION
-                if item_data["Name"] == "PenetrationDistance":
-                    item_data["Value"] = 13
-                    continue
-
                 # MESHSPACE DEFAULT
                 if item_data["Name"] == "MeshspaceTransform_Default":
                     
@@ -2216,7 +2190,37 @@ for item in data["Exports"][0]["Table"]["Data"]:
                                 translation_array["Value"]["Z"] = -0.75
                                 continue
                 
-                # RECOIL PATTERN
+                # DAMAGE
+                # if item_data["Name"] == "Damage":
+                #     item_data["Value"] = 25
+                #     continue
+
+                # # DAMAGE SEVERITY MULTIPLIER
+                # if item_data["Name"] == "DamageSeverityMultiplier":
+                #     item_data["Value"] = 1
+                #     continue
+
+                # # DAMAGE SEVERITY CHANCE
+                # if item_data["Name"] == "DamageSeverityChance":
+                #     item_data["Value"] = 0.025
+                #     continue
+
+                # # BLEEDOUT DAMAGE MULTIPLIER
+                # if item_data["Name"] == "BleedoutDamageMultiplier":
+                #     item_data["Value"] = 0.05
+                #     continue
+
+                # # BLEEDOUT DAMAGE CHANCE
+                # if item_data["Name"] == "BleedoutDamageChance":
+                #     item_data["Value"] = 0.05
+                #     continue
+
+                # # PENETRATION
+                # if item_data["Name"] == "PenetrationDistance":
+                #     item_data["Value"] = 13
+                #     continue
+
+                # # RECOIL PATTERN
                 # if item_data["Name"] == "RecoilPattern":
                     
                 #     for recoil_main in item_data["Value"]:
@@ -2235,6 +2239,7 @@ for item in data["Exports"][0]["Table"]["Data"]:
 
         # M2011
         if item["Name"] == "M2011":
+            
             # For every piece of the item data.
             for item_data in item["Value"]:
                 
@@ -2258,31 +2263,6 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     item_data["Value"] = 0.15000000596046448
                     continue
 
-                # DAMAGE
-                if item_data["Name"] == "Damage":
-                    item_data["Value"] = 32.5
-                    continue
-
-                # DAMAGE SEVERITY MULTIPLIER
-                if item_data["Name"] == "DamageSeverityMultiplier":
-                    item_data["Value"] = 1.025
-                    continue
-
-                # DAMAGE SEVERITY CHANCE
-                if item_data["Name"] == "DamageSeverityChance":
-                    item_data["Value"] = 0.025
-                    continue
-
-                # BLEEDOUT DAMAGE MULTIPLIER
-                if item_data["Name"] == "BleedoutDamageMultiplier":
-                    item_data["Value"] = 0.05
-                    continue
-
-                # BLEEDOUT DAMAGE CHANCE
-                if item_data["Name"] == "BleedoutDamageChance":
-                    item_data["Value"] = 0.05
-                    continue
-
                 # MESHSPACE DEFAULT
                 if item_data["Name"] == "MeshspaceTransform_Default":
                     
@@ -2296,7 +2276,32 @@ for item in data["Exports"][0]["Table"]["Data"]:
                                 translation_array["Value"]["Y"] = -4.85
                                 continue
 
-                # RECOIL PATTERN
+                # DAMAGE
+                # if item_data["Name"] == "Damage":
+                #     item_data["Value"] = 32.5
+                #     continue
+
+                # # DAMAGE SEVERITY MULTIPLIER
+                # if item_data["Name"] == "DamageSeverityMultiplier":
+                #     item_data["Value"] = 1.025
+                #     continue
+
+                # # DAMAGE SEVERITY CHANCE
+                # if item_data["Name"] == "DamageSeverityChance":
+                #     item_data["Value"] = 0.025
+                #     continue
+
+                # # BLEEDOUT DAMAGE MULTIPLIER
+                # if item_data["Name"] == "BleedoutDamageMultiplier":
+                #     item_data["Value"] = 0.05
+                #     continue
+
+                # # BLEEDOUT DAMAGE CHANCE
+                # if item_data["Name"] == "BleedoutDamageChance":
+                #     item_data["Value"] = 0.05
+                #     continue
+
+                # # RECOIL PATTERN
                 # if item_data["Name"] == "RecoilPattern":
                     
                 #     for recoil_main in item_data["Value"]:
@@ -2315,6 +2320,7 @@ for item in data["Exports"][0]["Table"]["Data"]:
 
         # USP
         if item["Name"] == "USP":
+            
             # For every piece of the item data.
             for item_data in item["Value"]:
                 
@@ -2326,31 +2332,6 @@ for item in data["Exports"][0]["Table"]["Data"]:
                 # WEIGHT
                 if item_data["Name"] == "ItemWeight":
                     item_data["Value"] = 0.88999998569488525
-                    continue
-
-                # DAMAGE
-                if item_data["Name"] == "Damage":
-                    item_data["Value"] = 32.5
-                    continue
-
-                # DAMAGE SEVERITY MULTIPLIER
-                if item_data["Name"] == "DamageSeverityMultiplier":
-                    item_data["Value"] = 1.025
-                    continue
-
-                # DAMAGE SEVERITY CHANCE
-                if item_data["Name"] == "DamageSeverityChance":
-                    item_data["Value"] = 0.025
-                    continue
-
-                # BLEEDOUT DAMAGE MULTIPLIER
-                if item_data["Name"] == "BleedoutDamageMultiplier":
-                    item_data["Value"] = 0.05
-                    continue
-
-                # BLEEDOUT DAMAGE CHANCE
-                if item_data["Name"] == "BleedoutDamageChance":
-                    item_data["Value"] = 0.05
                     continue
 
                 # MESHSPACE DEFAULT
@@ -2367,7 +2348,32 @@ for item in data["Exports"][0]["Table"]["Data"]:
                                 translation_array["Value"]["Z"] = -0.5
                                 continue
 
-                # RECOIL PATTERN
+                # DAMAGE
+                # if item_data["Name"] == "Damage":
+                #     item_data["Value"] = 32.5
+                #     continue
+
+                # # DAMAGE SEVERITY MULTIPLIER
+                # if item_data["Name"] == "DamageSeverityMultiplier":
+                #     item_data["Value"] = 1.025
+                #     continue
+
+                # # DAMAGE SEVERITY CHANCE
+                # if item_data["Name"] == "DamageSeverityChance":
+                #     item_data["Value"] = 0.025
+                #     continue
+
+                # # BLEEDOUT DAMAGE MULTIPLIER
+                # if item_data["Name"] == "BleedoutDamageMultiplier":
+                #     item_data["Value"] = 0.05
+                #     continue
+
+                # # BLEEDOUT DAMAGE CHANCE
+                # if item_data["Name"] == "BleedoutDamageChance":
+                #     item_data["Value"] = 0.05
+                #     continue
+
+                # # RECOIL PATTERN
                 # if item_data["Name"] == "RecoilPattern":
                     
                 #     for recoil_main in item_data["Value"]:
@@ -2386,6 +2392,7 @@ for item in data["Exports"][0]["Table"]["Data"]:
 
         # FiveSeven
         if item["Name"] == "FiveSeven":
+            
             # For every piece of the item data.
             for item_data in item["Value"]:
                 
@@ -2404,26 +2411,6 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     item_data["Value"] = 0.135
                     continue
 
-                # DAMAGE SEVERITY MULTIPLIER
-                if item_data["Name"] == "DamageSeverityMultiplier":
-                    item_data["Value"] = 1.05
-                    continue
-
-                # DAMAGE SEVERITY CHANCE
-                if item_data["Name"] == "DamageSeverityChance":
-                    item_data["Value"] = 0.075
-                    continue
-
-                # BLEEDOUT DAMAGE MULTIPLIER
-                if item_data["Name"] == "BleedoutDamageMultiplier":
-                    item_data["Value"] = 0.05
-                    continue
-
-                # BLEEDOUT DAMAGE CHANCE
-                if item_data["Name"] == "BleedoutDamageChance":
-                    item_data["Value"] = 0.05
-                    continue
-
                 # MESHSPACE DEFAULT
                 if item_data["Name"] == "MeshspaceTransform_Default":
                     
@@ -2437,8 +2424,29 @@ for item in data["Exports"][0]["Table"]["Data"]:
                                 translation_array["Value"]["Y"] = -4.62
                                 continue
 
+                # DAMAGE SEVERITY MULTIPLIER
+                # if item_data["Name"] == "DamageSeverityMultiplier":
+                #     item_data["Value"] = 1.05
+                #     continue
+
+                # # DAMAGE SEVERITY CHANCE
+                # if item_data["Name"] == "DamageSeverityChance":
+                #     item_data["Value"] = 0.075
+                #     continue
+
+                # # BLEEDOUT DAMAGE MULTIPLIER
+                # if item_data["Name"] == "BleedoutDamageMultiplier":
+                #     item_data["Value"] = 0.05
+                #     continue
+
+                # # BLEEDOUT DAMAGE CHANCE
+                # if item_data["Name"] == "BleedoutDamageChance":
+                #     item_data["Value"] = 0.05
+                #     continue
+                
         # Python
         if item["Name"] == "Python":
+            
             # For every piece of the item data.
             for item_data in item["Value"]:
                 
@@ -2487,42 +2495,13 @@ for item in data["Exports"][0]["Table"]["Data"]:
         
         # M92A3
         if item["Name"] == "M92A3":
+            
             # For every piece of the item data.
             for item_data in item["Value"]:
                 
                 # NAME
                 if item_data["Name"] == "ItemName":
                     item_data["CultureInvariantString"] = "Beretta M92X Performance"
-                    continue
-
-                # DAMAGE
-                if item_data["Name"] == "Damage":
-                    item_data["Value"] = 25
-                    continue
-
-                # DAMAGE SEVERITY MULTIPLIER
-                if item_data["Name"] == "DamageSeverityMultiplier":
-                    item_data["Value"] = 1
-                    continue
-
-                # DAMAGE SEVERITY CHANCE
-                if item_data["Name"] == "DamageSeverityChance":
-                    item_data["Value"] = 0.025
-                    continue
-
-                # BLEEDOUT DAMAGE MULTIPLIER
-                if item_data["Name"] == "BleedoutDamageMultiplier":
-                    item_data["Value"] = 0.05
-                    continue
-
-                # BLEEDOUT DAMAGE CHANCE
-                if item_data["Name"] == "BleedoutDamageChance":
-                    item_data["Value"] = 0.05
-                    continue
-
-                # PENETRATION
-                if item_data["Name"] == "PenetrationDistance":
-                    item_data["Value"] = 13
                     continue
 
                 # MESHSPACE DEFAULT
@@ -2538,7 +2517,37 @@ for item in data["Exports"][0]["Table"]["Data"]:
                                 translation_array["Value"]["Y"] = -4.4
                                 continue
 
-                # RECOIL PATTERN
+                # DAMAGE
+                # if item_data["Name"] == "Damage":
+                #     item_data["Value"] = 25
+                #     continue
+
+                # # DAMAGE SEVERITY MULTIPLIER
+                # if item_data["Name"] == "DamageSeverityMultiplier":
+                #     item_data["Value"] = 1
+                #     continue
+
+                # # DAMAGE SEVERITY CHANCE
+                # if item_data["Name"] == "DamageSeverityChance":
+                #     item_data["Value"] = 0.025
+                #     continue
+
+                # # BLEEDOUT DAMAGE MULTIPLIER
+                # if item_data["Name"] == "BleedoutDamageMultiplier":
+                #     item_data["Value"] = 0.05
+                #     continue
+
+                # # BLEEDOUT DAMAGE CHANCE
+                # if item_data["Name"] == "BleedoutDamageChance":
+                #     item_data["Value"] = 0.05
+                #     continue
+
+                # # PENETRATION
+                # if item_data["Name"] == "PenetrationDistance":
+                #     item_data["Value"] = 13
+                #     continue
+
+                # # RECOIL PATTERN
                 # if item_data["Name"] == "RecoilPattern":
                     
                 #     for recoil_main in item_data["Value"]:
@@ -2576,36 +2585,6 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     item_data["Value"] = 0.964
                     continue
 
-                # DAMAGE
-                if item_data["Name"] == "Damage":
-                    item_data["Value"] = 25
-                    continue
-
-                # DAMAGE SEVERITY MULTIPLIER
-                if item_data["Name"] == "DamageSeverityMultiplier":
-                    item_data["Value"] = 1
-                    continue
-
-                # DAMAGE SEVERITY CHANCE
-                if item_data["Name"] == "DamageSeverityChance":
-                    item_data["Value"] = 0.025
-                    continue
-
-                # BLEEDOUT DAMAGE MULTIPLIER
-                if item_data["Name"] == "BleedoutDamageMultiplier":
-                    item_data["Value"] = 0.05
-                    continue
-
-                # BLEEDOUT DAMAGE CHANCE
-                if item_data["Name"] == "BleedoutDamageChance":
-                    item_data["Value"] = 0.05
-                    continue
-
-                # PENETRATION
-                if item_data["Name"] == "PenetrationDistance":
-                    item_data["Value"] = 13
-                    continue
-
                 # MESHSPACE DEFAULT
                 if item_data["Name"] == "MeshspaceTransform_Default":
                     
@@ -2620,7 +2599,37 @@ for item in data["Exports"][0]["Table"]["Data"]:
                                 translation_array["Value"]["Y"] = -3.75
                                 continue
 
-                # RECOIL PATTERN
+                # DAMAGE
+                # if item_data["Name"] == "Damage":
+                #     item_data["Value"] = 25
+                #     continue
+
+                # # DAMAGE SEVERITY MULTIPLIER
+                # if item_data["Name"] == "DamageSeverityMultiplier":
+                #     item_data["Value"] = 1
+                #     continue
+
+                # # DAMAGE SEVERITY CHANCE
+                # if item_data["Name"] == "DamageSeverityChance":
+                #     item_data["Value"] = 0.025
+                #     continue
+
+                # # BLEEDOUT DAMAGE MULTIPLIER
+                # if item_data["Name"] == "BleedoutDamageMultiplier":
+                #     item_data["Value"] = 0.05
+                #     continue
+
+                # # BLEEDOUT DAMAGE CHANCE
+                # if item_data["Name"] == "BleedoutDamageChance":
+                #     item_data["Value"] = 0.05
+                #     continue
+
+                # # PENETRATION
+                # if item_data["Name"] == "PenetrationDistance":
+                #     item_data["Value"] = 13
+                #     continue
+
+                # # RECOIL PATTERN
                 # if item_data["Name"] == "RecoilPattern":
                     
                 #     for recoil_main in item_data["Value"]:
@@ -2721,7 +2730,7 @@ for item in data["Exports"][0]["Table"]["Data"]:
                     item_data["CultureInvariantString"] = "H&K M320 Stinger"
                     continue
 
-        # MIRRORGUN
+        # MIRRORGUN - EMPTY
         if item["Name"] == "Mirrorgun":
             
             # For every piece of the item data.
@@ -2999,6 +3008,7 @@ for item in data["Exports"][0]["Table"]["Data"]:
                 
         # SCARH
         if item["Name"] == "SCARH":
+            
             # For every piece of the item data.
             for item_data in item["Value"]:
                 
@@ -3147,7 +3157,6 @@ for item in data["Exports"][0]["Table"]["Data"]:
                                 translation_array["Value"]["Y"] = -6.85
                                 translation_array["Value"]["Y"] = -0.5
                                 continue
-
 
 # SAVE INTO FILE
 json.dump(data, open(f"ItemDataTable.json", "w"), indent = 1)
