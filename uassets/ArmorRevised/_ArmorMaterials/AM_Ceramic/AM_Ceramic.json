@@ -1,0 +1,259 @@
+{
+ "$type": "UAssetAPI.UAsset, UAssetAPI",
+ "Info": "Serialized with UAssetAPI 1.0.0.0 (946a8a0)",
+ "NameMap": [
+  "/Game/Blueprints/Items/ArmorRevised/ArmorMaterials/AM_Ceramic",
+  "/Game/Localization/Game/en/loc_ItemDescriptions",
+  "/Game/Localization/Game/en/loc_ItemDescriptions.loc_ItemDescriptions",
+  "/Game/Localization/Game/en/loc_Loadout",
+  "/Game/Localization/Game/en/loc_Loadout.loc_Loadout",
+  "/Game/ReadyOrNot/Assets/Particles/Weapon_VFX/Particles/P_VFX_Impact_Ceramic",
+  "/Game/ReadyOrNot/UI/Icons/Equipment/icn_ArmorMaterial_Ceramic",
+  "/Game/ReadyOrNot/UI/Icons/Equipment/icn_ArmorMaterial_Ceramic.icn_ArmorMaterial_Ceramic",
+  "/Script/CoreUObject",
+  "/Script/Engine",
+  "/Script/ReadyOrNot",
+  "AM_Ceramic",
+  "ArmourLevel",
+  "ArmourMaterial",
+  "bDurabilityEnabled",
+  "BoolProperty",
+  "Class",
+  "DamageReduction",
+  "Default__ArmourMaterial",
+  "Description",
+  "DisplayName",
+  "Durability",
+  "FloatProperty",
+  "HitParticle",
+  "LoadoutIcon",
+  "loc_ItemDescriptions",
+  "loc_Loadout",
+  "MinDamageReduction",
+  "None",
+  "ObjectProperty",
+  "P_VFX_Impact_Ceramic",
+  "Package",
+  "ParticleSystem",
+  "SoftObjectProperty",
+  "StringTable",
+  "TextProperty",
+  "UInt32Property"
+ ],
+ "UseSeparateBulkDataFiles": true,
+ "EngineVersion": "VER_UE4_25",
+ "LegacyFileVersion": -7,
+ "IsUnversioned": true,
+ "FileVersionLicenseeUE4": 0,
+ "CustomVersionContainer": [],
+ "Imports": [
+  {
+   "$type": "UAssetAPI.Import, UAssetAPI",
+   "ClassPackage": "/Script/ReadyOrNot",
+   "ClassName": "ArmourMaterial",
+   "ObjectName": "Default__ArmourMaterial",
+   "OuterIndex": -6
+  },
+  {
+   "$type": "UAssetAPI.Import, UAssetAPI",
+   "ClassPackage": "/Script/CoreUObject",
+   "ClassName": "Class",
+   "ObjectName": "ArmourMaterial",
+   "OuterIndex": -6
+  },
+  {
+   "$type": "UAssetAPI.Import, UAssetAPI",
+   "ClassPackage": "/Script/CoreUObject",
+   "ClassName": "Package",
+   "ObjectName": "/Game/Localization/Game/en/loc_ItemDescriptions",
+   "OuterIndex": 0
+  },
+  {
+   "$type": "UAssetAPI.Import, UAssetAPI",
+   "ClassPackage": "/Script/CoreUObject",
+   "ClassName": "Package",
+   "ObjectName": "/Game/Localization/Game/en/loc_Loadout",
+   "OuterIndex": 0
+  },
+  {
+   "$type": "UAssetAPI.Import, UAssetAPI",
+   "ClassPackage": "/Script/CoreUObject",
+   "ClassName": "Package",
+   "ObjectName": "/Game/ReadyOrNot/Assets/Particles/Weapon_VFX/Particles/P_VFX_Impact_Ceramic",
+   "OuterIndex": 0
+  },
+  {
+   "$type": "UAssetAPI.Import, UAssetAPI",
+   "ClassPackage": "/Script/CoreUObject",
+   "ClassName": "Package",
+   "ObjectName": "/Script/ReadyOrNot",
+   "OuterIndex": 0
+  },
+  {
+   "$type": "UAssetAPI.Import, UAssetAPI",
+   "ClassPackage": "/Script/Engine",
+   "ClassName": "ParticleSystem",
+   "ObjectName": "P_VFX_Impact_Ceramic",
+   "OuterIndex": -5
+  },
+  {
+   "$type": "UAssetAPI.Import, UAssetAPI",
+   "ClassPackage": "/Script/Engine",
+   "ClassName": "StringTable",
+   "ObjectName": "loc_ItemDescriptions",
+   "OuterIndex": -3
+  },
+  {
+   "$type": "UAssetAPI.Import, UAssetAPI",
+   "ClassPackage": "/Script/Engine",
+   "ClassName": "StringTable",
+   "ObjectName": "loc_Loadout",
+   "OuterIndex": -4
+  }
+ ],
+ "Exports": [
+  {
+   "$type": "UAssetAPI.NormalExport, UAssetAPI",
+   "Data": [
+    {
+     "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
+     "Value": 1,
+     "Name": "DamageReduction",
+     "DuplicationIndex": 0
+    },
+    {
+     "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
+     "Value": 1,
+     "Name": "MinDamageReduction",
+     "DuplicationIndex": 0
+    },
+    {
+     "$type": "UAssetAPI.PropertyTypes.Objects.BoolPropertyData, UAssetAPI",
+     "Name": "bDurabilityEnabled",
+     "DuplicationIndex": 0,
+     "Value": true
+    },
+    {
+     "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
+     "Value": 30,
+     "Name": "Durability",
+     "DuplicationIndex": 0
+    },
+    {
+     "$type": "UAssetAPI.PropertyTypes.Objects.UInt32PropertyData, UAssetAPI",
+     "Name": "ArmourLevel",
+     "DuplicationIndex": 0,
+     "Value": 5
+    },
+    {
+     "$type": "UAssetAPI.PropertyTypes.Objects.ObjectPropertyData, UAssetAPI",
+     "Name": "HitParticle",
+     "DuplicationIndex": 0,
+     "Value": -7
+    },
+    {
+     "$type": "UAssetAPI.PropertyTypes.Objects.TextPropertyData, UAssetAPI",
+     "Flags": 0,
+     "HistoryType": "StringTableEntry",
+     "TableId": "/Game/Localization/Game/en/loc_Loadout.loc_Loadout",
+     "Namespace": null,
+     "CultureInvariantString": null,
+     "Name": "DisplayName",
+     "DuplicationIndex": 0,
+     "Value": "armor.Ceramic"
+    },
+    {
+     "$type": "UAssetAPI.PropertyTypes.Objects.TextPropertyData, UAssetAPI",
+     "Flags": 0,
+     "HistoryType": "StringTableEntry",
+     "TableId": "/Game/Localization/Game/en/loc_ItemDescriptions.loc_ItemDescriptions",
+     "Namespace": null,
+     "CultureInvariantString": null,
+     "Name": "Description",
+     "DuplicationIndex": 0,
+     "Value": "armor.Ceramic"
+    },
+    {
+     "$type": "UAssetAPI.PropertyTypes.Objects.SoftObjectPropertyData, UAssetAPI",
+     "ID": 0,
+     "Name": "LoadoutIcon",
+     "DuplicationIndex": 0,
+     "Value": "/Game/ReadyOrNot/UI/Icons/Equipment/icn_ArmorMaterial_Ceramic.icn_ArmorMaterial_Ceramic"
+    }
+   ],
+   "ClassIndex": -2,
+   "SuperIndex": 0,
+   "TemplateIndex": -1,
+   "ObjectFlags": "RF_Public, RF_Standalone, RF_Transactional",
+   "SerialSize": 332,
+   "SerialOffset": 1786,
+   "bForcedExport": false,
+   "bNotForClient": false,
+   "bNotForServer": false,
+   "PackageGuid": "00000000-0000-0000-0000-000000000000",
+   "PackageFlags": "PKG_None",
+   "bNotAlwaysLoadedForEditorGame": true,
+   "bIsAsset": true,
+   "SerializationBeforeSerializationDependencies": [],
+   "CreateBeforeSerializationDependencies": [
+    -7,
+    -9,
+    -8
+   ],
+   "SerializationBeforeCreateDependencies": [
+    -2,
+    -1
+   ],
+   "CreateBeforeCreateDependencies": [],
+   "Extras": {
+    "$type": "System.Byte[], mscorlib",
+    "$value": "AAAAAA=="
+   },
+   "ObjectName": "AM_Ceramic",
+   "OuterIndex": 0
+  }
+ ],
+ "DependsMap": [
+  []
+ ],
+ "SoftPackageReferenceList": [],
+ "AssetRegistryData": [],
+ "WorldTileInfo": null,
+ "Generations": [
+  {
+   "$type": "UAssetAPI.FGenerationInfo, UAssetAPI",
+   "ExportCount": 1,
+   "NameCount": 37
+  }
+ ],
+ "PackageGuid": "a862bc83-c63b-4914-bc6b-2b5f9eb9416b",
+ "RecordedEngineVersion": {
+  "$type": "UAssetAPI.FEngineVersion, UAssetAPI",
+  "Major": 0,
+  "Minor": 0,
+  "Patch": 0,
+  "Changelist": 0,
+  "Branch": null
+ },
+ "RecordedCompatibleWithEngineVersion": {
+  "$type": "UAssetAPI.FEngineVersion, UAssetAPI",
+  "Major": 0,
+  "Minor": 0,
+  "Patch": 0,
+  "Changelist": 0,
+  "Branch": null
+ },
+ "ChunkIDs": [],
+ "PackageFlags": "PKG_FilterEditorOnly",
+ "PackageSource": 901189609,
+ "FolderName": "None",
+ "GatherableTextDataCount": 0,
+ "GatherableTextDataOffset": 0,
+ "SearchableNamesOffset": 0,
+ "ThumbnailTableOffset": 0,
+ "CompressionFlags": 0,
+ "doWeHaveDependsMap": true,
+ "doWeHaveSoftPackageReferences": false,
+ "doWeHaveAssetRegistryData": true,
+ "doWeHaveWorldTileInfo": false
+}
