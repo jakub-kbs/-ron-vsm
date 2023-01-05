@@ -1,0 +1,492 @@
+{
+  "$type": "UAssetAPI.UAsset, UAssetAPI",
+  "Info": "Serialized with UAssetAPI 1.0.0.0",
+  "NameMap": [
+    "/Game/Localization/Game/en/loc_Loadout",
+    "/Script/CoreUObject",
+    "/Script/Engine",
+    "Class",
+    "Default__StringTable",
+    "loc_Loadout",
+    "None",
+    "Package",
+    "StringTable"
+  ],
+  "UseSeparateBulkDataFiles": true,
+  "EngineVersion": "VER_UE4_25",
+  "LegacyFileVersion": -7,
+  "IsUnversioned": true,
+  "FileVersionLicenseeUE4": 0,
+  "CustomVersionContainer": [],
+  "Imports": [
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Class",
+      "ObjectName": "StringTable",
+      "OuterIndex": -2
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Package",
+      "ObjectName": "/Script/Engine",
+      "OuterIndex": 0
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/Engine",
+      "ClassName": "StringTable",
+      "ObjectName": "Default__StringTable",
+      "OuterIndex": -2
+    }
+  ],
+  "Exports": [
+    {
+      "$type": "UAssetAPI.StringTableExport, UAssetAPI",
+      "Table": {
+        "TableNamespace": "loc_Loadout",
+        "Value": [
+          [
+            "Loadout",
+            "Loadout"
+          ],
+          [
+            "category.Grenades",
+            "Grenades"
+          ],
+          [
+            "NonLethal",
+            "Non-Lethal"
+          ],
+          [
+            "category.Primary",
+            "Primary"
+          ],
+          [
+            "category.Sidearm",
+            "Sidearm"
+          ],
+          [
+            "category.LongTactical",
+            "Long Tactical"
+          ],
+          [
+            "category.Tactical",
+            "Tactical"
+          ],
+          [
+            "category.Weapons",
+            "Weapons"
+          ],
+          [
+            "category.Deployables",
+            "Deployables"
+          ],
+          [
+            "category.Gear",
+            "Gear"
+          ],
+          [
+            "category.Facewear",
+            "Facewear"
+          ],
+          [
+            "category.Headwear",
+            "Headwear"
+          ],
+          [
+            "category.BodyArmor",
+            "Body Armor"
+          ],
+          [
+            "Suppressed",
+            "Suppressed"
+          ],
+          [
+            "class.AssaultRifle",
+            "Assault Rifle"
+          ],
+          [
+            "class.Shotgun",
+            "Shotgun"
+          ],
+          [
+            "class.SMG",
+            "Sub Machine Gun"
+          ],
+          [
+            "class.LMG",
+            "Light Machine Gun"
+          ],
+          [
+            "class.Sniper",
+            "Sniper Rifle"
+          ],
+          [
+            "class.Pistol",
+            "Pistol"
+          ],
+          [
+            "ModifyWeapon",
+            "Modify Weapon"
+          ],
+          [
+            "class.Grenade",
+            "Grenade"
+          ],
+          [
+            "class.Melee",
+            "Melee"
+          ],
+          [
+            "class.Launcher",
+            "Launcher"
+          ],
+          [
+            "class.Shield",
+            "Shield"
+          ],
+          [
+            "class.TacticalDevice",
+            "Tactical Device"
+          ],
+          [
+            "class.Uniform",
+            "Uniform"
+          ],
+          [
+            "class.Patches",
+            "Patch"
+          ],
+          [
+            "class.Plates",
+            "Plates"
+          ],
+          [
+            "formated.SelectCategory",
+            "Select {C}"
+          ],
+          [
+            "Equipped",
+            "Equipped"
+          ],
+          [
+            "attachment.Optic",
+            "Optic"
+          ],
+          [
+            "attachment.Underbarrel",
+            "Underbarrel"
+          ],
+          [
+            "attachment.Overbarrel",
+            "Overbarrel"
+          ],
+          [
+            "attachment.Muzzle",
+            "Muzzle"
+          ],
+          [
+            "attachment.Stock",
+            "Stock"
+          ],
+          [
+            "attachment.Grip",
+            "Grip"
+          ],
+          [
+            "attachment.Illuminator",
+            "Illuminator"
+          ],
+          [
+            "attachment.Ammunition",
+            "Ammunition"
+          ],
+          [
+            "CleanWeapon",
+            "Clean Weapon"
+          ],
+          [
+            "presets.Save",
+            "Save Preset"
+          ],
+          [
+            "presets.SaveName",
+            "Name Your Preset"
+          ],
+          [
+            "presets.SaveNameOverwrite",
+            "Overwrite existing preset: <emphasis>{Preset}</>?"
+          ],
+          [
+            "presets.SaveNameExists",
+            "Existing Preset Name"
+          ],
+          [
+            "armor.GearSlots",
+            "Gear Slots"
+          ],
+          [
+            "ammo.Primary",
+            "Primary Ammunition"
+          ],
+          [
+            "ammo.SidearmAmmo",
+            "Sidearm Ammunition"
+          ],
+          [
+            "category.ArmorAndAmmo",
+            "Armor & Munitions"
+          ],
+          [
+            "armor.MunitionSlots",
+            "Munition Slots"
+          ],
+          [
+            "ammo.SplitSlots",
+            "Split Slots"
+          ],
+          [
+            "formated.SelectAmmoCategory",
+            "Select {weapon} ammunition type"
+          ],
+          [
+            "category.ArmorCoverage",
+            "Armor Coverage"
+          ],
+          [
+            "ACNone",
+            "No Armor"
+          ],
+          [
+            "ACFrontOnly",
+            "Front Only"
+          ],
+          [
+            "ACFrontBack",
+            "Front & Back"
+          ],
+          [
+            "ACFrontBackSides",
+            "Front, Back, and Sides"
+          ],
+          [
+            "ammo.FeedSystem.Magazine",
+            "{ammo}rnd Magazine"
+          ],
+          [
+            "ammo.FeedSystem.Hopper",
+            "{ammo}rnd Hopper"
+          ],
+          [
+            "ammo.FeedSystem.InternalMag.Shotgun",
+            "Shells x{ammo}"
+          ],
+          [
+            "ammo.FeedSystem.Taser",
+            "Cartridge"
+          ],
+          [
+            "category.GrenadeSlot",
+            "Grenade {n}"
+          ],
+          [
+            "category.TacticalSlot",
+            "Tactical {n}"
+          ],
+          [
+            "armor.EditSlots",
+            "Edit Slots"
+          ],
+          [
+            "armor.SaveSlots",
+            "Save Slots"
+          ],
+          [
+            "armor.Kevlar",
+            "Kevlar"
+          ],
+          [
+            "armor.Ceramic",
+            "Ceramic"
+          ],
+          [
+            "armor.Steel",
+            "Steel"
+          ],
+          [
+            "category.ArmorMaterial",
+            "Armor Material"
+          ],
+          [
+            "SelectArmourMaterial",
+            "Select Armor Material"
+          ],
+          [
+            "armor.SlotCount",
+            "{n} slots"
+          ],
+          [
+            "effects.Spread.Increase",
+            "Reduced accuracy"
+          ],
+          [
+            "effects.Recoil.Horiz.Increase",
+            "Increases horizontal recoil"
+          ],
+          [
+            "effects.MuzzleVelocity.Increase",
+            "Increased muzzle velocity"
+          ],
+          [
+            "effects.ADS.Speed.Increase",
+            "Increased ADS speed"
+          ],
+          [
+            "effects.ADS.Speed.Reduce",
+            "Reduced ADS speed"
+          ],
+          [
+            "effects",
+            "Effects"
+          ],
+          [
+            "effects.Recoil.Vertical.Reduce",
+            "Reduces vertical recoil"
+          ],
+          [
+            "effects.Recoil.Vertical.Increase",
+            "Increases vertical recoil"
+          ],
+          [
+            "effects.Recoil.Horiz.Reduce",
+            "Reduces horizontal recoil"
+          ],
+          [
+            "effects.MuzzleVelocity.Reduce",
+            "Reduced muzzle velocity"
+          ],
+          [
+            "effects.Spread.Reduce",
+            "Increased accuracy"
+          ],
+          [
+            "effects.Muzzle.FlashHide",
+            "Hides muzzle flash"
+          ],
+          [
+            "effects.Muzzle.FlashReduce",
+            "Reduces muzzle flash"
+          ],
+          [
+            "DLCExclusive",
+            "DLC Exclusive"
+          ],
+          [
+            "DLCExclusive.Supporter",
+            "Supporter Edition"
+          ],
+          [
+            "presets.Modified",
+            "{Preset} preset modified. CLICK TO SAVE"
+          ],
+          [
+            "presets.SaveName.Error.Default",
+            "Warning: \"Default\" preset cannot be overwritten or deleted"
+          ],
+          [
+            "GearUp",
+            "Gear Up"
+          ],
+          [
+            "presets.Delete",
+            "Delete Preset"
+          ],
+          [
+            "presets.DeleteConfirm",
+            "Are you sure you want to delete <emphasis>{Preset}</>?"
+          ],
+          [
+            "preset.LoadoutPreset",
+            "Preset"
+          ],
+          [
+            "preset.UnsavedPreset",
+            "Unsaved Preset"
+          ]
+        ]
+      },
+      "Data": [],
+      "ClassIndex": -1,
+      "SuperIndex": 0,
+      "TemplateIndex": -3,
+      "ObjectFlags": "RF_Public, RF_Standalone, RF_Transactional",
+      "SerialSize": 3856,
+      "SerialOffset": 607,
+      "bForcedExport": false,
+      "bNotForClient": false,
+      "bNotForServer": false,
+      "PackageGuid": "00000000-0000-0000-0000-000000000000",
+      "PackageFlags": "PKG_None",
+      "bNotAlwaysLoadedForEditorGame": true,
+      "bIsAsset": true,
+      "SerializationBeforeSerializationDependencies": [],
+      "CreateBeforeSerializationDependencies": [],
+      "SerializationBeforeCreateDependencies": [
+        -1,
+        -3
+      ],
+      "CreateBeforeCreateDependencies": [],
+      "Extras": {
+        "$type": "System.Byte[], mscorlib",
+        "$value": "AAAAAA=="
+      },
+      "ObjectName": "loc_Loadout",
+      "OuterIndex": 0
+    }
+  ],
+  "DependsMap": [
+    []
+  ],
+  "SoftPackageReferenceList": [],
+  "AssetRegistryData": [],
+  "WorldTileInfo": null,
+  "Generations": [
+    {
+      "$type": "UAssetAPI.FGenerationInfo, UAssetAPI",
+      "ExportCount": 1,
+      "NameCount": 9
+    }
+  ],
+  "PackageGuid": "28633a58-2ceb-4750-a809-e7cb4e735907",
+  "RecordedEngineVersion": {
+    "$type": "UAssetAPI.FEngineVersion, UAssetAPI",
+    "Major": 0,
+    "Minor": 0,
+    "Patch": 0,
+    "Changelist": 0,
+    "Branch": null
+  },
+  "RecordedCompatibleWithEngineVersion": {
+    "$type": "UAssetAPI.FEngineVersion, UAssetAPI",
+    "Major": 0,
+    "Minor": 0,
+    "Patch": 0,
+    "Changelist": 0,
+    "Branch": null
+  },
+  "ChunkIDs": [],
+  "PackageFlags": "PKG_FilterEditorOnly",
+  "PackageSource": 3769122176,
+  "FolderName": "None",
+  "GatherableTextDataCount": 0,
+  "GatherableTextDataOffset": 0,
+  "SearchableNamesOffset": 0,
+  "ThumbnailTableOffset": 0,
+  "CompressionFlags": 0,
+  "doWeHaveDependsMap": true,
+  "doWeHaveSoftPackageReferences": false,
+  "doWeHaveAssetRegistryData": true,
+  "doWeHaveWorldTileInfo": false
+}
