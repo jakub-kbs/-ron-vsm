@@ -11520,13 +11520,13 @@
     },
     {
      "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
-     "Value": 0.55,
+     "Value": 0.5,
      "Name": "SpeedModifier_AimFocus",
      "DuplicationIndex": 0
     },
     {
      "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
-     "Value": 0.9,
+     "Value": 0.85,
      "Name": "SpeedModifier_Aim",
      "DuplicationIndex": 0
     },
@@ -11556,7 +11556,7 @@
     },
     {
      "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
-     "Value": 3.5,
+     "Value": 3,
      "Name": "WalkSpeedMultiplier",
      "DuplicationIndex": 0
     },

@@ -15,7 +15,7 @@ for item in data["Exports"][20]["Data"]:
     
     # Walk Speed Multiplier                     # VANILLA 1
     if item["Name"] == "WalkSpeedMultiplier":
-        item["Value"] = 3.5
+        item["Value"] = 3
         continue
 
     # Min. Walk Speed %                         # VANILLA 0.25
@@ -25,12 +25,12 @@ for item in data["Exports"][20]["Data"]:
 
     # Speed Modifier Aim                        # VANILLA 0.85
     if item["Name"] == "SpeedModifier_Aim":
-        item["Value"] = 0.9
+        item["Value"] = 0.85
         continue
 
     # Speed Modifier Focus Aim                  # VANILLA 0.5
     if item["Name"] == "SpeedModifier_AimFocus":
-        item["Value"] = 0.55
+        item["Value"] = 0.5
         continue
 
     # Lean Speed Multiplier                     # VANILLA 0.5
