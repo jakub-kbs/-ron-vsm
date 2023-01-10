@@ -178,7 +178,7 @@ for item in data["Exports"][0]["Table"]["Data"]:
                                     
                                 # ENTER TRANSLATION OBJECT
                                 for translation_array in def_meshspace["Value"]:
-                                    translation_array["Value"]["X"] = -7
+                                    translation_array["Value"]["X"] = 6
                                     translation_array["Value"]["Y"] = -1
                                     translation_array["Value"]["Z"] = -1.25
                                     continue
@@ -283,7 +283,7 @@ for item in data["Exports"][0]["Table"]["Data"]:
                                     continue 
             index_hg+=1
 
-#----------- PRIMARY WEAPONS
+    #----------- PRIMARY WEAPONS
 
         # BEANBAG
         if item["Name"] == "Beanbag":

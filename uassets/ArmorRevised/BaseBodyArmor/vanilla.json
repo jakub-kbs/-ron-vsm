@@ -1,0 +1,966 @@
+{
+  "$type": "UAssetAPI.UAsset, UAssetAPI",
+  "Info": "Serialized with UAssetAPI 1.0.0.0 (946a8a0)",
+  "NameMap": [
+    "/Game/Blueprints/DataTables/ScoringGroupDataTable",
+    "/Game/Blueprints/Items/ArmorRevised/ArmorMaterials/AM_Kevlar",
+    "/Game/Blueprints/Items/ArmorRevised/BaseBodyArmor",
+    "/Game/FMOD/Events/Surfaces/Impacts/Armor_Impacts/1P/1P_Armor_Body",
+    "/Game/FMOD/Events/Surfaces/Impacts/Armor_Impacts/3P/3P_Armor_Body",
+    "/Script/CoreUObject",
+    "/Script/Engine",
+    "/Script/FMODStudio",
+    "/Script/ReadyOrNot",
+    "1P_Armor_Body",
+    "3P_Armor_Body",
+    "AM_Kevlar",
+    "ArmourHitSound",
+    "ArmourHitSoundFirstPerson",
+    "ArmourMaterial",
+    "AttachParent",
+    "BaseBodyArmor_C",
+    "BlueprintGeneratedClass",
+    "BoxComponent",
+    "CarrierMaterial",
+    "Class",
+    "ComponentClass",
+    "ComponentTemplate",
+    "DataTable",
+    "DataTableRowHandle",
+    "Default__BaseBodyArmor_C",
+    "Default__BlueprintGeneratedClass",
+    "Default__SceneComponent",
+    "Default__SCS_Node",
+    "Default__SimpleConstructionScript",
+    "Default__SWATArmour",
+    "DefaultSceneRoot",
+    "DefaultSceneRoot_GEN_VARIABLE",
+    "DefaultSceneRootNode",
+    "Engine",
+    "EvidenceSecured",
+    "FMODAudioComp",
+    "FMODAudioComponent",
+    "FMODAudioPlayer",
+    "FMODEvent",
+    "Guid",
+    "Interactable Component",
+    "InteractableComponent",
+    "Interaction Box",
+    "InteractionBox",
+    "InternalVariableName",
+    "ItemMesh",
+    "NameProperty",
+    "None",
+    "Object",
+    "ObjectProperty",
+    "Package",
+    "Root",
+    "RootComponent",
+    "RowName",
+    "SceneComp",
+    "SceneComponent",
+    "ScoreGroup",
+    "Scoring Component",
+    "ScoringComponent",
+    "ScoringGroupDataTable",
+    "SCS_Node",
+    "SimpleConstructionScript",
+    "SkeletalMeshComponent",
+    "StructProperty",
+    "SWATArmour",
+    "VariableGuid"
+  ],
+  "UseSeparateBulkDataFiles": true,
+  "EngineVersion": "VER_UE4_25",
+  "LegacyFileVersion": -7,
+  "IsUnversioned": true,
+  "FileVersionLicenseeUE4": 0,
+  "CustomVersionContainer": [],
+  "Imports": [
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/ReadyOrNot",
+      "ClassName": "ArmourMaterial",
+      "ObjectName": "AM_Kevlar",
+      "OuterIndex": -21
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/Engine",
+      "ClassName": "BlueprintGeneratedClass",
+      "ObjectName": "Default__BlueprintGeneratedClass",
+      "OuterIndex": -25
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/Engine",
+      "ClassName": "BoxComponent",
+      "ObjectName": "Interaction Box",
+      "OuterIndex": -34
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Class",
+      "ObjectName": "Object",
+      "OuterIndex": -24
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Class",
+      "ObjectName": "BlueprintGeneratedClass",
+      "OuterIndex": -25
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Class",
+      "ObjectName": "BoxComponent",
+      "OuterIndex": -25
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Class",
+      "ObjectName": "SceneComponent",
+      "OuterIndex": -25
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Class",
+      "ObjectName": "SCS_Node",
+      "OuterIndex": -25
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Class",
+      "ObjectName": "SimpleConstructionScript",
+      "OuterIndex": -25
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Class",
+      "ObjectName": "SkeletalMeshComponent",
+      "OuterIndex": -25
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Class",
+      "ObjectName": "FMODAudioComponent",
+      "OuterIndex": -26
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Class",
+      "ObjectName": "InteractableComponent",
+      "OuterIndex": -27
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Class",
+      "ObjectName": "ScoringComponent",
+      "OuterIndex": -27
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Class",
+      "ObjectName": "SWATArmour",
+      "OuterIndex": -27
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/Engine",
+      "ClassName": "DataTable",
+      "ObjectName": "ScoringGroupDataTable",
+      "OuterIndex": -20
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/FMODStudio",
+      "ClassName": "FMODAudioComponent",
+      "ObjectName": "FMODAudioPlayer",
+      "OuterIndex": -34
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/FMODStudio",
+      "ClassName": "FMODEvent",
+      "ObjectName": "1P_Armor_Body",
+      "OuterIndex": -22
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/FMODStudio",
+      "ClassName": "FMODEvent",
+      "ObjectName": "3P_Armor_Body",
+      "OuterIndex": -23
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/ReadyOrNot",
+      "ClassName": "InteractableComponent",
+      "ObjectName": "Interactable Component",
+      "OuterIndex": -34
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Package",
+      "ObjectName": "/Game/Blueprints/DataTables/ScoringGroupDataTable",
+      "OuterIndex": 0
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Package",
+      "ObjectName": "/Game/Blueprints/Items/ArmorRevised/ArmorMaterials/AM_Kevlar",
+      "OuterIndex": 0
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Package",
+      "ObjectName": "/Game/FMOD/Events/Surfaces/Impacts/Armor_Impacts/1P/1P_Armor_Body",
+      "OuterIndex": 0
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Package",
+      "ObjectName": "/Game/FMOD/Events/Surfaces/Impacts/Armor_Impacts/3P/3P_Armor_Body",
+      "OuterIndex": 0
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Package",
+      "ObjectName": "/Script/CoreUObject",
+      "OuterIndex": 0
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Package",
+      "ObjectName": "/Script/Engine",
+      "OuterIndex": 0
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Package",
+      "ObjectName": "/Script/FMODStudio",
+      "OuterIndex": 0
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Package",
+      "ObjectName": "/Script/ReadyOrNot",
+      "OuterIndex": 0
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/Engine",
+      "ClassName": "SceneComponent",
+      "ObjectName": "Default__SceneComponent",
+      "OuterIndex": -25
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/Engine",
+      "ClassName": "SceneComponent",
+      "ObjectName": "Root",
+      "OuterIndex": -34
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/ReadyOrNot",
+      "ClassName": "ScoringComponent",
+      "ObjectName": "Scoring Component",
+      "OuterIndex": -34
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/Engine",
+      "ClassName": "SCS_Node",
+      "ObjectName": "Default__SCS_Node",
+      "OuterIndex": -25
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/Engine",
+      "ClassName": "SimpleConstructionScript",
+      "ObjectName": "Default__SimpleConstructionScript",
+      "OuterIndex": -25
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/Engine",
+      "ClassName": "SkeletalMeshComponent",
+      "ObjectName": "ItemMesh",
+      "OuterIndex": -34
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/ReadyOrNot",
+      "ClassName": "SWATArmour",
+      "ObjectName": "Default__SWATArmour",
+      "OuterIndex": -27
+    }
+  ],
+  "Exports": [
+    {
+      "$type": "UAssetAPI.ClassExport, UAssetAPI",
+      "FuncMap": [],
+      "ClassFlags": "CLASS_Abstract, CLASS_Config, CLASS_Parsed, CLASS_ReplicationDataIsSetUp, CLASS_CompiledFromBlueprint, CLASS_HasInstancedReference",
+      "ClassWithin": -4,
+      "ClassConfigName": "Engine",
+      "Interfaces": [],
+      "ClassGeneratedBy": 0,
+      "bDeprecatedForceScriptOrder": false,
+      "bCooked": true,
+      "ClassDefaultObject": 2,
+      "SuperStruct": -14,
+      "Children": [],
+      "LoadedProperties": [],
+      "ScriptBytecode": [],
+      "ScriptBytecodeSize": 0,
+      "ScriptBytecodeRaw": null,
+      "Field": {
+        "$type": "UAssetAPI.FieldTypes.UField, UAssetAPI",
+        "Next": null
+      },
+      "Data": [
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.ObjectPropertyData, UAssetAPI",
+          "Name": "SimpleConstructionScript",
+          "DuplicationIndex": 0,
+          "Value": 10
+        }
+      ],
+      "ClassIndex": -5,
+      "SuperIndex": -14,
+      "TemplateIndex": -2,
+      "ObjectFlags": "RF_Public, RF_Transactional",
+      "SerialSize": 109,
+      "SerialOffset": 4493,
+      "bForcedExport": false,
+      "bNotForClient": false,
+      "bNotForServer": false,
+      "PackageGuid": "00000000-0000-0000-0000-000000000000",
+      "PackageFlags": "PKG_None",
+      "bNotAlwaysLoadedForEditorGame": false,
+      "bIsAsset": true,
+      "SerializationBeforeSerializationDependencies": [
+        -14,
+        -34,
+        -7,
+        -29,
+        -10,
+        -33,
+        -6,
+        -3,
+        -11,
+        -16,
+        -12,
+        -19,
+        -13,
+        -30,
+        10
+      ],
+      "CreateBeforeSerializationDependencies": [],
+      "SerializationBeforeCreateDependencies": [
+        -5,
+        -2
+      ],
+      "CreateBeforeCreateDependencies": [
+        -14
+      ],
+      "Extras": {
+        "$type": "System.Byte[], mscorlib",
+        "$value": ""
+      },
+      "ObjectName": "BaseBodyArmor_C",
+      "OuterIndex": 0
+    },
+    {
+      "$type": "UAssetAPI.NormalExport, UAssetAPI",
+      "Data": [
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.ObjectPropertyData, UAssetAPI",
+          "Name": "CarrierMaterial",
+          "DuplicationIndex": 0,
+          "Value": -1
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.ObjectPropertyData, UAssetAPI",
+          "Name": "ArmourHitSound",
+          "DuplicationIndex": 0,
+          "Value": -18
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.ObjectPropertyData, UAssetAPI",
+          "Name": "ArmourHitSoundFirstPerson",
+          "DuplicationIndex": 0,
+          "Value": -17
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.ObjectPropertyData, UAssetAPI",
+          "Name": "FMODAudioComp",
+          "DuplicationIndex": 0,
+          "Value": 4
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.ObjectPropertyData, UAssetAPI",
+          "Name": "InteractableComponent",
+          "DuplicationIndex": 0,
+          "Value": 5
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.ObjectPropertyData, UAssetAPI",
+          "Name": "ScoringComponent",
+          "DuplicationIndex": 0,
+          "Value": 8
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.ObjectPropertyData, UAssetAPI",
+          "Name": "SceneComp",
+          "DuplicationIndex": 0,
+          "Value": 7
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.ObjectPropertyData, UAssetAPI",
+          "Name": "ItemMesh",
+          "DuplicationIndex": 0,
+          "Value": 11
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.ObjectPropertyData, UAssetAPI",
+          "Name": "InteractionBox",
+          "DuplicationIndex": 0,
+          "Value": 3
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.ObjectPropertyData, UAssetAPI",
+          "Name": "RootComponent",
+          "DuplicationIndex": 0,
+          "Value": 7
+        }
+      ],
+      "ClassIndex": 1,
+      "SuperIndex": 0,
+      "TemplateIndex": -34,
+      "ObjectFlags": "RF_Public, RF_Transactional, RF_ClassDefaultObject, RF_ArchetypeObject",
+      "SerialSize": 298,
+      "SerialOffset": 4602,
+      "bForcedExport": false,
+      "bNotForClient": false,
+      "bNotForServer": false,
+      "PackageGuid": "00000000-0000-0000-0000-000000000000",
+      "PackageFlags": "PKG_None",
+      "bNotAlwaysLoadedForEditorGame": false,
+      "bIsAsset": false,
+      "SerializationBeforeSerializationDependencies": [],
+      "CreateBeforeSerializationDependencies": [
+        -1,
+        -18,
+        -17,
+        4,
+        5,
+        8,
+        7,
+        11,
+        3
+      ],
+      "SerializationBeforeCreateDependencies": [
+        1,
+        -34,
+        -29,
+        -33,
+        -3,
+        -16,
+        -19,
+        -30
+      ],
+      "CreateBeforeCreateDependencies": [],
+      "Extras": {
+        "$type": "System.Byte[], mscorlib",
+        "$value": ""
+      },
+      "ObjectName": "Default__BaseBodyArmor_C",
+      "OuterIndex": 0
+    },
+    {
+      "$type": "UAssetAPI.NormalExport, UAssetAPI",
+      "Data": [
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.ObjectPropertyData, UAssetAPI",
+          "Name": "AttachParent",
+          "DuplicationIndex": 0,
+          "Value": 11
+        }
+      ],
+      "ClassIndex": -6,
+      "SuperIndex": 0,
+      "TemplateIndex": -3,
+      "ObjectFlags": "RF_Public, RF_Transactional, RF_ArchetypeObject, RF_DefaultSubObject",
+      "SerialSize": 41,
+      "SerialOffset": 4900,
+      "bForcedExport": false,
+      "bNotForClient": false,
+      "bNotForServer": false,
+      "PackageGuid": "00000000-0000-0000-0000-000000000000",
+      "PackageFlags": "PKG_None",
+      "bNotAlwaysLoadedForEditorGame": true,
+      "bIsAsset": false,
+      "SerializationBeforeSerializationDependencies": [
+        2
+      ],
+      "CreateBeforeSerializationDependencies": [
+        11,
+        -34
+      ],
+      "SerializationBeforeCreateDependencies": [
+        -6,
+        -3
+      ],
+      "CreateBeforeCreateDependencies": [
+        2
+      ],
+      "Extras": {
+        "$type": "System.Byte[], mscorlib",
+        "$value": "AAAAAA=="
+      },
+      "ObjectName": "Interaction Box",
+      "OuterIndex": 2
+    },
+    {
+      "$type": "UAssetAPI.NormalExport, UAssetAPI",
+      "Data": [
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.ObjectPropertyData, UAssetAPI",
+          "Name": "AttachParent",
+          "DuplicationIndex": 0,
+          "Value": 11
+        }
+      ],
+      "ClassIndex": -11,
+      "SuperIndex": 0,
+      "TemplateIndex": -16,
+      "ObjectFlags": "RF_Public, RF_Transactional, RF_ArchetypeObject, RF_DefaultSubObject",
+      "SerialSize": 41,
+      "SerialOffset": 4941,
+      "bForcedExport": false,
+      "bNotForClient": false,
+      "bNotForServer": false,
+      "PackageGuid": "00000000-0000-0000-0000-000000000000",
+      "PackageFlags": "PKG_None",
+      "bNotAlwaysLoadedForEditorGame": true,
+      "bIsAsset": false,
+      "SerializationBeforeSerializationDependencies": [
+        2
+      ],
+      "CreateBeforeSerializationDependencies": [
+        11,
+        -34
+      ],
+      "SerializationBeforeCreateDependencies": [
+        -11,
+        -16
+      ],
+      "CreateBeforeCreateDependencies": [
+        2
+      ],
+      "Extras": {
+        "$type": "System.Byte[], mscorlib",
+        "$value": "AAAAAA=="
+      },
+      "ObjectName": "FMODAudioPlayer",
+      "OuterIndex": 2
+    },
+    {
+      "$type": "UAssetAPI.NormalExport, UAssetAPI",
+      "Data": [
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.ObjectPropertyData, UAssetAPI",
+          "Name": "AttachParent",
+          "DuplicationIndex": 0,
+          "Value": 11
+        }
+      ],
+      "ClassIndex": -12,
+      "SuperIndex": 0,
+      "TemplateIndex": -19,
+      "ObjectFlags": "RF_Public, RF_Transactional, RF_ArchetypeObject, RF_DefaultSubObject",
+      "SerialSize": 41,
+      "SerialOffset": 4982,
+      "bForcedExport": false,
+      "bNotForClient": false,
+      "bNotForServer": false,
+      "PackageGuid": "00000000-0000-0000-0000-000000000000",
+      "PackageFlags": "PKG_None",
+      "bNotAlwaysLoadedForEditorGame": true,
+      "bIsAsset": false,
+      "SerializationBeforeSerializationDependencies": [
+        2
+      ],
+      "CreateBeforeSerializationDependencies": [
+        11,
+        -34
+      ],
+      "SerializationBeforeCreateDependencies": [
+        -12,
+        -19
+      ],
+      "CreateBeforeCreateDependencies": [
+        2
+      ],
+      "Extras": {
+        "$type": "System.Byte[], mscorlib",
+        "$value": "AAAAAA=="
+      },
+      "ObjectName": "Interactable Component",
+      "OuterIndex": 2
+    },
+    {
+      "$type": "UAssetAPI.NormalExport, UAssetAPI",
+      "Data": [],
+      "ClassIndex": -7,
+      "SuperIndex": 0,
+      "TemplateIndex": -28,
+      "ObjectFlags": "RF_Public, RF_Transactional, RF_ArchetypeObject",
+      "SerialSize": 12,
+      "SerialOffset": 5023,
+      "bForcedExport": false,
+      "bNotForClient": false,
+      "bNotForServer": false,
+      "PackageGuid": "00000000-0000-0000-0000-000000000000",
+      "PackageFlags": "PKG_None",
+      "bNotAlwaysLoadedForEditorGame": false,
+      "bIsAsset": false,
+      "SerializationBeforeSerializationDependencies": [
+        1
+      ],
+      "CreateBeforeSerializationDependencies": [],
+      "SerializationBeforeCreateDependencies": [
+        -7,
+        -28
+      ],
+      "CreateBeforeCreateDependencies": [
+        1
+      ],
+      "Extras": {
+        "$type": "System.Byte[], mscorlib",
+        "$value": "AAAAAA=="
+      },
+      "ObjectName": "DefaultSceneRoot_GEN_VARIABLE",
+      "OuterIndex": 1
+    },
+    {
+      "$type": "UAssetAPI.NormalExport, UAssetAPI",
+      "Data": [],
+      "ClassIndex": -7,
+      "SuperIndex": 0,
+      "TemplateIndex": -29,
+      "ObjectFlags": "RF_Public, RF_Transactional, RF_ArchetypeObject, RF_DefaultSubObject",
+      "SerialSize": 12,
+      "SerialOffset": 5035,
+      "bForcedExport": false,
+      "bNotForClient": false,
+      "bNotForServer": false,
+      "PackageGuid": "00000000-0000-0000-0000-000000000000",
+      "PackageFlags": "PKG_None",
+      "bNotAlwaysLoadedForEditorGame": true,
+      "bIsAsset": false,
+      "SerializationBeforeSerializationDependencies": [
+        2
+      ],
+      "CreateBeforeSerializationDependencies": [
+        -34
+      ],
+      "SerializationBeforeCreateDependencies": [
+        -7,
+        -29
+      ],
+      "CreateBeforeCreateDependencies": [
+        2
+      ],
+      "Extras": {
+        "$type": "System.Byte[], mscorlib",
+        "$value": "AAAAAA=="
+      },
+      "ObjectName": "Root",
+      "OuterIndex": 2
+    },
+    {
+      "$type": "UAssetAPI.NormalExport, UAssetAPI",
+      "Data": [
+        {
+          "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+          "StructType": "DataTableRowHandle",
+          "SerializeNone": true,
+          "StructGUID": "00000000-0000-0000-0000-000000000000",
+          "Name": "ScoreGroup",
+          "DuplicationIndex": 0,
+          "Value": [
+            {
+              "$type": "UAssetAPI.PropertyTypes.Objects.NamePropertyData, UAssetAPI",
+              "Name": "RowName",
+              "DuplicationIndex": 0,
+              "Value": "EvidenceSecured"
+            }
+          ]
+        }
+      ],
+      "ClassIndex": -13,
+      "SuperIndex": 0,
+      "TemplateIndex": -30,
+      "ObjectFlags": "RF_Public, RF_Transactional, RF_ArchetypeObject, RF_DefaultSubObject",
+      "SerialSize": 102,
+      "SerialOffset": 5047,
+      "bForcedExport": false,
+      "bNotForClient": false,
+      "bNotForServer": false,
+      "PackageGuid": "00000000-0000-0000-0000-000000000000",
+      "PackageFlags": "PKG_None",
+      "bNotAlwaysLoadedForEditorGame": true,
+      "bIsAsset": false,
+      "SerializationBeforeSerializationDependencies": [
+        2
+      ],
+      "CreateBeforeSerializationDependencies": [
+        -15,
+        -34
+      ],
+      "SerializationBeforeCreateDependencies": [
+        -13,
+        -30
+      ],
+      "CreateBeforeCreateDependencies": [
+        2
+      ],
+      "Extras": {
+        "$type": "System.Byte[], mscorlib",
+        "$value": "AAAAAA=="
+      },
+      "ObjectName": "Scoring Component",
+      "OuterIndex": 2
+    },
+    {
+      "$type": "UAssetAPI.NormalExport, UAssetAPI",
+      "Data": [
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.ObjectPropertyData, UAssetAPI",
+          "Name": "ComponentClass",
+          "DuplicationIndex": 0,
+          "Value": -7
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.ObjectPropertyData, UAssetAPI",
+          "Name": "ComponentTemplate",
+          "DuplicationIndex": 0,
+          "Value": 6
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+          "StructType": "Guid",
+          "SerializeNone": true,
+          "StructGUID": "00000000-0000-0000-0000-000000000000",
+          "Name": "VariableGuid",
+          "DuplicationIndex": 0,
+          "Value": [
+            {
+              "$type": "UAssetAPI.PropertyTypes.Structs.GuidPropertyData, UAssetAPI",
+              "Name": "VariableGuid",
+              "DuplicationIndex": 0,
+              "Value": "55af9b58-21f8-4396-88c5-41a38181f10b"
+            }
+          ]
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.NamePropertyData, UAssetAPI",
+          "Name": "InternalVariableName",
+          "DuplicationIndex": 0,
+          "Value": "DefaultSceneRoot"
+        }
+      ],
+      "ClassIndex": -8,
+      "SuperIndex": 0,
+      "TemplateIndex": -31,
+      "ObjectFlags": "RF_Transactional",
+      "SerialSize": 168,
+      "SerialOffset": 5149,
+      "bForcedExport": false,
+      "bNotForClient": false,
+      "bNotForServer": false,
+      "PackageGuid": "00000000-0000-0000-0000-000000000000",
+      "PackageFlags": "PKG_None",
+      "bNotAlwaysLoadedForEditorGame": false,
+      "bIsAsset": false,
+      "SerializationBeforeSerializationDependencies": [],
+      "CreateBeforeSerializationDependencies": [
+        6,
+        -7
+      ],
+      "SerializationBeforeCreateDependencies": [
+        -8,
+        -31
+      ],
+      "CreateBeforeCreateDependencies": [
+        10
+      ],
+      "Extras": {
+        "$type": "System.Byte[], mscorlib",
+        "$value": "AAAAAA=="
+      },
+      "ObjectName": "SCS_Node_0",
+      "OuterIndex": 10
+    },
+    {
+      "$type": "UAssetAPI.NormalExport, UAssetAPI",
+      "Data": [
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.ObjectPropertyData, UAssetAPI",
+          "Name": "DefaultSceneRootNode",
+          "DuplicationIndex": 0,
+          "Value": 9
+        }
+      ],
+      "ClassIndex": -9,
+      "SuperIndex": 0,
+      "TemplateIndex": -32,
+      "ObjectFlags": "RF_Transactional",
+      "SerialSize": 41,
+      "SerialOffset": 5317,
+      "bForcedExport": false,
+      "bNotForClient": false,
+      "bNotForServer": false,
+      "PackageGuid": "00000000-0000-0000-0000-000000000000",
+      "PackageFlags": "PKG_None",
+      "bNotAlwaysLoadedForEditorGame": false,
+      "bIsAsset": false,
+      "SerializationBeforeSerializationDependencies": [],
+      "CreateBeforeSerializationDependencies": [
+        9
+      ],
+      "SerializationBeforeCreateDependencies": [
+        -9,
+        -32
+      ],
+      "CreateBeforeCreateDependencies": [
+        1
+      ],
+      "Extras": {
+        "$type": "System.Byte[], mscorlib",
+        "$value": "AAAAAA=="
+      },
+      "ObjectName": "SimpleConstructionScript_0",
+      "OuterIndex": 1
+    },
+    {
+      "$type": "UAssetAPI.NormalExport, UAssetAPI",
+      "Data": [
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.ObjectPropertyData, UAssetAPI",
+          "Name": "AttachParent",
+          "DuplicationIndex": 0,
+          "Value": 7
+        }
+      ],
+      "ClassIndex": -10,
+      "SuperIndex": 0,
+      "TemplateIndex": -33,
+      "ObjectFlags": "RF_Public, RF_Transactional, RF_ArchetypeObject, RF_DefaultSubObject",
+      "SerialSize": 41,
+      "SerialOffset": 5358,
+      "bForcedExport": false,
+      "bNotForClient": false,
+      "bNotForServer": false,
+      "PackageGuid": "00000000-0000-0000-0000-000000000000",
+      "PackageFlags": "PKG_None",
+      "bNotAlwaysLoadedForEditorGame": true,
+      "bIsAsset": false,
+      "SerializationBeforeSerializationDependencies": [
+        2
+      ],
+      "CreateBeforeSerializationDependencies": [
+        7,
+        -34
+      ],
+      "SerializationBeforeCreateDependencies": [
+        -10,
+        -33
+      ],
+      "CreateBeforeCreateDependencies": [
+        2
+      ],
+      "Extras": {
+        "$type": "System.Byte[], mscorlib",
+        "$value": "AAAAAA=="
+      },
+      "ObjectName": "ItemMesh",
+      "OuterIndex": 2
+    }
+  ],
+  "DependsMap": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+  ],
+  "SoftPackageReferenceList": [],
+  "AssetRegistryData": [],
+  "WorldTileInfo": null,
+  "Generations": [
+    {
+      "$type": "UAssetAPI.FGenerationInfo, UAssetAPI",
+      "ExportCount": 11,
+      "NameCount": 67
+    }
+  ],
+  "PackageGuid": "a3f99654-df73-4d6e-803f-9e45bac69a00",
+  "RecordedEngineVersion": {
+    "$type": "UAssetAPI.FEngineVersion, UAssetAPI",
+    "Major": 0,
+    "Minor": 0,
+    "Patch": 0,
+    "Changelist": 0,
+    "Branch": null
+  },
+  "RecordedCompatibleWithEngineVersion": {
+    "$type": "UAssetAPI.FEngineVersion, UAssetAPI",
+    "Major": 0,
+    "Minor": 0,
+    "Patch": 0,
+    "Changelist": 0,
+    "Branch": null
+  },
+  "ChunkIDs": [],
+  "PackageFlags": "PKG_FilterEditorOnly",
+  "PackageSource": 2572999326,
+  "FolderName": "None",
+  "GatherableTextDataCount": 0,
+  "GatherableTextDataOffset": 0,
+  "SearchableNamesOffset": 0,
+  "ThumbnailTableOffset": 0,
+  "CompressionFlags": 0,
+  "doWeHaveDependsMap": true,
+  "doWeHaveSoftPackageReferences": false,
+  "doWeHaveAssetRegistryData": true,
+  "doWeHaveWorldTileInfo": false
+}

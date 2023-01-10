@@ -1,0 +1,1648 @@
+{
+  "$type": "UAssetAPI.UAsset, UAssetAPI",
+  "Info": "Serialized with UAssetAPI 1.0.0.0 (946a8a0)",
+  "NameMap": [
+    "/Game/Blueprints/DataTables/ScoringGroupDataTable",
+    "/Game/Blueprints/Items/ArmorRevised/Helmet_UpArmor",
+    "/Game/FMOD/Events/Surfaces/Impacts/Armor_Impacts/1P/1P_Armor_Head",
+    "/Game/FMOD/Events/Surfaces/Impacts/Armor_Impacts/3P/3P_Armor_Head",
+    "/Game/FMOD/Events/Surfaces/Impacts/Bullet_Impacts/Ricochets",
+    "/Game/ReadyOrNot/Assets/Particles/Weapon_VFX/Particles/P_VFX_Impact_Galvanized",
+    "/Game/ReadyOrNot/Character/SWAT/SWAT_UpArmor/SWAT_Helmet_UpArmoredGoggles",
+    "/Game/ReadyOrNot/UI/HUD/FP/Goggles_Widget",
+    "/Game/ReadyOrNot/UI/HUD_Revised/Paperdoll/Crouch/Paperdoll_Crouch_Armor_Helmet_Light_White",
+    "/Game/ReadyOrNot/UI/HUD_Revised/Paperdoll/Crouch/Paperdoll_Crouch_Armor_Helmet_Light_White.Paperdoll_Crouch_Armor_Helmet_Light_White",
+    "/Game/ReadyOrNot/UI/HUD_Revised/Paperdoll/Paperdoll_Armor_Helmet_Light_White",
+    "/Game/ReadyOrNot/UI/HUD_Revised/Paperdoll/Paperdoll_Armor_Helmet_Light_White.Paperdoll_Armor_Helmet_Light_White",
+    "/Game/ReadyOrNot/UI/PlanningV3/UI_Cust_Tactical_Armor",
+    "/Game/ReadyOrNot/UI/PlanningV3/UI_Cust_Tactical_Armor.UI_Cust_Tactical_Armor",
+    "/Script/CoreUObject",
+    "/Script/Engine",
+    "/Script/FMODStudio",
+    "/Script/ReadyOrNot",
+    "/Script/UMG",
+    "1P_Armor_Head",
+    "3P_Armor_Head",
+    "Actor",
+    "ArmourHitParticle",
+    "ArmourHitSound",
+    "ArmourHitSoundFirstPerson",
+    "ArrayProperty",
+    "AttachParent",
+    "AutoExposureBiasBackup",
+    "BlueprintGeneratedClass",
+    "BodySocket",
+    "BoolProperty",
+    "bOverride_Bloom1Size",
+    "bOverride_Bloom2Size",
+    "bOverride_Bloom3Size",
+    "bOverride_Bloom4Size",
+    "bOverride_Bloom5Size",
+    "bOverride_Bloom6Size",
+    "bOverride_BloomDirtMask",
+    "bOverride_BloomDirtMaskIntensity",
+    "bOverride_BloomDirtMaskTint",
+    "bOverride_BloomIntensity",
+    "bOverride_BloomMethod",
+    "bOverride_BloomThreshold",
+    "bOverride_ChromaticAberrationStartOffset",
+    "bOverride_FilmSlope",
+    "bOverride_SceneFringeIntensity",
+    "BoxComponent",
+    "CallFunc_GetOwner_ReturnValue",
+    "CallFunc_IsValid_ReturnValue",
+    "Class",
+    "ComponentClass",
+    "ComponentTemplate",
+    "DamageReduction",
+    "DataTable",
+    "DataTableRowHandle",
+    "Default__BlueprintGeneratedClass",
+    "Default__Function",
+    "Default__Goggles_Widget_C",
+    "Default__Headwear",
+    "Default__Helmet_UpArmor_C",
+    "Default__SceneComponent",
+    "Default__SCS_Node",
+    "Default__SimpleConstructionScript",
+    "DefaultSceneRoot",
+    "DefaultSceneRoot_GEN_VARIABLE",
+    "DefaultSceneRootNode",
+    "DeltaSeconds",
+    "Durability",
+    "EItemCategory::IC_Armor",
+    "EItemCategory::IC_Helmet",
+    "EItemClass",
+    "EItemClass::IC_Headgear",
+    "Engine",
+    "EntryPoint",
+    "EnumProperty",
+    "EvidenceSecured",
+    "ExecuteUbergraph_Helmet_UpArmor",
+    "FloatProperty",
+    "FMODAudioComp",
+    "FMODAudioComponent",
+    "FMODAudioPlayer",
+    "FMODEvent",
+    "FreeAimInterpADSModifier",
+    "FreeAimInterpHipModifier",
+    "FreeAimInterpSpeed",
+    "FreeAimSlowMoveModifier",
+    "FreeAimSlowMoveTolerance",
+    "Function",
+    "GetOwner",
+    "Goggles_Widget_C",
+    "Guid",
+    "HandsSocket",
+    "head_equipment_armor",
+    "Headwear",
+    "Helmet_UpArmor_C",
+    "InertiaDragStrafeLocation",
+    "InertiaDragStrafeRotation",
+    "Interactable Component",
+    "InteractableComponent",
+    "Interaction Box",
+    "InteractionBox",
+    "InternalVariableName",
+    "IntProperty",
+    "IsValid",
+    "ItemCategories",
+    "ItemClass",
+    "ItemDescription",
+    "ItemIcon",
+    "ItemMesh",
+    "ItemName",
+    "ItemSelectorName",
+    "ItemVisualData",
+    "ItemWeight",
+    "K2Node_Event_DeltaSeconds",
+    "KismetSystemLibrary",
+    "LensFlareTints",
+    "LinearColor",
+    "LookupTableIdx",
+    "MaskOverlay",
+    "MaskPostProcess",
+    "NameProperty",
+    "None",
+    "Object",
+    "ObjectProperty",
+    "P_VFX_Impact_Galvanized",
+    "Package",
+    "PaperdollTexture",
+    "PaperdollTexture_Carry",
+    "PaperdollTexture_Carry_Crouch",
+    "PaperdollTexture_Crouch",
+    "ParticleSystem",
+    "playerState",
+    "PlayerState",
+    "PointerToUberGraphFrame",
+    "PostProcessSettings",
+    "ReceiveTick",
+    "RicochetChance",
+    "RicochetEvent",
+    "Ricochets",
+    "Root",
+    "RootComponent",
+    "RowName",
+    "SceneComp",
+    "SceneComponent",
+    "ScoreGroup",
+    "Scoring Component",
+    "ScoringComponent",
+    "ScoringGroupDataTable",
+    "ScriptStruct",
+    "SCS_Node",
+    "SimpleConstructionScript",
+    "SkeletalMesh",
+    "SkeletalMeshComponent",
+    "SoftObjectProperty",
+    "StrProperty",
+    "StructProperty",
+    "SWAT_Helmet_UpArmoredGoggles",
+    "TextProperty",
+    "UberGraphFrame",
+    "UberGraphFunction",
+    "UpArmor",
+    "VariableGuid",
+    "Visuals",
+    "WidgetBlueprintGeneratedClass",
+    "ArmourLevel",
+    "16777216"
+  ],
+  "UseSeparateBulkDataFiles": true,
+  "EngineVersion": "VER_UE4_FILLER_22",
+  "LegacyFileVersion": -7,
+  "IsUnversioned": true,
+  "FileVersionLicenseeUE4": 0,
+  "CustomVersionContainer": [],
+  "Imports": [
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/Engine",
+      "ClassName": "BlueprintGeneratedClass",
+      "ObjectName": "Default__BlueprintGeneratedClass",
+      "OuterIndex": -38
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/Engine",
+      "ClassName": "BoxComponent",
+      "ObjectName": "Interaction Box",
+      "OuterIndex": -28
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Class",
+      "ObjectName": "Function",
+      "OuterIndex": -37
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Class",
+      "ObjectName": "Object",
+      "OuterIndex": -37
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Class",
+      "ObjectName": "Actor",
+      "OuterIndex": -38
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Class",
+      "ObjectName": "BlueprintGeneratedClass",
+      "OuterIndex": -38
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Class",
+      "ObjectName": "BoxComponent",
+      "OuterIndex": -38
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Class",
+      "ObjectName": "KismetSystemLibrary",
+      "OuterIndex": -38
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Class",
+      "ObjectName": "PlayerState",
+      "OuterIndex": -38
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Class",
+      "ObjectName": "SceneComponent",
+      "OuterIndex": -38
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Class",
+      "ObjectName": "SCS_Node",
+      "OuterIndex": -38
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Class",
+      "ObjectName": "SimpleConstructionScript",
+      "OuterIndex": -38
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Class",
+      "ObjectName": "SkeletalMeshComponent",
+      "OuterIndex": -38
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Class",
+      "ObjectName": "FMODAudioComponent",
+      "OuterIndex": -39
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Class",
+      "ObjectName": "Headwear",
+      "OuterIndex": -40
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Class",
+      "ObjectName": "InteractableComponent",
+      "OuterIndex": -40
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Class",
+      "ObjectName": "ScoringComponent",
+      "OuterIndex": -40
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/Engine",
+      "ClassName": "DataTable",
+      "ObjectName": "ScoringGroupDataTable",
+      "OuterIndex": -30
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/FMODStudio",
+      "ClassName": "FMODAudioComponent",
+      "ObjectName": "FMODAudioPlayer",
+      "OuterIndex": -28
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/FMODStudio",
+      "ClassName": "FMODEvent",
+      "ObjectName": "1P_Armor_Head",
+      "OuterIndex": -31
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/FMODStudio",
+      "ClassName": "FMODEvent",
+      "ObjectName": "3P_Armor_Head",
+      "OuterIndex": -32
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/FMODStudio",
+      "ClassName": "FMODEvent",
+      "ObjectName": "Ricochets",
+      "OuterIndex": -33
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Function",
+      "ObjectName": "Default__Function",
+      "OuterIndex": -37
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Function",
+      "ObjectName": "GetOwner",
+      "OuterIndex": -5
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Function",
+      "ObjectName": "ReceiveTick",
+      "OuterIndex": -5
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Function",
+      "ObjectName": "IsValid",
+      "OuterIndex": -8
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Game/ReadyOrNot/UI/HUD/FP/Goggles_Widget",
+      "ClassName": "Goggles_Widget_C",
+      "ObjectName": "Default__Goggles_Widget_C",
+      "OuterIndex": -36
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/ReadyOrNot",
+      "ClassName": "Headwear",
+      "ObjectName": "Default__Headwear",
+      "OuterIndex": -40
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/ReadyOrNot",
+      "ClassName": "InteractableComponent",
+      "ObjectName": "Interactable Component",
+      "OuterIndex": -28
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Package",
+      "ObjectName": "/Game/Blueprints/DataTables/ScoringGroupDataTable",
+      "OuterIndex": 0
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Package",
+      "ObjectName": "/Game/FMOD/Events/Surfaces/Impacts/Armor_Impacts/1P/1P_Armor_Head",
+      "OuterIndex": 0
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Package",
+      "ObjectName": "/Game/FMOD/Events/Surfaces/Impacts/Armor_Impacts/3P/3P_Armor_Head",
+      "OuterIndex": 0
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Package",
+      "ObjectName": "/Game/FMOD/Events/Surfaces/Impacts/Bullet_Impacts/Ricochets",
+      "OuterIndex": 0
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Package",
+      "ObjectName": "/Game/ReadyOrNot/Assets/Particles/Weapon_VFX/Particles/P_VFX_Impact_Galvanized",
+      "OuterIndex": 0
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Package",
+      "ObjectName": "/Game/ReadyOrNot/Character/SWAT/SWAT_UpArmor/SWAT_Helmet_UpArmoredGoggles",
+      "OuterIndex": 0
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Package",
+      "ObjectName": "/Game/ReadyOrNot/UI/HUD/FP/Goggles_Widget",
+      "OuterIndex": 0
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Package",
+      "ObjectName": "/Script/CoreUObject",
+      "OuterIndex": 0
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Package",
+      "ObjectName": "/Script/Engine",
+      "OuterIndex": 0
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Package",
+      "ObjectName": "/Script/FMODStudio",
+      "OuterIndex": 0
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Package",
+      "ObjectName": "/Script/ReadyOrNot",
+      "OuterIndex": 0
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/Engine",
+      "ClassName": "ParticleSystem",
+      "ObjectName": "P_VFX_Impact_Galvanized",
+      "OuterIndex": -34
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/Engine",
+      "ClassName": "SceneComponent",
+      "ObjectName": "Default__SceneComponent",
+      "OuterIndex": -38
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/Engine",
+      "ClassName": "SceneComponent",
+      "ObjectName": "Root",
+      "OuterIndex": -28
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/ReadyOrNot",
+      "ClassName": "ScoringComponent",
+      "ObjectName": "Scoring Component",
+      "OuterIndex": -28
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "ScriptStruct",
+      "ObjectName": "PointerToUberGraphFrame",
+      "OuterIndex": -38
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/Engine",
+      "ClassName": "SCS_Node",
+      "ObjectName": "Default__SCS_Node",
+      "OuterIndex": -38
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/Engine",
+      "ClassName": "SimpleConstructionScript",
+      "ObjectName": "Default__SimpleConstructionScript",
+      "OuterIndex": -38
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/Engine",
+      "ClassName": "SkeletalMesh",
+      "ObjectName": "SWAT_Helmet_UpArmoredGoggles",
+      "OuterIndex": -35
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/Engine",
+      "ClassName": "SkeletalMeshComponent",
+      "ObjectName": "ItemMesh",
+      "OuterIndex": -28
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ClassPackage": "/Script/UMG",
+      "ClassName": "WidgetBlueprintGeneratedClass",
+      "ObjectName": "Goggles_Widget_C",
+      "OuterIndex": -36
+    }
+  ],
+  "Exports": [
+    {
+      "$type": "UAssetAPI.FunctionExport, UAssetAPI",
+      "FunctionFlags": 113,
+      "SuperStruct": 0,
+      "Children": [],
+      "LoadedProperties": [],
+      "ScriptBytecode": null,
+      "ScriptBytecodeSize": 4,
+      "ScriptBytecodeRaw": {
+        "$type": "System.Byte[], mscorlib",
+        "$value": "AAAAAEkAAAAAAAAAAQAAAAEAAAAEAAAAlAAAAAAAAAAAAHkAAAAAAAAAAHsAAAAAAAAALwAAAAAAAAABAAAAAQAAAAgAAAAAAAAAAAAAAAAAeQAAAAAAAAAA+////00AAAAAAAAA"
+      },
+      "Field": {
+        "$type": "UAssetAPI.FieldTypes.UField, UAssetAPI",
+        "Next": null
+      },
+      "Data": [],
+      "ClassIndex": -3,
+      "SuperIndex": 0,
+      "TemplateIndex": -23,
+      "ObjectFlags": "RF_Public",
+      "SerialSize": 360,
+      "SerialOffset": 8417,
+      "bForcedExport": false,
+      "bNotForClient": false,
+      "bNotForServer": false,
+      "PackageGuid": "00000000-0000-0000-0000-000000000000",
+      "PackageFlags": "PKG_None",
+      "bNotAlwaysLoadedForEditorGame": false,
+      "bIsAsset": false,
+      "SerializationBeforeSerializationDependencies": [],
+      "CreateBeforeSerializationDependencies": [
+        1,
+        -5,
+        -24,
+        -26,
+        -8
+      ],
+      "SerializationBeforeCreateDependencies": [],
+      "CreateBeforeCreateDependencies": [
+        3
+      ],
+      "Extras": {
+        "$type": "System.Byte[], mscorlib",
+        "$value": "AAAAAAEAAAABAAAABAAAAAAAAAAAAAAAAAB5AAAAAAAAAAAeAAAAAAAAADAAAAAAAAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAHkAAAAAAAAAAAEAAf8BAVYAAAB2AAAATgABAAAASQAAAAAAAAABAAAAXwABAAAALwAAAAAAAAABAAAAHOj///8WFAABAAAAMAAAAAAAAAABAAAAaOb///8AAQAAAC8AAAAAAAAAAQAAABYHUwAAAAABAAAAMAAAAAAAAAABAAAABlMAAAAGCgAAAAQLUwGAAAAAAAAAAAAAAA=="
+      },
+      "ObjectName": "ExecuteUbergraph_Helmet_UpArmor",
+      "OuterIndex": 3
+    },
+    {
+      "$type": "UAssetAPI.FunctionExport, UAssetAPI",
+      "FunctionFlags": "FUNC_None",
+      "SuperStruct": -25,
+      "Children": [],
+      "LoadedProperties": [],
+      "ScriptBytecode": null,
+      "ScriptBytecodeSize": 1,
+      "ScriptBytecodeRaw": {
+        "$type": "System.Byte[], mscorlib",
+        "$value": "AAAAAEIAAAAAAAAAAQAAAAEAAAAEAAAAlAAAAAAAAAAAAHkAAAAAAAAAACQAAAAwAAAAZAEAAABxAAAAAAAAAAEAAAAAAQAAAEIAAAA="
+      },
+      "Field": {
+        "$type": "UAssetAPI.FieldTypes.UField, UAssetAPI",
+        "Next": null
+      },
+      "Data": [],
+      "ClassIndex": -3,
+      "SuperIndex": -25,
+      "TemplateIndex": -23,
+      "ObjectFlags": "RF_Public",
+      "SerialSize": 139,
+      "SerialOffset": 8777,
+      "bForcedExport": false,
+      "bNotForClient": false,
+      "bNotForServer": false,
+      "PackageGuid": "00000000-0000-0000-0000-000000000000",
+      "PackageFlags": "PKG_None",
+      "bNotAlwaysLoadedForEditorGame": false,
+      "bIsAsset": false,
+      "SerializationBeforeSerializationDependencies": [
+        -25
+      ],
+      "CreateBeforeSerializationDependencies": [
+        1,
+        2,
+        -5
+      ],
+      "SerializationBeforeCreateDependencies": [],
+      "CreateBeforeCreateDependencies": [
+        3,
+        -25
+      ],
+      "Extras": {
+        "$type": "System.Byte[], mscorlib",
+        "$value": "AgAAAEYBAAAAHU4AAAAWBAtTAAgCCAAAAAAAAAAA"
+      },
+      "ObjectName": "ReceiveTick",
+      "OuterIndex": 3
+    },
+    {
+      "$type": "UAssetAPI.RawExport, UAssetAPI",
+      "Data": {
+        "$type": "System.Byte[], mscorlib",
+        "$value": "lgAAAAAAAAB7AAAAAAAAAAQAAAAAAAAAAAwAAACfAAAAAAAAAHsAAAAAAAAABAAAAAAAAAAAAQAAAHkAAAAAAAAAAAAAAPH///8CAAAAAgAAAAEAAAACAAAAmwAAAAAAAACeAAAAAAAAAAEAIAABAAAAEAAAAAAgIAAAAAAAAAB5AAAAAAAAAADT////ewAAAAAAAACDAAAAAAAAAAEAIAABAAAACAAAAAUIAQAAAAAAAAB5AAAAAAAAAAD3////AAAAAAAAAAACAAAATAAAAAAAAAABAAAAhwAAAAAAAAACAAAAFAiEAPz///9IAAAAAAAAAAAAAAAAAAAAAAAAAHkAAAAAAAAAAQAAAAQAAAA="
+      },
+      "ClassIndex": -6,
+      "SuperIndex": -15,
+      "TemplateIndex": -1,
+      "ObjectFlags": "RF_Public, RF_Transactional",
+      "SerialSize": 272,
+      "SerialOffset": 8916,
+      "bForcedExport": false,
+      "bNotForClient": false,
+      "bNotForServer": false,
+      "PackageGuid": "00000000-0000-0000-0000-000000000000",
+      "PackageFlags": "PKG_None",
+      "bNotAlwaysLoadedForEditorGame": false,
+      "bIsAsset": true,
+      "SerializationBeforeSerializationDependencies": [
+        -15,
+        -45,
+        -28,
+        1,
+        -10,
+        -43,
+        -13,
+        -49,
+        -7,
+        -2,
+        -14,
+        -19,
+        -16,
+        -29,
+        -17,
+        -44,
+        12
+      ],
+      "CreateBeforeSerializationDependencies": [
+        2,
+        -9
+      ],
+      "SerializationBeforeCreateDependencies": [
+        -6,
+        -1
+      ],
+      "CreateBeforeCreateDependencies": [
+        -15
+      ],
+      "Extras": {
+        "$type": "System.Byte[], mscorlib",
+        "$value": ""
+      },
+      "ObjectName": "Helmet_UpArmor_C",
+      "OuterIndex": 0
+    },
+    {
+      "$type": "UAssetAPI.NormalExport, UAssetAPI",
+      "Data": [
+        {
+          "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+          "StructType": "PointerToUberGraphFrame",
+          "SerializeNone": true,
+          "StructGUID": "00000000-0000-0000-0000-000000000000",
+          "Name": "UberGraphFrame",
+          "DuplicationIndex": 0,
+          "Value": []
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
+          "Value": 20.0,
+          "Name": "Durability",
+          "DuplicationIndex": 0
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
+          "Value": 1.0,
+          "Name": "DamageReduction",
+          "DuplicationIndex": 0
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
+          "Value": 0.25,
+          "Name": "RicochetChance",
+          "DuplicationIndex": 0
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.ObjectPropertyData, UAssetAPI",
+          "Name": "RicochetEvent",
+          "DuplicationIndex": 0,
+          "Value": -22
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.ObjectPropertyData, UAssetAPI",
+          "Name": "MaskOverlay",
+          "DuplicationIndex": 0,
+          "Value": -50
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+          "StructType": "PostProcessSettings",
+          "SerializeNone": true,
+          "StructGUID": "00000000-0000-0000-0000-000000000000",
+          "Name": "MaskPostProcess",
+          "DuplicationIndex": 0,
+          "Value": [
+            {
+              "$type": "UAssetAPI.PropertyTypes.Objects.BoolPropertyData, UAssetAPI",
+              "Name": "bOverride_FilmSlope",
+              "DuplicationIndex": 0,
+              "Value": true
+            },
+            {
+              "$type": "UAssetAPI.PropertyTypes.Objects.BoolPropertyData, UAssetAPI",
+              "Name": "bOverride_SceneFringeIntensity",
+              "DuplicationIndex": 0,
+              "Value": true
+            },
+            {
+              "$type": "UAssetAPI.PropertyTypes.Objects.BoolPropertyData, UAssetAPI",
+              "Name": "bOverride_ChromaticAberrationStartOffset",
+              "DuplicationIndex": 0,
+              "Value": true
+            },
+            {
+              "$type": "UAssetAPI.PropertyTypes.Objects.BoolPropertyData, UAssetAPI",
+              "Name": "bOverride_BloomMethod",
+              "DuplicationIndex": 0,
+              "Value": true
+            },
+            {
+              "$type": "UAssetAPI.PropertyTypes.Objects.BoolPropertyData, UAssetAPI",
+              "Name": "bOverride_BloomIntensity",
+              "DuplicationIndex": 0,
+              "Value": true
+            },
+            {
+              "$type": "UAssetAPI.PropertyTypes.Objects.BoolPropertyData, UAssetAPI",
+              "Name": "bOverride_BloomThreshold",
+              "DuplicationIndex": 0,
+              "Value": true
+            },
+            {
+              "$type": "UAssetAPI.PropertyTypes.Objects.BoolPropertyData, UAssetAPI",
+              "Name": "bOverride_Bloom1Size",
+              "DuplicationIndex": 0,
+              "Value": true
+            },
+            {
+              "$type": "UAssetAPI.PropertyTypes.Objects.BoolPropertyData, UAssetAPI",
+              "Name": "bOverride_Bloom2Size",
+              "DuplicationIndex": 0,
+              "Value": true
+            },
+            {
+              "$type": "UAssetAPI.PropertyTypes.Objects.BoolPropertyData, UAssetAPI",
+              "Name": "bOverride_Bloom3Size",
+              "DuplicationIndex": 0,
+              "Value": true
+            },
+            {
+              "$type": "UAssetAPI.PropertyTypes.Objects.BoolPropertyData, UAssetAPI",
+              "Name": "bOverride_Bloom4Size",
+              "DuplicationIndex": 0,
+              "Value": true
+            },
+            {
+              "$type": "UAssetAPI.PropertyTypes.Objects.BoolPropertyData, UAssetAPI",
+              "Name": "bOverride_Bloom5Size",
+              "DuplicationIndex": 0,
+              "Value": true
+            },
+            {
+              "$type": "UAssetAPI.PropertyTypes.Objects.BoolPropertyData, UAssetAPI",
+              "Name": "bOverride_Bloom6Size",
+              "DuplicationIndex": 0,
+              "Value": true
+            },
+            {
+              "$type": "UAssetAPI.PropertyTypes.Objects.BoolPropertyData, UAssetAPI",
+              "Name": "bOverride_BloomDirtMaskIntensity",
+              "DuplicationIndex": 0,
+              "Value": true
+            },
+            {
+              "$type": "UAssetAPI.PropertyTypes.Objects.BoolPropertyData, UAssetAPI",
+              "Name": "bOverride_BloomDirtMaskTint",
+              "DuplicationIndex": 0,
+              "Value": true
+            },
+            {
+              "$type": "UAssetAPI.PropertyTypes.Objects.BoolPropertyData, UAssetAPI",
+              "Name": "bOverride_BloomDirtMask",
+              "DuplicationIndex": 0,
+              "Value": true
+            },
+            {
+              "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
+              "Value": 1.0,
+              "Name": "AutoExposureBiasBackup",
+              "DuplicationIndex": 0
+            },
+            {
+              "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+              "StructType": "LinearColor",
+              "SerializeNone": true,
+              "StructGUID": "00000000-0000-0000-0000-000000000000",
+              "Name": "LensFlareTints",
+              "DuplicationIndex": 1,
+              "Value": [
+                {
+                  "$type": "UAssetAPI.PropertyTypes.Structs.LinearColorPropertyData, UAssetAPI",
+                  "Name": "LensFlareTints",
+                  "DuplicationIndex": 0,
+                  "Value": {
+                    "$type": "UAssetAPI.PropertyTypes.Structs.LinearColor, UAssetAPI",
+                    "R": 0.72263497114181519,
+                    "G": 0.74245202541351318,
+                    "B": 1.0,
+                    "A": 0.52999997138977051
+                  }
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+              "StructType": "LinearColor",
+              "SerializeNone": true,
+              "StructGUID": "00000000-0000-0000-0000-000000000000",
+              "Name": "LensFlareTints",
+              "DuplicationIndex": 6,
+              "Value": [
+                {
+                  "$type": "UAssetAPI.PropertyTypes.Structs.LinearColorPropertyData, UAssetAPI",
+                  "Name": "LensFlareTints",
+                  "DuplicationIndex": 0,
+                  "Value": {
+                    "$type": "UAssetAPI.PropertyTypes.Structs.LinearColor, UAssetAPI",
+                    "R": 0.218532994389534,
+                    "G": 0.36181598901748657,
+                    "B": 0.79166698455810547,
+                    "A": 0.2199999988079071
+                  }
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+              "StructType": "LinearColor",
+              "SerializeNone": true,
+              "StructGUID": "00000000-0000-0000-0000-000000000000",
+              "Name": "LensFlareTints",
+              "DuplicationIndex": 7,
+              "Value": [
+                {
+                  "$type": "UAssetAPI.PropertyTypes.Structs.LinearColorPropertyData, UAssetAPI",
+                  "Name": "LensFlareTints",
+                  "DuplicationIndex": 0,
+                  "Value": {
+                    "$type": "UAssetAPI.PropertyTypes.Structs.LinearColor, UAssetAPI",
+                    "R": 0.71893900632858276,
+                    "G": 0.835873007774353,
+                    "B": 0.89999997615814209,
+                    "A": 0.15000000596046448
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.ObjectPropertyData, UAssetAPI",
+          "Name": "ArmourHitParticle",
+          "DuplicationIndex": 0,
+          "Value": -41
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.ObjectPropertyData, UAssetAPI",
+          "Name": "ArmourHitSound",
+          "DuplicationIndex": 0,
+          "Value": -21
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.ObjectPropertyData, UAssetAPI",
+          "Name": "ArmourHitSoundFirstPerson",
+          "DuplicationIndex": 0,
+          "Value": -20
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.SoftObjectPropertyData, UAssetAPI",
+          "ID": 0,
+          "Name": "PaperdollTexture",
+          "DuplicationIndex": 0,
+          "Value": "/Game/ReadyOrNot/UI/HUD_Revised/Paperdoll/Paperdoll_Armor_Helmet_Light_White.Paperdoll_Armor_Helmet_Light_White"
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.SoftObjectPropertyData, UAssetAPI",
+          "ID": 0,
+          "Name": "PaperdollTexture_Crouch",
+          "DuplicationIndex": 0,
+          "Value": "/Game/ReadyOrNot/UI/HUD_Revised/Paperdoll/Crouch/Paperdoll_Crouch_Armor_Helmet_Light_White.Paperdoll_Crouch_Armor_Helmet_Light_White"
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.SoftObjectPropertyData, UAssetAPI",
+          "ID": 0,
+          "Name": "PaperdollTexture_Carry",
+          "DuplicationIndex": 0,
+          "Value": "/Game/ReadyOrNot/UI/HUD_Revised/Paperdoll/Paperdoll_Armor_Helmet_Light_White.Paperdoll_Armor_Helmet_Light_White"
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.SoftObjectPropertyData, UAssetAPI",
+          "ID": 0,
+          "Name": "PaperdollTexture_Carry_Crouch",
+          "DuplicationIndex": 0,
+          "Value": "/Game/ReadyOrNot/UI/HUD_Revised/Paperdoll/Crouch/Paperdoll_Crouch_Armor_Helmet_Light_White.Paperdoll_Crouch_Armor_Helmet_Light_White"
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.ObjectPropertyData, UAssetAPI",
+          "Name": "FMODAudioComp",
+          "DuplicationIndex": 0,
+          "Value": 6
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.ObjectPropertyData, UAssetAPI",
+          "Name": "InteractableComponent",
+          "DuplicationIndex": 0,
+          "Value": 7
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.ObjectPropertyData, UAssetAPI",
+          "Name": "ScoringComponent",
+          "DuplicationIndex": 0,
+          "Value": 10
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
+          "Value": 2.0,
+          "Name": "ItemWeight",
+          "DuplicationIndex": 0
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.NamePropertyData, UAssetAPI",
+          "Name": "LookupTableIdx",
+          "DuplicationIndex": 0,
+          "Value": "UpArmor"
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.StrPropertyData, UAssetAPI",
+          "Name": "ItemName",
+          "DuplicationIndex": 0,
+          "Value": "UPARMORING"
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.EnumPropertyData, UAssetAPI",
+          "EnumType": "EItemClass",
+          "Name": "ItemClass",
+          "DuplicationIndex": 0,
+          "Value": "EItemClass::IC_Headgear"
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.TextPropertyData, UAssetAPI",
+          "Flags": 0,
+          "HistoryType": "Base",
+          "Namespace": "",
+          "CultureInvariantString": "Extra protection for the front of the head, as well as plates on the sides to assist in deflecting projectiles.",
+          "Name": "ItemDescription",
+          "DuplicationIndex": 0,
+          "Value": "653D64224EF6FC107091E3A1340E765B"
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.StrPropertyData, UAssetAPI",
+          "Name": "ItemSelectorName",
+          "DuplicationIndex": 0,
+          "Value": "ARMOR"
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+          "StructType": "ItemVisualData",
+          "SerializeNone": true,
+          "StructGUID": "00000000-0000-0000-0000-000000000000",
+          "Name": "Visuals",
+          "DuplicationIndex": 0,
+          "Value": [
+            {
+              "$type": "UAssetAPI.PropertyTypes.Objects.SoftObjectPropertyData, UAssetAPI",
+              "ID": 0,
+              "Name": "ItemIcon",
+              "DuplicationIndex": 0,
+              "Value": "/Game/ReadyOrNot/UI/PlanningV3/UI_Cust_Tactical_Armor.UI_Cust_Tactical_Armor"
+            }
+          ]
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.ObjectPropertyData, UAssetAPI",
+          "Name": "SceneComp",
+          "DuplicationIndex": 0,
+          "Value": 8
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.ObjectPropertyData, UAssetAPI",
+          "Name": "ItemMesh",
+          "DuplicationIndex": 0,
+          "Value": 13
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.ObjectPropertyData, UAssetAPI",
+          "Name": "InteractionBox",
+          "DuplicationIndex": 0,
+          "Value": 5
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
+          "Value": 1.0,
+          "Name": "InertiaDragStrafeRotation",
+          "DuplicationIndex": 0
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
+          "Value": 1.0,
+          "Name": "InertiaDragStrafeLocation",
+          "DuplicationIndex": 0
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.NamePropertyData, UAssetAPI",
+          "Name": "BodySocket",
+          "DuplicationIndex": 0,
+          "Value": "head_equipment_armor"
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.NamePropertyData, UAssetAPI",
+          "Name": "HandsSocket",
+          "DuplicationIndex": 0,
+          "Value": "head_equipment_armor"
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.ArrayPropertyData, UAssetAPI",
+          "ArrayType": "EnumProperty",
+          "Name": "ItemCategories",
+          "DuplicationIndex": 0,
+          "Value": [
+            {
+              "$type": "UAssetAPI.PropertyTypes.Objects.EnumPropertyData, UAssetAPI",
+              "EnumType": null,
+              "Name": "",
+              "DuplicationIndex": 0,
+              "Value": "EItemCategory::IC_Armor"
+            },
+            {
+              "$type": "UAssetAPI.PropertyTypes.Objects.EnumPropertyData, UAssetAPI",
+              "EnumType": null,
+              "Name": "",
+              "DuplicationIndex": 0,
+              "Value": "EItemCategory::IC_Helmet"
+            }
+          ]
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
+          "Value": 20.0,
+          "Name": "FreeAimInterpSpeed",
+          "DuplicationIndex": 0
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
+          "Value": 1.0,
+          "Name": "FreeAimInterpADSModifier",
+          "DuplicationIndex": 0
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
+          "Value": 1.0,
+          "Name": "FreeAimInterpHipModifier",
+          "DuplicationIndex": 0
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
+          "Value": 0.30000001192092896,
+          "Name": "FreeAimSlowMoveModifier",
+          "DuplicationIndex": 0
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
+          "Value": 360.0,
+          "Name": "FreeAimSlowMoveTolerance",
+          "DuplicationIndex": 0
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.ObjectPropertyData, UAssetAPI",
+          "Name": "RootComponent",
+          "DuplicationIndex": 0,
+          "Value": 8
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
+          "Value": 5.0,
+          "Name": "ArmourLevel",
+          "DuplicationIndex": 0
+        }
+      ],
+      "ClassIndex": 3,
+      "SuperIndex": 0,
+      "TemplateIndex": -28,
+      "ObjectFlags": "RF_Public, RF_ClassDefaultObject, RF_ArchetypeObject",
+      "SerialSize": 2130,
+      "SerialOffset": 9188,
+      "bForcedExport": false,
+      "bNotForClient": false,
+      "bNotForServer": false,
+      "PackageGuid": "00000000-0000-0000-0000-000000000000",
+      "PackageFlags": "PKG_None",
+      "bNotAlwaysLoadedForEditorGame": false,
+      "bIsAsset": false,
+      "SerializationBeforeSerializationDependencies": [],
+      "CreateBeforeSerializationDependencies": [
+        -22,
+        -50,
+        -41,
+        -21,
+        -20,
+        6,
+        7,
+        10,
+        8,
+        13,
+        5
+      ],
+      "SerializationBeforeCreateDependencies": [
+        3,
+        -28,
+        -43,
+        -49,
+        -2,
+        -19,
+        -29,
+        -44
+      ],
+      "CreateBeforeCreateDependencies": [],
+      "Extras": {
+        "$type": "System.Byte[], mscorlib",
+        "$value": ""
+      },
+      "ObjectName": "Default__Helmet_UpArmor_C",
+      "OuterIndex": 0
+    },
+    {
+      "$type": "UAssetAPI.NormalExport, UAssetAPI",
+      "Data": [
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.ObjectPropertyData, UAssetAPI",
+          "Name": "AttachParent",
+          "DuplicationIndex": 0,
+          "Value": 13
+        }
+      ],
+      "ClassIndex": -7,
+      "SuperIndex": 0,
+      "TemplateIndex": -2,
+      "ObjectFlags": "RF_Public, RF_Transactional, RF_ArchetypeObject, RF_DefaultSubObject",
+      "SerialSize": 41,
+      "SerialOffset": 11318,
+      "bForcedExport": false,
+      "bNotForClient": false,
+      "bNotForServer": false,
+      "PackageGuid": "00000000-0000-0000-0000-000000000000",
+      "PackageFlags": "PKG_None",
+      "bNotAlwaysLoadedForEditorGame": true,
+      "bIsAsset": false,
+      "SerializationBeforeSerializationDependencies": [
+        4
+      ],
+      "CreateBeforeSerializationDependencies": [
+        13,
+        -28
+      ],
+      "SerializationBeforeCreateDependencies": [
+        -7,
+        -2
+      ],
+      "CreateBeforeCreateDependencies": [
+        4
+      ],
+      "Extras": {
+        "$type": "System.Byte[], mscorlib",
+        "$value": "AAAAAA=="
+      },
+      "ObjectName": "Interaction Box",
+      "OuterIndex": 4
+    },
+    {
+      "$type": "UAssetAPI.NormalExport, UAssetAPI",
+      "Data": [
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.ObjectPropertyData, UAssetAPI",
+          "Name": "AttachParent",
+          "DuplicationIndex": 0,
+          "Value": 13
+        }
+      ],
+      "ClassIndex": -14,
+      "SuperIndex": 0,
+      "TemplateIndex": -19,
+      "ObjectFlags": "RF_Public, RF_Transactional, RF_ArchetypeObject, RF_DefaultSubObject",
+      "SerialSize": 41,
+      "SerialOffset": 11359,
+      "bForcedExport": false,
+      "bNotForClient": false,
+      "bNotForServer": false,
+      "PackageGuid": "00000000-0000-0000-0000-000000000000",
+      "PackageFlags": "PKG_None",
+      "bNotAlwaysLoadedForEditorGame": true,
+      "bIsAsset": false,
+      "SerializationBeforeSerializationDependencies": [
+        4
+      ],
+      "CreateBeforeSerializationDependencies": [
+        13,
+        -28
+      ],
+      "SerializationBeforeCreateDependencies": [
+        -14,
+        -19
+      ],
+      "CreateBeforeCreateDependencies": [
+        4
+      ],
+      "Extras": {
+        "$type": "System.Byte[], mscorlib",
+        "$value": "AAAAAA=="
+      },
+      "ObjectName": "FMODAudioPlayer",
+      "OuterIndex": 4
+    },
+    {
+      "$type": "UAssetAPI.NormalExport, UAssetAPI",
+      "Data": [
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.ObjectPropertyData, UAssetAPI",
+          "Name": "AttachParent",
+          "DuplicationIndex": 0,
+          "Value": 13
+        }
+      ],
+      "ClassIndex": -16,
+      "SuperIndex": 0,
+      "TemplateIndex": -29,
+      "ObjectFlags": "RF_Public, RF_Transactional, RF_ArchetypeObject, RF_DefaultSubObject",
+      "SerialSize": 41,
+      "SerialOffset": 11400,
+      "bForcedExport": false,
+      "bNotForClient": false,
+      "bNotForServer": false,
+      "PackageGuid": "00000000-0000-0000-0000-000000000000",
+      "PackageFlags": "PKG_None",
+      "bNotAlwaysLoadedForEditorGame": true,
+      "bIsAsset": false,
+      "SerializationBeforeSerializationDependencies": [
+        4
+      ],
+      "CreateBeforeSerializationDependencies": [
+        13,
+        -28
+      ],
+      "SerializationBeforeCreateDependencies": [
+        -16,
+        -29
+      ],
+      "CreateBeforeCreateDependencies": [
+        4
+      ],
+      "Extras": {
+        "$type": "System.Byte[], mscorlib",
+        "$value": "AAAAAA=="
+      },
+      "ObjectName": "Interactable Component",
+      "OuterIndex": 4
+    },
+    {
+      "$type": "UAssetAPI.NormalExport, UAssetAPI",
+      "Data": [],
+      "ClassIndex": -10,
+      "SuperIndex": 0,
+      "TemplateIndex": -43,
+      "ObjectFlags": "RF_Public, RF_Transactional, RF_ArchetypeObject, RF_DefaultSubObject",
+      "SerialSize": 12,
+      "SerialOffset": 11441,
+      "bForcedExport": false,
+      "bNotForClient": false,
+      "bNotForServer": false,
+      "PackageGuid": "00000000-0000-0000-0000-000000000000",
+      "PackageFlags": "PKG_None",
+      "bNotAlwaysLoadedForEditorGame": true,
+      "bIsAsset": false,
+      "SerializationBeforeSerializationDependencies": [
+        4
+      ],
+      "CreateBeforeSerializationDependencies": [
+        -28
+      ],
+      "SerializationBeforeCreateDependencies": [
+        -10,
+        -43
+      ],
+      "CreateBeforeCreateDependencies": [
+        4
+      ],
+      "Extras": {
+        "$type": "System.Byte[], mscorlib",
+        "$value": "AAAAAA=="
+      },
+      "ObjectName": "Root",
+      "OuterIndex": 4
+    },
+    {
+      "$type": "UAssetAPI.NormalExport, UAssetAPI",
+      "Data": [],
+      "ClassIndex": -10,
+      "SuperIndex": 0,
+      "TemplateIndex": -42,
+      "ObjectFlags": "RF_Public, RF_Transactional, RF_ArchetypeObject",
+      "SerialSize": 12,
+      "SerialOffset": 11453,
+      "bForcedExport": false,
+      "bNotForClient": false,
+      "bNotForServer": false,
+      "PackageGuid": "00000000-0000-0000-0000-000000000000",
+      "PackageFlags": "PKG_None",
+      "bNotAlwaysLoadedForEditorGame": false,
+      "bIsAsset": false,
+      "SerializationBeforeSerializationDependencies": [
+        3
+      ],
+      "CreateBeforeSerializationDependencies": [],
+      "SerializationBeforeCreateDependencies": [
+        -10,
+        -42
+      ],
+      "CreateBeforeCreateDependencies": [
+        3
+      ],
+      "Extras": {
+        "$type": "System.Byte[], mscorlib",
+        "$value": "AAAAAA=="
+      },
+      "ObjectName": "DefaultSceneRoot_GEN_VARIABLE",
+      "OuterIndex": 3
+    },
+    {
+      "$type": "UAssetAPI.NormalExport, UAssetAPI",
+      "Data": [
+        {
+          "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+          "StructType": "DataTableRowHandle",
+          "SerializeNone": true,
+          "StructGUID": "00000000-0000-0000-0000-000000000000",
+          "Name": "ScoreGroup",
+          "DuplicationIndex": 0,
+          "Value": [
+            {
+              "$type": "UAssetAPI.PropertyTypes.Objects.NamePropertyData, UAssetAPI",
+              "Name": "RowName",
+              "DuplicationIndex": 0,
+              "Value": "EvidenceSecured"
+            }
+          ]
+        }
+      ],
+      "ClassIndex": -17,
+      "SuperIndex": 0,
+      "TemplateIndex": -44,
+      "ObjectFlags": "RF_Public, RF_Transactional, RF_ArchetypeObject, RF_DefaultSubObject",
+      "SerialSize": 102,
+      "SerialOffset": 11465,
+      "bForcedExport": false,
+      "bNotForClient": false,
+      "bNotForServer": false,
+      "PackageGuid": "00000000-0000-0000-0000-000000000000",
+      "PackageFlags": "PKG_None",
+      "bNotAlwaysLoadedForEditorGame": true,
+      "bIsAsset": false,
+      "SerializationBeforeSerializationDependencies": [
+        4
+      ],
+      "CreateBeforeSerializationDependencies": [
+        -18,
+        -28
+      ],
+      "SerializationBeforeCreateDependencies": [
+        -17,
+        -44
+      ],
+      "CreateBeforeCreateDependencies": [
+        4
+      ],
+      "Extras": {
+        "$type": "System.Byte[], mscorlib",
+        "$value": "AAAAAA=="
+      },
+      "ObjectName": "Scoring Component",
+      "OuterIndex": 4
+    },
+    {
+      "$type": "UAssetAPI.NormalExport, UAssetAPI",
+      "Data": [
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.ObjectPropertyData, UAssetAPI",
+          "Name": "ComponentClass",
+          "DuplicationIndex": 0,
+          "Value": -10
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.ObjectPropertyData, UAssetAPI",
+          "Name": "ComponentTemplate",
+          "DuplicationIndex": 0,
+          "Value": 9
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+          "StructType": "Guid",
+          "SerializeNone": true,
+          "StructGUID": "00000000-0000-0000-0000-000000000000",
+          "Name": "VariableGuid",
+          "DuplicationIndex": 0,
+          "Value": [
+            {
+              "$type": "UAssetAPI.PropertyTypes.Structs.GuidPropertyData, UAssetAPI",
+              "Name": "VariableGuid",
+              "DuplicationIndex": 0,
+              "Value": "a6bd7a2f-42a1-4cf9-b7c5-40754fe9b829"
+            }
+          ]
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.NamePropertyData, UAssetAPI",
+          "Name": "InternalVariableName",
+          "DuplicationIndex": 0,
+          "Value": "DefaultSceneRoot"
+        }
+      ],
+      "ClassIndex": -11,
+      "SuperIndex": 0,
+      "TemplateIndex": -46,
+      "ObjectFlags": "RF_Transactional",
+      "SerialSize": 168,
+      "SerialOffset": 11567,
+      "bForcedExport": false,
+      "bNotForClient": false,
+      "bNotForServer": false,
+      "PackageGuid": "00000000-0000-0000-0000-000000000000",
+      "PackageFlags": "PKG_None",
+      "bNotAlwaysLoadedForEditorGame": false,
+      "bIsAsset": false,
+      "SerializationBeforeSerializationDependencies": [],
+      "CreateBeforeSerializationDependencies": [
+        9,
+        -10
+      ],
+      "SerializationBeforeCreateDependencies": [
+        -11,
+        -46
+      ],
+      "CreateBeforeCreateDependencies": [
+        12
+      ],
+      "Extras": {
+        "$type": "System.Byte[], mscorlib",
+        "$value": "AAAAAA=="
+      },
+      "ObjectName": "SCS_Node_0",
+      "OuterIndex": 12
+    },
+    {
+      "$type": "UAssetAPI.NormalExport, UAssetAPI",
+      "Data": [
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.ObjectPropertyData, UAssetAPI",
+          "Name": "DefaultSceneRootNode",
+          "DuplicationIndex": 0,
+          "Value": 11
+        }
+      ],
+      "ClassIndex": -12,
+      "SuperIndex": 0,
+      "TemplateIndex": -47,
+      "ObjectFlags": "RF_Transactional",
+      "SerialSize": 41,
+      "SerialOffset": 11735,
+      "bForcedExport": false,
+      "bNotForClient": false,
+      "bNotForServer": false,
+      "PackageGuid": "00000000-0000-0000-0000-000000000000",
+      "PackageFlags": "PKG_None",
+      "bNotAlwaysLoadedForEditorGame": false,
+      "bIsAsset": false,
+      "SerializationBeforeSerializationDependencies": [],
+      "CreateBeforeSerializationDependencies": [
+        11
+      ],
+      "SerializationBeforeCreateDependencies": [
+        -12,
+        -47
+      ],
+      "CreateBeforeCreateDependencies": [
+        3
+      ],
+      "Extras": {
+        "$type": "System.Byte[], mscorlib",
+        "$value": "AAAAAA=="
+      },
+      "ObjectName": "SimpleConstructionScript_0",
+      "OuterIndex": 3
+    },
+    {
+      "$type": "UAssetAPI.NormalExport, UAssetAPI",
+      "Data": [
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.ObjectPropertyData, UAssetAPI",
+          "Name": "SkeletalMesh",
+          "DuplicationIndex": 0,
+          "Value": -48
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.ObjectPropertyData, UAssetAPI",
+          "Name": "AttachParent",
+          "DuplicationIndex": 0,
+          "Value": 8
+        }
+      ],
+      "ClassIndex": -13,
+      "SuperIndex": 0,
+      "TemplateIndex": -49,
+      "ObjectFlags": "RF_Public, RF_Transactional, RF_ArchetypeObject, RF_DefaultSubObject",
+      "SerialSize": 70,
+      "SerialOffset": 11776,
+      "bForcedExport": false,
+      "bNotForClient": false,
+      "bNotForServer": false,
+      "PackageGuid": "00000000-0000-0000-0000-000000000000",
+      "PackageFlags": "PKG_None",
+      "bNotAlwaysLoadedForEditorGame": true,
+      "bIsAsset": false,
+      "SerializationBeforeSerializationDependencies": [
+        4
+      ],
+      "CreateBeforeSerializationDependencies": [
+        -48,
+        8,
+        -28
+      ],
+      "SerializationBeforeCreateDependencies": [
+        -13,
+        -49
+      ],
+      "CreateBeforeCreateDependencies": [
+        4
+      ],
+      "Extras": {
+        "$type": "System.Byte[], mscorlib",
+        "$value": "AAAAAA=="
+      },
+      "ObjectName": "ItemMesh",
+      "OuterIndex": 4
+    }
+  ],
+  "DependsMap": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+  ],
+  "SoftPackageReferenceList": [],
+  "AssetRegistryData": [],
+  "WorldTileInfo": null,
+  "Generations": [
+    {
+      "$type": "UAssetAPI.FGenerationInfo, UAssetAPI",
+      "ExportCount": 13,
+      "NameCount": 166
+    }
+  ],
+  "PackageGuid": "5ffcb230-639c-4827-84c4-112d5c7eb38e",
+  "RecordedEngineVersion": {
+    "$type": "UAssetAPI.FEngineVersion, UAssetAPI",
+    "Major": 0,
+    "Minor": 0,
+    "Patch": 0,
+    "Changelist": 0,
+    "Branch": null
+  },
+  "RecordedCompatibleWithEngineVersion": {
+    "$type": "UAssetAPI.FEngineVersion, UAssetAPI",
+    "Major": 0,
+    "Minor": 0,
+    "Patch": 0,
+    "Changelist": 0,
+    "Branch": null
+  },
+  "ChunkIDs": [],
+  "PackageFlags": "PKG_RequiresLocalizationGather, PKG_FilterEditorOnly",
+  "PackageSource": 1898390633,
+  "FolderName": "None",
+  "GatherableTextDataCount": 0,
+  "GatherableTextDataOffset": 0,
+  "SearchableNamesOffset": 0,
+  "ThumbnailTableOffset": 0,
+  "CompressionFlags": 0,
+  "doWeHaveDependsMap": true,
+  "doWeHaveSoftPackageReferences": false,
+  "doWeHaveAssetRegistryData": true,
+  "doWeHaveWorldTileInfo": false
+}
