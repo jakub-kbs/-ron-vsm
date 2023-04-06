@@ -1997,13 +1997,13 @@
       },
       {
        "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
-       "Value": 1,
+       "Value": 1.5,
        "Name": "BloomIntensity",
        "DuplicationIndex": 0
       },
       {
        "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
-       "Value": 1,
+       "Value": -0.5,
        "Name": "BloomThreshold",
        "DuplicationIndex": 0
       },
@@ -2051,7 +2051,7 @@
       },
       {
        "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
-       "Value": -7.5,
+       "Value": -4,
        "Name": "AutoExposureMinBrightness",
        "DuplicationIndex": 0
       },
@@ -2063,13 +2063,13 @@
       },
       {
        "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
-       "Value": 7.5,
+       "Value": 2,
        "Name": "AutoExposureSpeedUp",
        "DuplicationIndex": 0
       },
       {
        "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
-       "Value": 7.5,
+       "Value": 2,
        "Name": "AutoExposureSpeedDown",
        "DuplicationIndex": 0
       },
@@ -2117,7 +2117,7 @@
       },
       {
        "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
-       "Value": 0.25,
+       "Value": 0.4,
        "Name": "GrainIntensity",
        "DuplicationIndex": 0
       },
@@ -2129,7 +2129,7 @@
       },
       {
        "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
-       "Value": 2.0,
+       "Value": 0.5,
        "Name": "IndirectLightingIntensity",
        "DuplicationIndex": 0
       },
@@ -2141,19 +2141,19 @@
       },
       {
        "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
-       "Value": 10000,
+       "Value": 10,
        "Name": "DepthOfFieldFocalDistance",
        "DuplicationIndex": 0
       },
       {
        "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
-       "Value": 250,
+       "Value": 1000,
        "Name": "DepthOfFieldDepthBlurAmount",
        "DuplicationIndex": 0
       },
       {
        "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
-       "Value": 25,
+       "Value": 10,
        "Name": "DepthOfFieldDepthBlurRadius",
        "DuplicationIndex": 0
       }
