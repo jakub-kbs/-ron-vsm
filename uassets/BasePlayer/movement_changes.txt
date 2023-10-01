@@ -11,7 +11,8 @@ SPEED % LOSS WHEN CARRYING              --> INCREASED 3.2 TIMES         (20% SPD
 
 SUPPRESSION SHAKE SCALE                 --> REDUCED BY 17%
 
-FREELOOK YAW                            --> INCREASED TO 90 DEG         (VANILLA 65 DEG)
+FREELOOK YAW                            --> INCREASED TO 100 DEG        (VANILLA 65 DEG)
+FREELOK PITCH                           --> INCREASED TO 65             (VANILLA 50 DEG)    
 
 CHARACTER COLLISION CYLINDER RADIUS     --> REDUCED BY ~10.5%            
 

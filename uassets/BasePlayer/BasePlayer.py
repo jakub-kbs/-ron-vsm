@@ -58,12 +58,16 @@ for item in data["Exports"][20]["Data"]:
 
         for item_data in item["Value"]:
 
+            if item_data["Name"] == "PitchMax":
+                item_data["Value"] = 65
+                continue
+
             if item_data["Name"] == "YawMin":
-                item_data["Value"] = -90 
+                item_data["Value"] = -100    
                 continue
 
             if item_data["Name"] == "YawMax":
-                item_data["Value"] = 90 
+                item_data["Value"] = 100 
                 continue
 
 for item in data["Exports"][26]["Data"]:

@@ -11494,19 +11494,19 @@
      "Value": [
       {
        "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
-       "Value": 50.0,
+       "Value": 65,
        "Name": "PitchMax",
        "DuplicationIndex": 0
       },
       {
        "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
-       "Value": -90,
+       "Value": -100,
        "Name": "YawMin",
        "DuplicationIndex": 0
       },
       {
        "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
-       "Value": 90,
+       "Value": 100,
        "Name": "YawMax",
        "DuplicationIndex": 0
       }

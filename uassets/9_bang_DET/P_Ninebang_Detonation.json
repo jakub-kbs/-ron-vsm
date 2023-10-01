@@ -19848,19 +19848,19 @@
          "Value": [
           {
            "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
-           "Value": 1022.0,
+           "Value": 2555.0,
            "Name": "",
            "DuplicationIndex": 0
           },
           {
            "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
-           "Value": 1022.0,
+           "Value": 2555.0,
            "Name": "",
            "DuplicationIndex": 0
           },
           {
            "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
-           "Value": 1022.0,
+           "Value": 2555.0,
            "Name": "",
            "DuplicationIndex": 0
           }
@@ -19904,13 +19904,13 @@
      "Value": [
       {
        "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
-       "Value": 2555.0,
+       "Value": 1405.25,
        "Name": "MinValue",
        "DuplicationIndex": 0
       },
       {
        "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
-       "Value": 2555.0,
+       "Value": 1405.25,
        "Name": "MaxValue",
        "DuplicationIndex": 0
       },
@@ -19980,13 +19980,13 @@
      "Value": [
       {
        "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
-       "Value": 25000.0,
+       "Value": 3000.0,
        "Name": "MinValue",
        "DuplicationIndex": 0
       },
       {
        "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
-       "Value": 25000.0,
+       "Value": 3000.0,
        "Name": "MaxValue",
        "DuplicationIndex": 0
       },
@@ -21291,13 +21291,13 @@
      "Value": [
       {
        "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
-       "Value": 200.0,
+       "Value": 38.0,
        "Name": "MinValue",
        "DuplicationIndex": 0
       },
       {
        "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
-       "Value": 200.0,
+       "Value": 42.0,
        "Name": "MaxValue",
        "DuplicationIndex": 0
       },
@@ -28620,7 +28620,7 @@
          "DuplicationIndex": 0,
          "Value": {
           "$type": "UAssetAPI.UnrealTypes.FVector, UAssetAPI",
-          "X": 255.0,
+          "X": 89.25,
           "Y": "+0",
           "Z": "+0"
          }
@@ -28641,7 +28641,7 @@
          "DuplicationIndex": 0,
          "Value": {
           "$type": "UAssetAPI.UnrealTypes.FVector, UAssetAPI",
-          "X": 500.0,
+          "X": 200.0,
           "Y": "+0",
           "Z": "+0"
          }
@@ -28819,7 +28819,7 @@
          "DuplicationIndex": 0,
          "Value": {
           "$type": "UAssetAPI.UnrealTypes.FVector, UAssetAPI",
-          "X": 50.0,
+          "X": 44.5,
           "Y": "+0",
           "Z": "+0"
          }
@@ -28840,7 +28840,7 @@
          "DuplicationIndex": 0,
          "Value": {
           "$type": "UAssetAPI.UnrealTypes.FVector, UAssetAPI",
-          "X": 80.0,
+          "X": 72.8,
           "Y": "+0",
           "Z": "+0"
          }
@@ -29555,9 +29555,9 @@
          "DuplicationIndex": 0,
          "Value": {
           "$type": "UAssetAPI.UnrealTypes.FVector, UAssetAPI",
-          "X": 90.0,
-          "Y": 30.0,
-          "Z": 25.0
+          "X": 80.1,
+          "Y": 19.5,
+          "Z": 15.5
          }
         }
        ]
@@ -29576,9 +29576,9 @@
          "DuplicationIndex": 0,
          "Value": {
           "$type": "UAssetAPI.UnrealTypes.FVector, UAssetAPI",
-          "X": 150.0,
-          "Y": 25.0,
-          "Z": 25.0
+          "X": 135.0,
+          "Y": 19.375,
+          "Z": 22.5
          }
         }
        ]
@@ -29746,7 +29746,7 @@
          "DuplicationIndex": 0,
          "Value": {
           "$type": "UAssetAPI.UnrealTypes.FVector, UAssetAPI",
-          "X": 255.0,
+          "X": 153.0,
           "Y": "+0",
           "Z": "+0"
          }
@@ -29767,7 +29767,7 @@
          "DuplicationIndex": 0,
          "Value": {
           "$type": "UAssetAPI.UnrealTypes.FVector, UAssetAPI",
-          "X": 450.0,
+          "X": 202.5,
           "Y": "+0",
           "Z": "+0"
          }
@@ -29919,13 +29919,13 @@
      "Value": [
       {
        "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
-       "Value": 25.0,
+       "Value": 11.25,
        "Name": "MinValue",
        "DuplicationIndex": 0
       },
       {
        "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
-       "Value": 400.0,
+       "Value": 160.0,
        "Name": "MaxValue",
        "DuplicationIndex": 0
       },
@@ -29943,9 +29943,9 @@
          "DuplicationIndex": 0,
          "Value": {
           "$type": "UAssetAPI.UnrealTypes.FVector, UAssetAPI",
-          "X": 60.0,
-          "Y": 300.0,
-          "Z": 25.0
+          "X": 16.5,
+          "Y": 135.0,
+          "Z": 20.0
          }
         }
        ]
@@ -29964,9 +29964,9 @@
          "DuplicationIndex": 0,
          "Value": {
           "$type": "UAssetAPI.UnrealTypes.FVector, UAssetAPI",
-          "X": 100.0,
-          "Y": 400.0,
-          "Z": 25.0
+          "X": 50.0,
+          "Y": 190.0,
+          "Z": 13.750000000000002
          }
         }
        ]
@@ -30134,7 +30134,7 @@
          "DuplicationIndex": 0,
          "Value": {
           "$type": "UAssetAPI.UnrealTypes.FVector, UAssetAPI",
-          "X": 37.5,
+          "X": 17.25,
           "Y": "+0",
           "Z": "+0"
          }
@@ -30155,7 +30155,7 @@
          "DuplicationIndex": 0,
          "Value": {
           "$type": "UAssetAPI.UnrealTypes.FVector, UAssetAPI",
-          "X": 50.0,
+          "X": 25.0,
           "Y": "+0",
           "Z": "+0"
          }
@@ -30740,9 +30740,9 @@
          "DuplicationIndex": 0,
          "Value": {
           "$type": "UAssetAPI.UnrealTypes.FVector, UAssetAPI",
-          "X": 30.0,
-          "Y": 30.0,
-          "Z": 30.0
+          "X": 10.5,
+          "Y": 10.5,
+          "Z": 10.5
          }
         }
        ]
@@ -30917,8 +30917,8 @@
          "Value": {
           "$type": "UAssetAPI.UnrealTypes.FVector, UAssetAPI",
           "X": 5.0,
-          "Y": 50.0,
-          "Z": 25.0
+          "Y": 22.5,
+          "Z": 6.25
          }
         }
        ]

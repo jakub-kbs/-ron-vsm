@@ -17,7 +17,7 @@ Added realistic names for all weapons, including grenades, as well as edited a f
 
 Added the 9-banger with custom loadout menu icon: 
     The fuse delay is set to 1.5 seconds and redetonation delay is set to 0.25 of a second, 
-    Tweaked the redetonation VFX, again, huge thanks to Ninomaelsshin416 for allowing me to reverse engineer his file;
+    Tweaked the redetonation VFX, again, huge thanks to Ninomaelsshin416 for allowing me to reverse engineer his files;
 
 Rebalanced recoil values for all weapons: 
     FAL is now somewhat usable, still kicks like a truck but at least you're not shooting the ceiling after 3 rounds;
@@ -51,7 +51,7 @@ Character collision cylinder size reduced by about 10.5%:
     You are now able to get closer to walls and walk through doors with AI or other players simultaneously without getting stuck on each other, 
     This may create some clipping issues when walking into the walls while facing them directly and looking down, so unless you're really trying, you won't notice it; 
 
-You are now able to turn your head by 90 degrees when using freelook (vanilla 65 degrees);
+You are now able to turn your head by 100 degrees when using freelook (vanilla 65 degrees). Pitch has also been increased to 65 degrees from vanilla 50;
 
 FUTURE PLANS
 
