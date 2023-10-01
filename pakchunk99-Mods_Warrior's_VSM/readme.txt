@@ -16,24 +16,25 @@
                 Keep in mind the frame drops on redetonations, it's a game issue not your PC catching fire;
         >   Rebalanced recoil values for all weapons:
                 FAL is now somewhat usable, still kicks like a truck but at least you're not shooting the ceiling after 3 rounds;
-        >   Reworked (halved) weapon's inertia values, they won't sway so much when turning or strafing;
+        >   Lowered the weapon's inertia values, they won't sway so much when turning or strafing;
         >   All primary weapons and long tactical items were given a new perspective:
                This gives the look of the character pressing weapons more into the shoulder,
                These changes were made to visualize new inertia values;
         >   All handguns were given a new perspective:
                 This change was inspired by the way of how handguns are held in Ground Branch;
-        >   Similarly to Jug's rework and Gunfighter, I've included the low-ready when colliding with objects,
-        >   Changed all weapon's weight values to their IRL counterparts (this does something for sure, dunno what yet);
-        >   Reworked damage and penetration distance values:
-            >   Weapons can now apply bleeding and 'critical hits', with damage and chance varying on the caliber;
+        >   Similarly to Jug's rework and Gunfighter, I've included the low-ready when colliding with objects, also inspired by Ground Branch,
+//        >   Changed all weapon's weight values to their IRL counterparts (this does something for sure, dunno what yet);
+//        >   Reworked damage and penetration distance values:
+//            >   Weapons can now apply bleeding and 'critical hits', with damage and chance varying on the caliber;
         >   Door wedges are now 3 per slot (vanilla 2)
+        >   Both heavy and light vest now have 14 slots 
 
     >   MOVEMENT   <
         >   Tweaked movement speed:
             >   Increased base run and walk speeds,
             >   Slightly faster movement when aiming,
             >   Faster moving speed when leaning,
-            >   When hit in the legs you lose 12.5% of overall movement speed,
+            >   When hit in a leg you lose 12.5% of overall movement speed for each time being hit,
             >   Slower movement when carrying restrained suspects and civies;
         >   Slightly reduced screen shake while suppressed by enemy fire;
         >   Character collision cylinder size reduced by about 10.5%:
