@@ -14,20 +14,28 @@ CHANGES
 WEAPONS   &   EQUIPMENT
 
 Added realistic names for all weapons, including grenades, as well as edited a few descriptions;
-    Added the 9-banger with custom loadout menu icon:
-        The fuse delay is set to 1.5 seconds and redetonation delay is set to 0.25 of a second,
-        Tweaked the redetonation VFX, again, huge thanks to Ninomaelsshin416 for allowing me to reverse engineer his file;
-    Rebalanced recoil values for all weapons:
-        FAL is now somewhat usable, still kicks like a truck but at least you're not shooting the ceiling after 3 rounds;
-    Lowered the weapon's inertia values, they won't sway so much when turning or strafing;
-    All primary weapons and long tactical items were given a new perspective:
-        This gives the look of the character pressing weapons more into the shoulder,
-        These changes were made to visualize new inertia values;
-    All handguns were given a new perspective:
-        This change was inspired by the way of how handguns are held in Ground Branch;
-    Similarly to Jug's rework and Gunfighter, I've included the low-ready when colliding with objects, also inspired by Ground Branch,
-    Door wedges are now 3 per slot (vanilla 2)
-    Both heavy and light vest now have 14 slots 
+
+Added the 9-banger with custom loadout menu icon: 
+    The fuse delay is set to 1.5 seconds and redetonation delay is set to 0.25 of a second, 
+    Tweaked the redetonation VFX, again, huge thanks to Ninomaelsshin416 for allowing me to reverse engineer his file;
+
+Rebalanced recoil values for all weapons: 
+    FAL is now somewhat usable, still kicks like a truck but at least you're not shooting the ceiling after 3 rounds;
+
+Lowered the weapon's inertia values, they won't sway so much when turning or strafing; 
+
+All primary weapons and long tactical items were given a new perspective: 
+    This gives the look of the character pressing weapons more into the shoulder, 
+    These changes were made to visualize new inertia values;
+
+All handguns were given a new perspective: 
+    This change was inspired by the way of how handguns are held in Ground Branch; 
+
+Similarly to Jug's rework and Gunfighter, I've included the low-ready when colliding with objects, also inspired by Ground Branch,
+
+Door wedges are now 3 per slot (vanilla 2)
+
+Both heavy and light vest now have 14 slots 
 
 MOVEMENT
 
@@ -42,7 +50,7 @@ Slightly reduced screen shake while suppressed by enemy fire;
 Character collision cylinder size reduced by about 10.5%:
     You are now able to get closer to walls and walk through doors with AI or other players simultaneously without getting stuck on each other, 
     This may create some clipping issues when walking into the walls while facing them directly and looking down, so unless you're really trying, you won't notice it; 
-    
+
 You are now able to turn your head by 90 degrees when using freelook (vanilla 65 degrees);
 
 FUTURE PLANS
