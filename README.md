@@ -10,7 +10,9 @@ This mod is not compatible with any other mods that edit ItemDataTable.uasset fi
    This mod already contains the Glock 19 TTI Mag Extension, huge thanks to Ninomaelsshin416 for letting me use his mod;
 
 CHANGES
+
 WEAPONS   &   EQUIPMENT
+
 Added realistic names for all weapons, including grenades, as well as edited a few descriptions;
     Added the 9-banger with custom loadout menu icon:
         The fuse delay is set to 1.5 seconds and redetonation delay is set to 0.25 of a second,
