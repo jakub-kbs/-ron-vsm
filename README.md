@@ -10,26 +10,25 @@ This mod is not compatible with any other mods that edit ItemDataTable.uasset fi
    This mod already contains the Glock 19 TTI Mag Extension, huge thanks to Ninomaelsshin416 for letting me use his mod;
 
 CHANGES
-
-    WEAPONS   &   EQUIPMENT
-
-        Added realistic names for all weapons, including grenades, as well as edited a few descriptions;
-        Added the 9-banger with custom loadout menu icon:
-            The fuse delay is set to 1.5 seconds and redetonation delay is set to 0.25 of a second, 
-            Tweaked the redetonation VFX, again, huge thanks to Ninomaelsshin416 for allowing me to reverse engineer his file;
-        Rebalanced recoil values for all weapons:
-            FAL is now somewhat usable, still kicks like a truck but at least you're not shooting the ceiling after 3 rounds;
-        Lowered the weapon's inertia values, they won't sway so much when turning or strafing;
-        All primary weapons and long tactical items were given a new perspective:
-            This gives the look of the character pressing weapons more into the shoulder,
-            These changes were made to visualize new inertia values;
-        All handguns were given a new perspective:
-            This change was inspired by the way of how handguns are held in Ground Branch;
-        Similarly to Jug's rework and Gunfighter, I've included the low-ready when colliding with objects, also inspired by Ground Branch,
-        Door wedges are now 3 per slot (vanilla 2)
-        Both heavy and light vest now have 14 slots 
+WEAPONS   &   EQUIPMENT
+Added realistic names for all weapons, including grenades, as well as edited a few descriptions;
+    Added the 9-banger with custom loadout menu icon:
+        The fuse delay is set to 1.5 seconds and redetonation delay is set to 0.25 of a second,
+        Tweaked the redetonation VFX, again, huge thanks to Ninomaelsshin416 for allowing me to reverse engineer his file;
+    Rebalanced recoil values for all weapons:
+        FAL is now somewhat usable, still kicks like a truck but at least you're not shooting the ceiling after 3 rounds;
+    Lowered the weapon's inertia values, they won't sway so much when turning or strafing;
+    All primary weapons and long tactical items were given a new perspective:
+        This gives the look of the character pressing weapons more into the shoulder,
+        These changes were made to visualize new inertia values;
+    All handguns were given a new perspective:
+        This change was inspired by the way of how handguns are held in Ground Branch;
+    Similarly to Jug's rework and Gunfighter, I've included the low-ready when colliding with objects, also inspired by Ground Branch,
+    Door wedges are now 3 per slot (vanilla 2)
+    Both heavy and light vest now have 14 slots 
 
 MOVEMENT
+
 Tweaked movement speed:
     Increased base run and walk speeds,
     Slightly faster movement when aiming,Faster moving speed when leaning,
