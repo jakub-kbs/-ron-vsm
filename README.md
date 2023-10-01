@@ -29,24 +29,22 @@ CHANGES
         Door wedges are now 3 per slot (vanilla 2)
         Both heavy and light vest now have 14 slots 
 
-    MOVEMENT
-
-        Tweaked movement speed:
-            Increased base run and walk speeds,
-            Slightly faster movement when aiming,
-            Faster moving speed when leaning,
-            When hit in a leg you lose 12.5% of overall movement speed for each time being hit,
-            Slower movement when carrying restrained suspects and civies;
-        Slightly reduced screen shake while suppressed by enemy fire;
-        Character collision cylinder size reduced by about 10.5%:
-            You are now able to get closer to walls and walk through doors with AI or other players simultaneously without getting stuck on each other,
-            This may create some clipping issues when walking into the walls while facing them directly and looking down, so unless you're really trying, you won't notice it;
-        You are now able to turn your head by 90 degrees when using freelook (vanilla 65 degrees);
+MOVEMENT
+Tweaked movement speed:
+    Increased base run and walk speeds,
+    Slightly faster movement when aiming,Faster moving speed when leaning,
+    When hit in a leg you lose 12.5% of overall movement speed for each time being hit,
+    Slower movement when carrying restrained suspects and civies;
+Slightly reduced screen shake while suppressed by enemy fire;
+Character collision cylinder size reduced by about 10.5%:
+    You are now able to get closer to walls and walk through doors with AI or other players simultaneously without getting stuck on each other,
+    This may create some clipping issues when walking into the walls while facing them directly and looking down, so unless you're really trying, you won't notice it;
+You are now able to turn your head by 90 degrees when using freelook (vanilla 65 degrees);
 
 FUTURE PLANS
 
-    If I manage to figure out how to add new weapons I will add a few, most likely it will come as a collection for Vortex users (highly suggested for easy updates);
-    I'm not planning on working on the AI, there is plenty of amazing mods that do that;
-    I'm open to your suggestions, but keep in mind I may not add whatever you're asking me to, either because I don't like the idea or I simply don't know how to do it.
+If I manage to figure out how to add new weapons I will add a few, most likely it will come as a collection for Vortex users (highly suggested for easy updates);
+I'm not planning on working on the AI, there is plenty of amazing mods that do that;
+I'm open to your suggestions, but keep in mind I may not add whatever you're asking me to, either because I don't like the idea or I simply don't know how to do it.
 
 Thank you for downloading my mod, if you encounter any bugs be sure to post them on the Nexus page. I'll do my best to fix them.
