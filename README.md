@@ -32,14 +32,17 @@ Added realistic names for all weapons, including grenades, as well as edited a f
 MOVEMENT
 
 Tweaked movement speed:
-    Increased base run and walk speeds,
-    Slightly faster movement when aiming,Faster moving speed when leaning,
-    When hit in a leg you lose 12.5% of overall movement speed for each time being hit,
-    Slower movement when carrying restrained suspects and civies;
+    Increased base run and walk speeds, 
+    Slightly faster movement when aiming,Faster moving speed when leaning, 
+    When hit in a leg you lose 12.5% of overall movement speed for each time being hit, 
+    Slower movement when carrying restrained suspects and civies; 
+
 Slightly reduced screen shake while suppressed by enemy fire;
+
 Character collision cylinder size reduced by about 10.5%:
-    You are now able to get closer to walls and walk through doors with AI or other players simultaneously without getting stuck on each other,
-    This may create some clipping issues when walking into the walls while facing them directly and looking down, so unless you're really trying, you won't notice it;
+    You are now able to get closer to walls and walk through doors with AI or other players simultaneously without getting stuck on each other, 
+    This may create some clipping issues when walking into the walls while facing them directly and looking down, so unless you're really trying, you won't notice it; 
+    
 You are now able to turn your head by 90 degrees when using freelook (vanilla 65 degrees);
 
 FUTURE PLANS
