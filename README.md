@@ -3,11 +3,11 @@ Warrior's VSM Rework v. pre-1.0
 IMPORTANT
 
 This mod is not compatible with any other mods that edit ItemDataTable.uasset file, such as:
-   Jugulator's Gameplay Review (WEAPONS pak);
-   Gunfighter Gameplay Improvement;
-   Everything Unlocked;
-   Real Weapon Names with More Guns and Attachments;
-   This mod already contains the Glock 19 TTI Mag Extension, huge thanks to Ninomaelsshin416 for letting me use his mod;
+Jugulator's Gameplay Review (WEAPONS pak);
+Gunfighter Gameplay Improvement;
+Everything Unlocked;
+Real Weapon Names with More Guns and Attachments;
+This mod already contains the Glock 19 TTI Mag Extension, huge thanks to Ninomaelsshin416 for letting me use his mod;
 
 CHANGES
 
