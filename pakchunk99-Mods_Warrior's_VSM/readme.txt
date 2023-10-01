@@ -6,14 +6,15 @@
         >   Gunfighter Gameplay Improvement;
         >   Everything Unlocked;
         >   Real Weapon Names with More Guns and Attachments;
-    >   This mod already contains the Glock 19 TTI Mag Extension, huge thanks to williammiller4161 for letting me use his mod;
+    >   This mod already contains the Glock 19 TTI Mag Extension, huge thanks to Ninomaelsshin416 for letting me use his mod;
 
 !   CHANGES   !
     >   WEAPONS   &   EQUIPMENT   <
         >   Added realistic names for all weapons, including grenades, as well as edited a few descriptions;
         >   Added the 9-banger with custom loadout menu icon:
                 The fuse delay is set to 1.5 seconds and redetonation delay is set to 0.25 of a second, 
-                Keep in mind the frame drops on redetonations, it's a game issue not your PC catching fire;
+//              Keep in mind the frame drops on redetonations, it's a game issue not your PC catching fire,
+                Tweaked the redetonation VFX, again, huge thanks to Ninomaelsshin416 for allowing me to reverse engineer his file;
         >   Rebalanced recoil values for all weapons:
                 FAL is now somewhat usable, still kicks like a truck but at least you're not shooting the ceiling after 3 rounds;
         >   Lowered the weapon's inertia values, they won't sway so much when turning or strafing;
@@ -47,4 +48,4 @@
     >   I'm not planning on working on the AI, there is plenty of amazing mods that do that;
     >   I'm open to your suggestions, but keep in mind I may not add whatever you're asking me to, either because I don't like the idea or I simply don't know how to do it.
 
-Thank you for downloading my mod, if you encounter any bugs be sure to post them on the Nexus page. I'll do my best to fix them although I'm quite unexperienced when it comes to modding RoN or UE4 games in general.
+Thank you for downloading my mod, if you encounter any bugs be sure to post them on the Nexus page. I'll do my best to fix them.
